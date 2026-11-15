@@ -12,8 +12,6 @@ HOMEBOUND connects a science question with a complete modeled excursion: leave o
 
 ![HOMEBOUND demonstration: reducing observation from 88 to 85 minutes makes the modeled trip fit.](docs/demo/HOMEBOUND_YouTube_Thumbnail_EN.jpg)
 
-Application **1.1.12** | Decision model **1.0.0** | Public package **1.1**
-
 ## What it does
 
 - Guides **Destination -> Activities -> Review -> Save brief**.
@@ -57,7 +55,7 @@ At 20 degrees, A/B/C have no permitted modeled round-trip route in the prepared 
 | Mars Odyssey / THEMIS | `Gale_crater_THEMIS_qualTI` | Regional qualitative context; not calibrated temperature or route cost |
 | Mars Global Surveyor / MOLA, via NASA Mars Trek | `Mars_MGS_MOLA_ClrShade_merge_global_463m` | Regional orientation only; not a routing layer |
 
-See the [data guide](data/README.md), [source catalog](data/homebound/web/sources.json), [regional provenance](data/homebound/web/regional-context.json) and [third-party notices](THIRD_PARTY_NOTICES.md) for product links, credits and licensing boundaries. Small prepared inputs and cached regional tiles are included; large original NASA downloads are not.
+See the [source catalog](data/homebound/web/sources.json), [regional provenance](data/homebound/web/regional-context.json) and [third-party notices](THIRD_PARTY_NOTICES.md) for product links, credits and licensing boundaries. Small prepared inputs and cached regional tiles are included; large original NASA downloads are not.
 
 ## Run from source
 
@@ -85,30 +83,16 @@ Do not double-click the HTML using `file://`: module workers and data loading re
 
 After building, upload the **contents** of `decision-model/deploy/` to a static hosting document root or subfolder. No database, API key, npm install or Node server is needed on the hosting account. Review `.htaccess` before combining it with an existing site's configuration.
 
-See the [deployment checklist](docs/HOMEBOUND_Application_Deployment_EN.md) and [developer methods](decision-model/README.md).
-
 ## Repository map
 
 | Location | Contents |
 |---|---|
 | [decision-model/](decision-model/) | TypeScript source, tests, configuration, scripts and scoped evidence |
 | [data/](data/) | Prepared NASA-derived inputs, spatial metadata and regional tile provenance |
-| [docs/](docs/) | Application user guide, QA workbook and deployment instructions |
 | [docs/demo/](docs/demo/) | Final MP4/SRT, music credit, PPTX/PDF deck, thumbnail and public provenance |
-| [GitHub publishing guide](docs/GITHUB_PUBLISH_ID.md) | Indonesian steps for publishing this package |
 | [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) | Public release file sizes, SHA-256 hashes and verification scope |
 
 Generated `node_modules/`, `dist/` and `deploy/` are intentionally absent and ignored. They are recreated locally. The package contains no `.git` history, remote configuration or credentials. `"private": true` in the npm manifest prevents accidental npm publication; it does not prevent a public GitHub repository.
-
-## Verification and evidence
-
-The release is checked with the existing **160 unit/regression**, **8 application integration**, **7 regional data/model**, **8 preset data/model** and **42 static-delivery** checks. Public package 1.1 changes non-rendered regional-map metadata and its dependent image hash/cache keys; comparison with the existing deployment verifies that scientific inputs, visible map content and executable behavior remain unchanged.
-
-The [evidence guide](decision-model/evidence/README.md) distinguishes new source-package checks from retained browser/release records. Earlier history is not silently treated as a fresh rerun. Missing optional historical archives are explicitly reported as `NOT_PRESENT`.
-
-The final demo video is edition 1.7, with actual application **1.1.11** captures whose Science results remain unchanged in 1.1.12. It is not labeled as a new 1.1.12 capture. [Demo provenance](docs/demo/PROVENANCE.json) records the current assets and the public-copy-only deck metadata edit.
-
-**Preserve exact bytes:** `.gitattributes` disables automatic text conversion because prepared input and release checks use byte hashes. Do not apply a repository-wide line-ending normalization to this release.
 
 ## Model scope
 
