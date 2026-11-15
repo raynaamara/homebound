@@ -1,0 +1,59 @@
+{
+  "sources": [
+    {
+      "id": "hirise_dem",
+      "mission": "Mars Reconnaissance Orbiter",
+      "instrument": "HiRISE",
+      "data_type": "topographic",
+      "role": "Primary measured terrain input",
+      "product_id": "DTEEC_012340_1750_012195_1750_A01",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_012300_012399/ESP_012340_1750_ESP_012195_1750/DTEEC_012340_1750_012195_1750_A01.IMG",
+      "provider_page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_012340_1750",
+      "interpretation": "Elevation in meters above the Mars 2000 equipotential surface; not a traversability certification.",
+      "sha256": "1ce168a5bedfdb138aabf1c06feca573e6f2222003a592accda4ef30a45f0339",
+      "retrieved_utc": "2026-11-09T14:19:15.532221+00:00"
+    },
+    {
+      "id": "hirise_optical",
+      "mission": "Mars Reconnaissance Orbiter",
+      "instrument": "HiRISE",
+      "data_type": "optical",
+      "role": "Co-registered surface context",
+      "product_id": "ESP_012195_1750_RED_C_01_ORTHO",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_012300_012399/ESP_012340_1750_ESP_012195_1750/ESP_012195_1750_RED_C_01_ORTHO.JP2",
+      "provider_page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_012340_1750",
+      "interpretation": "8-bit red-band digital numbers. Preserve the label's scale/offset; null and saturation codes are not ordinary reflectance samples.",
+      "sha256": "13756d7b5931ddaa656bd8591bbe69333e090d4369d56cc8ac446299b4bed9e3",
+      "retrieved_utc": "2026-11-09T14:17:03.403594+00:00"
+    },
+    {
+      "id": "themis_context_cube",
+      "mission": "2001 Mars Odyssey",
+      "instrument": "THEMIS",
+      "data_type": "metadata and thermal-derived contextual",
+      "role": "Independent source format and embedded ISIS projection/history label",
+      "product_id": "Gale_crater_THEMIS_qualTI",
+      "url": "http://static.mars.asu.edu/themis/landingsites/msl42/qualTI/Gale_crater_THEMIS_qualTI_ISIS.cub",
+      "provider_page": "https://themis.mars.asu.edu/landingsites/mslsite_42",
+      "interpretation": "Use embedded source projection; compare raster values with the provider's GeoTIFF.",
+      "sha256": "84489e9b6b7a8699ac84fde59c8e2051b97478312733e32a4a3a04b68a69e0d8",
+      "retrieved_utc": "2026-11-09T14:17:43.832303+00:00"
+    },
+    {
+      "id": "mars_trek_mola_context",
+      "mission": "Mars Global Surveyor",
+      "instrument": "MOLA",
+      "data_type": "regional topographic visualization",
+      "role": "Regional relief context only; not used for route calculation. This download is the study-area tile; all four mosaic tiles and hashes are recorded in regional-context.json.",
+      "product_id": "Mars_MGS_MOLA_ClrShade_merge_global_463m",
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/33/112.jpg",
+      "provider_page": "https://trek.nasa.gov/mars/",
+      "metadata_url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/WMTSCapabilities.xml",
+      "interpretation": "Color-shaded relief served by NASA Mars Trek, based on MGS/MOLA. Approximate native product spacing 463 m. The AOI footprint is georeferenced; the locator ring is enlarged for visibility.",
+      "sha256": "67e58224618989875db1fa6749c659207565dc0b7deef89b12a05bc01da96c96",
+      "retrieved_utc": "2026-11-14T04:00:46.196783+00:00"
+    }
+  ],
+  "credit": "HiRISE: NASA/JPL-Caltech/University of Arizona. THEMIS: NASA/JPL-Caltech/Arizona State University. Retain original source credits and check provider citation policies. MOLA regional relief: NASA MGS/MOLA; map service: NASA Mars Trek.",
+  "thermal_limitation": "Qualitative contextual values, not verified physical temperature or thermal inertia."
+}

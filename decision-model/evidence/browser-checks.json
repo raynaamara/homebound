@@ -1,0 +1,25 @@
+{
+  "method": "Executed through the integrated Chromium browser and Playwright tools against the generated static build.",
+  "hosting_claim": "Root and nested-folder static delivery verified locally; an actual Rumahweb account was not accessed.",
+  "checks": [
+    {"id": "B01", "status": "PASS", "check": "Nominal original target", "observed": "Target A at the 20-degree preset returns NO_MODELED_ROUTE with null time, without changing the preset."},
+    {"id": "B02", "status": "PASS", "check": "Connected-cell integration witness", "observed": "Custom row 70, column 37 returns FEASIBLE under the unchanged nominal parameters."},
+    {"id": "B03", "status": "PASS", "check": "Directional real-data times", "observed": "Outbound 8.7749792466404 min; return 9.308022209934713 min; margin 61.91699854342489 min."},
+    {"id": "B04", "status": "PASS", "check": "Stale result invalidation", "observed": "Editing an input clears the previous result and sets the status to STALE before recalculation."},
+    {"id": "B05", "status": "PASS", "check": "Additional science decision", "observed": "Adding 63 min changes the witness result to TIME_BUDGET_EXCEEDED, margin -1.0830014565751185 min."},
+    {"id": "B06", "status": "PASS", "check": "Route-search reuse", "observed": "A science-only change reports cached route search reused."},
+    {"id": "B07", "status": "PASS", "check": "Explicit parameter rebuild", "observed": "Manually changing the slope limit to 25 degrees rebuilds the search; target A becomes FEASIBLE with margin 37.44801268475368 min."},
+    {"id": "B08", "status": "PASS", "check": "Subfolder deployment", "observed": "The same application, worker, and real data load at /nested/homebound/; the original nominal 20-degree preset is restored."},
+    {"id": "B09", "status": "PASS", "check": "Worker error boundary", "observed": "A direct worker request with zero speed yields an explicit error response with code INVALID_INPUT, not a plan result."},
+    {"id": "B10", "status": "PASS", "check": "Mobile layout", "observed": "At 390 x 844 CSS pixels, document width does not exceed viewport width."},
+    {"id": "B11", "status": "PASS", "check": "Actual result-export payload", "observed": "The generated export Blob was read through temporary test instrumentation: valid JSON; width 300; Mars radius 3396036.8126024 m; complete 41-cell return route."},
+    {"id": "B12", "status": "PASS", "check": "Map layers", "observed": "Optical and qualitative thermal selections produce different canvas images; the opportunity overlay is restored."},
+    {"id": "B13", "status": "PASS", "check": "Desktop visual evidence", "observed": "Decision and map screenshots captured with a requested 1440 x 1100 viewport; the embedded page reported an actual 1015 x 775 CSS viewport. This distinction is not hidden."}
+  ],
+  "limitations": [
+    "The integrated browser did not expose a native download event. OS-level save/download behavior is not claimed as tested. The actual generated Blob content was validated independently of that event.",
+    "Direct fetch of a Blob URL was blocked by the application's intentional self-only connect-src policy. The production CSP was not weakened; temporary test instrumentation captured the generated Blob and was removed.",
+    "The intentional invalid-input worker test emits an expected console error. This is not recorded as an unexpected application failure.",
+    "No real astronaut, planetary analog, physiological, mission-safety, or human-factors validation was performed."
+  ]
+}

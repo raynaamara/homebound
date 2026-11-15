@@ -1,0 +1,19 @@
+{
+  "applicationVersion": "1.1.4",
+  "scope": "Customer-facing interface and generated mission briefs. Historical evidence and technical development provenance are preserved.",
+  "checks": [
+    {"id":"C01","status":"PASS","check":"Landing copy","observed":"The landing page uses Planning simulation and method-focused copy; requested operational/certification/eligibility boilerplate is absent."},
+    {"id":"C02","status":"PASS","check":"Destination and activity copy","observed":"Guided practice, observation examples and custom location retain their roles and coordinates, with concise positive scenario descriptions and adjustable-assumption guidance."},
+    {"id":"C03","status":"PASS","check":"Feasible explanation","observed":"The displayed explanation reports the protected reserve and extra margin directly; practice margin remains 61.92 min."},
+    {"id":"C04","status":"PASS","check":"Over-budget result remains accurate","observed":"Adding 63 min still yields TIME_BUDGET_EXCEEDED and -1.0830014565751185 min margin with the 20-minute reserve retained."},
+    {"id":"C05","status":"PASS","check":"Actual customer exports and print","observed":"Actual text/JSON Blob contents, mission brief and print-media content were checked for the requested phrases. Source links/hashes, times and original/revised comparison remain present."},
+    {"id":"C06","status":"PASS","check":"Methods and map layers","observed":"All five layer descriptions and Data & assumptions were scanned. Thermal context remains qualitative, with DN and native resolution preserved."},
+    {"id":"C07","status":"PASS","check":"Unavailable route remains truthful","observed":"Original A retains NO_MODELED_ROUTE with null time under the 20-degree preset; explanation directs the user to location/settings review."},
+    {"id":"C08","status":"PASS","check":"Mobile and regression","observed":"At actual 390 px viewport, document width is 375 px without horizontal overflow. All 100 unit tests and the application integration audit pass."}
+  ],
+  "boundaries": [
+    "This is a presentation-copy change, not a change to the routing algorithm, numerical results, raw model metadata or scientific inputs.",
+    "Detailed technical provenance, historical releases and QA statuses remain in their development records; customer-facing boilerplate was streamlined.",
+    "Actual Rumahweb hosting and a formal human usability study were not performed during this copy refresh."
+  ]
+}

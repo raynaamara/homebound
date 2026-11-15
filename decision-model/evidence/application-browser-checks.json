@@ -1,0 +1,39 @@
+{
+  "method": "Executed with integrated Chromium and Playwright tools on local HTTP root and nested-folder deployments.",
+  "applicationVersion": "1.1.0",
+  "checks": [
+    {"id":"A01","status":"PASS","scope":"Rendered application","check":"Problem and purpose","observed":"The introduction explains terrain, observation duration and protected reserve, with HOMEBOUND Interactive Marswalk Planner as the product heading."},
+    {"id":"A02","status":"PASS","scope":"Actual prepared terrain","check":"Approved guided start","observed":"P is initially selected and explicitly hypothetical. It uses row 70, column 37; original H/A/B/C and nominal assumptions are unchanged."},
+    {"id":"A03","status":"PASS","scope":"Workflow state","check":"Progress gates","observed":"Review and Save remain unavailable before a calculation. The four steps have labeled navigation and focused headings."},
+    {"id":"A04","status":"PASS","scope":"Actual prepared terrain","check":"Practice baseline","observed":"The nominal 20-minute practice observation gives 61.92 min extra margin; actual directional times are about 8.77 and 9.31 min."},
+    {"id":"A05","status":"PASS","scope":"Actual prepared terrain","check":"Original versus revised","observed":"Adding 63 min changes observation from 20 to 83 min and margin to -1.0830014565751185 min. Original plan remains intact."},
+    {"id":"A06","status":"PASS","scope":"Worker cache","check":"Science-only route reuse","observed":"Additional observation calculation reports cached route search reused."},
+    {"id":"A07","status":"PASS","scope":"Workflow state","check":"Explicit restoration","observed":"Restore original resets extra duration to zero and recovers the original 61.92 min margin."},
+    {"id":"A08","status":"PASS","scope":"Workflow state","check":"Pending comparison","observed":"Editing extra duration sets STALE and disables saving until recalculation or explicit restoration."},
+    {"id":"A09","status":"PASS","scope":"Workflow and print state","check":"Primary input invalidation","observed":"Editing a primary value clears old brief content and exports, disables Save, and shows a warning rather than printing an old plan."},
+    {"id":"A10","status":"PASS","scope":"Development-only delayed-grid fixture","check":"Late response rejection","observed":"With a 1.5-second grid delay, editing observation to 21 min before the reply preserves the edited step and rejects the obsolete result; recalculation gives 60.92 min margin."},
+    {"id":"A11","status":"PASS","scope":"Actual prepared terrain","check":"Original A no-route finding","observed":"A remains NO_MODELED_ROUTE at 20 degrees, with null time/route. Its finding can be saved without relocating the origin."},
+    {"id":"A12","status":"PASS","scope":"Rendered application","check":"Unavailable comparison disclosure","observed":"No-route comparison controls are hidden and a clear reason is shown; the Save finding path remains available."},
+    {"id":"A13","status":"PASS","scope":"Development-only missing-practice fixture","check":"Insufficient data","observed":"One in-memory response cell is marked unknown. UI returns INSUFFICIENT_DATA with null route/time and an exportable unavailable finding; source files are not changed."},
+    {"id":"A14","status":"PASS","scope":"Input validation","check":"Negative budget","observed":"An invalid negative mission budget produces visible validation/error feedback rather than a feasible plan."},
+    {"id":"A15","status":"PASS","scope":"Data disclosure","check":"Source references","observed":"Data & assumptions opens and lists the three primary product references with qualitative thermal limitations."},
+    {"id":"A16","status":"PASS","scope":"Canvas rendering","check":"Five layers and map framing","observed":"Optical, opportunity, elevation, slope and qualitative thermal selections produce five distinct canvas images; whole-area and focused views differ."},
+    {"id":"A17","status":"PASS","scope":"Actual prepared terrain","check":"Custom coordinate alternative","observed":"Keyboard-entered row 70, column 37 produces a labeled custom hypothetical result and preserves origin row 105, column 43."},
+    {"id":"A18","status":"PASS","scope":"Map interaction","check":"Point picking requires opt-in","observed":"Clicking the map normally does not change the destination. Explicit picking sets aria-pressed and selects valid integer grid coordinates (observed row 87, column 39)."},
+    {"id":"A19","status":"PASS","scope":"Explicit sensitivity change","check":"Travel assumptions rebuild","observed":"Manually setting A's slope limit to 25 degrees rebuilds routing and yields about 37.45 min margin; this is not an automatic limit change or a safety recommendation."},
+    {"id":"A20","status":"PASS","scope":"Responsive rendering","check":"Mobile layout","observed":"Actual CSS viewport 390 x 844; document width 375, with the narrow layout active and no horizontal overflow."},
+    {"id":"A21","status":"PASS","scope":"Keyboard interaction","check":"Guided keyboard activation","observed":"Native Tab navigation and Enter activate the guided plan, destination continuation and review. This is not a full WCAG conformance audit."},
+    {"id":"A22","status":"PASS","scope":"Export payload","check":"Text and JSON bytes","observed":"Actual generated Blob text/JSON retain version, hypothetical purpose, original/revised plan, 20-minute reserve, source hashes and claim boundary. Temporary test instrumentation was removed."},
+    {"id":"A23","status":"PASS","scope":"Print CSS emulation","check":"Print layout and stale guard","observed":"Current brief is printable with application header hidden; after invalidation the old brief is empty and the print warning is visible. Native OS/PDF dialogs are not claimed as tested."},
+    {"id":"A24","status":"PASS","scope":"Static deployment","check":"Root and subfolder","observed":"The application, worker and relative data paths operate at / and /nested/homebound/. Desktop checks used an actual 977 x 848 CSS viewport after a 980 x 850 request."},
+    {"id":"A25","status":"PASS","scope":"Keyboard navigation","check":"Skip link","observed":"Keyboard activation enters the ready planner and focuses the Step 1 heading rather than targeting a hidden section."},
+    {"id":"A26","status":"PASS","scope":"Development-only configuration-failure fixture","check":"Loading error and retry","observed":"A deliberate one-time application.json HTTP 503 produces visible feedback with Start disabled. Retry loads the approved scenario successfully without substituting data."}
+  ],
+  "limitations": [
+    "No human usability pilot, astronaut/analog study, expert science validation, physical route validation or complete accessibility audit has been performed.",
+    "Native file-save and PDF dialogs and the actual Rumahweb account require post-upload checks. Generated payloads and print CSS were checked without claiming those dialogs.",
+    "Missing-data, delayed-grid and initial HTTP 503 tests use explicitly labeled development-only server fixtures; original prepared source files remain unchanged.",
+    "Integrated-browser network interception was unreliable; reproducible preview-server fixtures were used instead. An oversized requested viewport also caused tool pointer-coordinate mismatch; DOM hit testing showed no application overlap, and normal desktop pointer tests were rerun successfully within the actual viewport.",
+    "All test servers were temporary local helpers, not production deployments."
+  ]
+}

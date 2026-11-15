@@ -1,0 +1,14 @@
+{
+  "applicationVersion": "1.1.5",
+  "scenario": "P; 120/20/20 minutes; nominal preset; destination/route focus",
+  "canvas": "900x900",
+  "margin": "61.92 min",
+  "hashMethod": "SHA-256 of canvas PNG data URL in the same browser",
+  "hashes": {
+    "optical": "f1642520f16afc8dcda99dca49d9142e6f740108f01c0ac827c3274d8ea02df6",
+    "elevation": "e3a5a9287106002838da54f76ae216c3165a5ceb5d2370032a522f5266852486",
+    "slope": "1d72be2b342f8e599aad3cf562db0370f24098a6ffdba2c2d817ad692eb08651",
+    "thermal": "e59e33e76c3dc4b71b4168b293fc6f5a696043997dc05ba1f601d78aa49cb31d",
+    "opportunity": "908342a218c97aa84879345b0c196b81c20bf6c3671452f403811260ad0f6d12"
+  }
+}

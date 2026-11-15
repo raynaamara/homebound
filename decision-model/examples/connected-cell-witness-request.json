@@ -1,0 +1,21 @@
+{
+  "origin": {
+    "row": 105,
+    "column": 43
+  },
+  "destination": {
+    "row": 70,
+    "column": 37
+  },
+  "parameters": {
+    "baseSpeedMPerMin": 30,
+    "maximumSlopeDegrees": 20,
+    "uphillPenalty": 4,
+    "downhillPenalty": 2
+  },
+  "mission": {
+    "missionBudgetMinutes": 120,
+    "scienceMinutes": 20,
+    "reserveMinutes": 20
+  }
+}

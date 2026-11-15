@@ -1,0 +1,78 @@
+HOMEBOUND - MISSION BRIEF
+Application 1.1.12; decision model 1.0.0
+Planning estimates for the selected Mars terrain and mission assumptions.
+
+Origin / return marker: H (fixed scenario starting point).
+Destination: Location B: Dissected-terrain observation area
+Scenario: Observation example
+Purpose: Plan an observation here and compare its round-trip and activity timing.
+Location: row 168, column 160 (zero-based Mars grid)
+Scenario context: This example uses prepared terrain data at the original scenario coordinates.
+
+REGIONAL CONTEXT - NASA MARS TREK
+HOMEBOUND explores a small area within Gale Crater. This regional map shows its setting; the detailed HiRISE terrain supports the walking-route calculation.
+Source: Mars Global Surveyor / MOLA: Mars_MGS_MOLA_ClrShade_merge_global_463m
+Use: Regional color-shaded relief only; not a walking-route layer, local slope measurement or geological-unit identification. Source spacing about 463 m.
+Study area: 137.34046 to 137.36616 degrees east; -5.20242 to -5.17682 degrees planetocentric latitude.
+Study-area size: 1517.5 x 1517.5 m.
+The footprint is georeferenced; the larger locator ring is for visibility, not a walking route.
+Credit: NASA Mars Trek / NASA MGS-MOLA
+Provider: https://trek.nasa.gov/mars/
+Service metadata: https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/WMTSCapabilities.xml
+SHA-256: 2fb4722b5af0417980052354eab806cb9bdea003617548433cec8d8813d8d125
+Prepared image: regional-context.svg
+SHA-256: f2819e9ed36bed3d851ace3d628e0e2839c0c3890e3b79ddcd7a43bbd7d8bc5c
+Study-area georeferencing SHA-256: 31ff0a3abb7a223c264706f82409017e917d38356966409dbec9059b432e4bf0
+Original WMTS tile: https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/33/112.jpg
+SHA-256: 67e58224618989875db1fa6749c659207565dc0b7deef89b12a05bc01da96c96
+Original WMTS tile: https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/33/113.jpg
+SHA-256: 07b928ea3986d03a4c977ae8b998c7c3548cc72ba22af4edb21c3f43b51cb059
+Original WMTS tile: https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/34/112.jpg
+SHA-256: 1f342902bd9ee9025f41e058fef143af3289cc84e642edba75ac8dea637cac98
+Original WMTS tile: https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/34/113.jpg
+SHA-256: 5267bba3e0b541dce410e2e5b2ccb73fa550e584632c33897fd1356437b021fa
+
+Planning preset: Custom settings
+Preset identity follows the calculated budget, reserve and travel assumptions; observation duration is separate.
+Decision: Fits the current time model
+Your complete round trip fits the selected budget, retains 20.00 minutes of protected reserve, and leaves 11.24 additional minutes.
+Next action: Compare a longer observation or save your mission brief.
+
+Mission budget: 181.00 min
+Observation: 25.00 min
+Protected reserve: 20.00 min
+Outbound: 68.23 min
+Return: 56.53 min
+Required including reserve: 169.76 min
+Extra margin beyond reserve: 11.24 min
+Maximum total observation time: 36.24 min
+Latest planned return departure: mission minute 104.47 after departure
+
+Assumptions: flat speed 30 m/min; slope limit 30 degrees; uphill 4; downhill 2.
+Travel estimates use the selected speed, slope limit, and directional time coefficients.
+Original observation plan.
+
+DATA AND METHODS
+HiRISE optical imagery is visual context; terrain elevation/slope support the route model.
+THEMIS provides qualitative thermal-derived context at native 100 m spacing.
+Terrain elevation and slope support the route calculation; A/B/C are example observation locations.
+Mars Reconnaissance Orbiter / HiRISE: DTEEC_012340_1750_012195_1750_A01
+Role: Primary measured terrain input
+https://www.uahirise.org/PDS/DTM/ESP/ORB_012300_012399/ESP_012340_1750_ESP_012195_1750/DTEEC_012340_1750_012195_1750_A01.IMG
+SHA-256: 1ce168a5bedfdb138aabf1c06feca573e6f2222003a592accda4ef30a45f0339
+Mars Reconnaissance Orbiter / HiRISE: ESP_012195_1750_RED_C_01_ORTHO
+Role: Co-registered surface context
+https://www.uahirise.org/PDS/DTM/ESP/ORB_012300_012399/ESP_012340_1750_ESP_012195_1750/ESP_012195_1750_RED_C_01_ORTHO.JP2
+SHA-256: 13756d7b5931ddaa656bd8591bbe69333e090d4369d56cc8ac446299b4bed9e3
+2001 Mars Odyssey / THEMIS: Gale_crater_THEMIS_qualTI
+Role: Independent source format and embedded ISIS projection/history label
+http://static.mars.asu.edu/themis/landingsites/msl42/qualTI/Gale_crater_THEMIS_qualTI_ISIS.cub
+SHA-256: 84489e9b6b7a8699ac84fde59c8e2051b97478312733e32a4a3a04b68a69e0d8
+Mars Global Surveyor / MOLA: Mars_MGS_MOLA_ClrShade_merge_global_463m
+Role: Regional relief context only; not used for route calculation. This download is the study-area tile; all four mosaic tiles and hashes are recorded in regional-context.json.
+https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/33/112.jpg
+SHA-256: 67e58224618989875db1fa6749c659207565dc0b7deef89b12a05bc01da96c96
+
+MAP DISPLAY
+Optical surface context
+HiRISE image brightness provides visual surface context with a display contrast stretch.

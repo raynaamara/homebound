@@ -1,0 +1,21 @@
+{
+  "applicationVersion": "1.1.5",
+  "method": "Targeted integrated-browser checks against the served static build, plus nine new viewport/control unit tests. Earlier UX evidence retains its original release scope.",
+  "checks": [
+    {"id":"V01","status":"PASS","check":"Desktop grouped layout","observed":"Map view is a named group below Layer with exactly two native toggle buttons. At the desktop viewport, buttons are equal-width 223.39 px and 44 px high; the group starts 12 px below the dropdown."},
+    {"id":"V02","status":"PASS","check":"Whole-area pointer selection","observed":"Selecting Whole area changes the actual canvas image and sets only that button to aria-pressed=true."},
+    {"id":"V03","status":"PASS","check":"Keyboard and visible focus","observed":"Tab/Shift+Tab reach the two native buttons; Space and Enter activate them. Keyboard focus has a visible 3 px outline."},
+    {"id":"V04","status":"PASS","check":"Automatic focus synchronization","observed":"Choosing A or P and continuing to Activities automatically restores the focused viewport and updates the pressed option from the actual MissionMap view mode."},
+    {"id":"V05","status":"PASS","check":"Layer changes preserve map extent","observed":"Switching from the whole-area view to elevation retains Whole area as the selected option; returning to focus updates the elevation display and active option together."},
+    {"id":"V06","status":"PASS","check":"Calculation and numerical regression","observed":"Calculating P while Whole area is selected preserves that extent and produces FEASIBLE with the unchanged 61.92 min displayed margin."},
+    {"id":"V07","status":"PASS","check":"Saved brief follows map view","observed":"Switching view in Save brief replaces the brief map image; its actual data URL matches the current canvas."},
+    {"id":"V08","status":"PASS","check":"Invalid coordinates preserve consistent state","observed":"With an empty custom row, a Whole area attempt surfaces the standard cell.row validation error. The viewport image and previously active focus option remain unchanged. The expected validation error was logged explicitly."},
+    {"id":"V09","status":"PASS","check":"Responsive layout and activation","observed":"At actual 390 px and 320 px viewport widths, document widths are 375 px and 305 px without horizontal overflow. Both buttons stay on one row, equal width and equal height, with heights 44 px and 55.72 px respectively. Pointer activation works at both widths."},
+    {"id":"V10","status":"PASS","check":"Repeated active focus remains available","observed":"Clicking the already active Destination / route button still refocuses the map and leaves exactly one pressed option. The original refocus action is preserved rather than becoming an ON/OFF switch."}
+  ],
+  "boundaries": [
+    "The routing engine, prepared terrain inputs, scenario coordinates and numerical parameters are unchanged.",
+    "Keyboard and pointer paths were tested; this refresh does not claim a physical touch-device test or a full assistive-technology audit.",
+    "This targeted refresh does not relabel historical browser checks as new reruns."
+  ]
+}

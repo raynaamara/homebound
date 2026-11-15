@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "project": "HOMEBOUND by Nusa Nova",
+  "packagingEdition": "1.1",
+  "applicationVersion": "1.1.12",
+  "modelVersion": "1.0.0",
+  "sourceArchiveSha256": "e2068a90d219ddead185fcbce03ec7d98ebf9910428eb3698b5296eb773e2f1c",
+  "video": {
+    "edition": "1.7",
+    "durationSeconds": 29,
+    "captureApplicationVersion": "1.1.11",
+    "compatibility": "The captured Science walkthrough S results are unchanged in application 1.1.12.",
+    "geographicBridge": "Site S lies within the marked study area in Gale Crater.",
+    "topRightWebsite": "Visible only in the opening scene (0 to 6 seconds). The closing website remains visible.",
+    "captions": "English burned-in captions and a matching SRT are included.",
+    "musicCredit": "HOMEBOUND_App_Demo_Music_Credit_EN.txt",
+    "internalReleaseRecordSha256": "4394b913b23f1cb3e74e45135077b4eba354d64a147a918f8f07d71abc89a441",
+    "publicCopy": "One production-method sentence was removed from the container comment; encoded audio/video payloads, track metadata, timing and file offsets are unchanged.",
+    "encodedMediaPayloadSha256": "576f92b7ef34c76411e70113c7d94056fe5ddd7ea816f31a283b0576a744535e"
+  },
+  "deck": {
+    "storyEdition": "1.11",
+    "publicCopy": "Current supplied PPTX, with last-editor metadata cleared and one production-method sentence removed from slide 4 notes; visible slides, images and layouts are unchanged.",
+    "pdf": "Last native Story edition 1.11 PDF export; supplied separately from the subsequently saved PPTX.",
+    "pdfCheck": {
+      "pages": 7,
+      "links": 11,
+      "metadataPrivacyCheck": "PASS"
+    }
+  },
+  "thumbnail": {
+    "dimensions": [
+      3840,
+      2160
+    ],
+    "source": "Actual HiRISE image visible in the encoded demonstration, not generated terrain."
+  },
+  "licensing": "Original HOMEBOUND code/documentation: Apache-2.0. NASA data, music and third-party material retain their own terms; see ../../THIRD_PARTY_NOTICES.md.",
+  "assets": {
+    "HOMEBOUND_App_Demo_EN.mp4": {
+      "original": {
+        "bytes": 1980218,
+        "sha256": "8ffde4a22a8a4bd0846ece5c225fa1211379dba273c495d40db827aaba3e12a2"
+      },
+      "public": {
+        "bytes": 1980218,
+        "sha256": "255790b5d593273037cd7f809b1370184fcf386b433478eea318e5adbb944c0a"
+      },
+      "publicCopyChanges": [
+        "Removed one production-method sentence from the container comment; all bytes outside the comment atom are unchanged."
+      ]
+    },
+    "HOMEBOUND_App_Demo_EN.srt": {
+      "original": {
+        "bytes": 545,
+        "sha256": "45ddef41b782a1b5aec2ddb047fd25794f1e97d43fbb8b065126ff881fd6a787"
+      },
+      "public": {
+        "bytes": 545,
+        "sha256": "45ddef41b782a1b5aec2ddb047fd25794f1e97d43fbb8b065126ff881fd6a787"
+      },
+      "publicCopyChanges": []
+    },
+    "HOMEBOUND_App_Demo_Music_Credit_EN.txt": {
+      "original": {
+        "bytes": 406,
+        "sha256": "8a06564cb473f19510e37e51aa72f7ef5a3870c030390722f356440f28c6aedd"
+      },
+      "public": {
+        "bytes": 406,
+        "sha256": "8a06564cb473f19510e37e51aa72f7ef5a3870c030390722f356440f28c6aedd"
+      },
+      "publicCopyChanges": []
+    },
+    "HOMEBOUND_Project_Demo_Story_EN.pptx": {
+      "original": {
+        "bytes": 3485197,
+        "sha256": "d95e39ac3d7cdb7ba81f3f8b6e2c017fcee1ae484c526035ce1f94389e7ed5c8"
+      },
+      "public": {
+        "bytes": 3482097,
+        "sha256": "dc9f477b1b8850bd5814439a67b113cf060609743f2156a9e9d18727352151b2"
+      },
+      "publicCopyChanges": [
+        "Cleared lastModifiedBy in the public copy only.",
+        "Removed one production-method sentence from slide 4 speaker notes; visible slides, image bytes, layouts and all other notes are unchanged."
+      ]
+    },
+    "HOMEBOUND_Project_Demo_Story_EN.pdf": {
+      "original": {
+        "bytes": 510822,
+        "sha256": "3820cfb70677beb4ae2253495ccb09dee7c17e991e73d2503f9c2c8cfb063dcf"
+      },
+      "public": {
+        "bytes": 510822,
+        "sha256": "3820cfb70677beb4ae2253495ccb09dee7c17e991e73d2503f9c2c8cfb063dcf"
+      },
+      "publicCopyChanges": []
+    },
+    "HOMEBOUND_YouTube_Thumbnail_EN.jpg": {
+      "original": {
+        "bytes": 462384,
+        "sha256": "c6b5d86f65bdcd8ed7f2367096f7c8fff9cf11f7591e6df3a83408cdd8a29661"
+      },
+      "public": {
+        "bytes": 462384,
+        "sha256": "c6b5d86f65bdcd8ed7f2367096f7c8fff9cf11f7591e6df3a83408cdd8a29661"
+      },
+      "publicCopyChanges": []
+    }
+  }
+}

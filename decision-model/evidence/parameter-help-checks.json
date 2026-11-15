@@ -1,0 +1,20 @@
+{
+  "applicationVersion": "1.1.3",
+  "method": "Eight focused parameter-help unit tests plus Chromium/Playwright checks of visible copy, accessible descriptions, disclosure behavior, mobile layout and actual practice-model regression.",
+  "checks": [
+    {"id":"P01","status":"PASS","check":"Seven concise visible definitions","observed":"Budget, observation, reserve, reference speed, slope limit, uphill coefficient and downhill coefficient each have a visible field-specific description."},
+    {"id":"P02","status":"PASS","check":"Accessible input associations","observed":"All seven inputs reference nonempty helper elements through aria-describedby. Advanced inputs also reference the explicit non-NASA-operating-limits warning."},
+    {"id":"P03","status":"PASS","check":"Units and reserve distinction","observed":"Time fields retain minute labels, speed uses m/min, slope uses degrees, coefficients are labeled unitless, and reserve is distinguished from extra margin."},
+    {"id":"P04","status":"PASS","check":"Native keyboard disclosure","observed":"Enter opens advanced assumptions and the separate How these assumptions affect the model disclosure; technical detail is not hover-only."},
+    {"id":"P05","status":"PASS","check":"Mobile and click path","observed":"Click toggles the coefficient detail open/closed. At actual 390 x 844 CSS viewport, document width remains 375 px without horizontal overflow."},
+    {"id":"P06","status":"PASS","check":"Coefficient arithmetic and percent/degrees","observed":"Visible 10% uphill with coefficient 4 gives a 1.40 multiplier and 10% downhill with coefficient 2 gives 1.20. Dedicated tests verify both against actual engine edge costs; 10% is correctly described as about 5.71 degrees, not 10 degrees."},
+    {"id":"P07","status":"PASS","check":"Unchanged model result","observed":"Opening and reading help leaves the nominal guided plan unchanged: FEASIBLE with 61.92 min extra margin."},
+    {"id":"P08","status":"PASS","check":"Additional observation semantics","observed":"A focused test verifies the additional-observation input explicitly says it adds to the original duration; shortcut buttons still set, rather than accumulate, the extra amount."}
+  ],
+  "limitations": [
+    "Native HTML details/summary supports pointer and keyboard activation. A real touch-device or emulated-touch-context test was not completed; click and keyboard paths were verified at a mobile viewport.",
+    "The examples explain the existing heuristic, not validated astronaut performance or NASA operating standards. No model formula or scientific input was changed.",
+    "Earlier 1.1.0 browser, 1.1.1 layer and 1.1.2 destination checks remain historical evidence, not fabricated complete fresh reruns.",
+    "No human usability pilot, full screen-reader/accessibility audit, actual hosting deployment or operational safety validation is asserted."
+  ]
+}

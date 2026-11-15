@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Decorative illustration of Mars and an orbital arc</title>
+  <defs>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#db7950" stop-opacity=".2"/>
+      <stop offset=".7" stop-color="#b94f2e" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#b94f2e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="surface" cx=".28" cy=".24" r=".9">
+      <stop offset="0" stop-color="#f4be86"/>
+      <stop offset=".37" stop-color="#da8754"/>
+      <stop offset=".7" stop-color="#b95534"/>
+      <stop offset="1" stop-color="#6b3029"/>
+    </radialGradient>
+    <radialGradient id="sunlight" cx=".3" cy=".22" r=".85">
+      <stop offset="0" stop-color="#ffe4bc" stop-opacity=".3"/>
+      <stop offset=".7" stop-color="#ffe4bc" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="night" x1=".2" y1=".15" x2=".95" y2=".6">
+      <stop offset="0" stop-color="#0b1120" stop-opacity="0"/>
+      <stop offset=".4" stop-color="#0b1120" stop-opacity="0"/>
+      <stop offset=".68" stop-color="#0b1120" stop-opacity=".16"/>
+      <stop offset=".9" stop-color="#0b1120" stop-opacity=".68"/>
+      <stop offset="1" stop-color="#0b1120" stop-opacity=".94"/>
+    </linearGradient>
+    <clipPath id="planet">
+      <circle cx="256" cy="256" r="190"/>
+    </clipPath>
+  </defs>
+  <circle cx="256" cy="256" r="249" fill="url(#halo)"/>
+  <g fill="#e9f2ff">
+    <circle cx="33" cy="72" r="2" opacity=".8"/>
+    <circle cx="117" cy="32" r="1.7" opacity=".6"/>
+    <circle cx="210" cy="20" r="1.5" opacity=".7"/>
+    <circle cx="328" cy="31" r="2.2" opacity=".9"/>
+    <circle cx="432" cy="50" r="1.5" opacity=".7"/>
+    <circle cx="484" cy="112" r="2" opacity=".8"/>
+    <circle cx="28" cy="171" r="1.5" opacity=".6"/>
+    <circle cx="13" cy="276" r="2.2" opacity=".7"/>
+    <circle cx="31" cy="383" r="1.5" opacity=".7"/>
+    <circle cx="74" cy="459" r="2.1" opacity=".9"/>
+    <circle cx="164" cy="487" r="1.7" opacity=".7"/>
+    <circle cx="282" cy="491" r="2" opacity=".9"/>
+    <circle cx="380" cy="475" r="1.5" opacity=".8"/>
+    <circle cx="473" cy="432" r="2.3" opacity=".9"/>
+    <circle cx="494" cy="341" r="1.5" opacity=".7"/>
+    <circle cx="493" cy="219" r="1.9" opacity=".8"/>
+    <circle cx="76" cy="109" r="1.5" opacity=".7"/>
+    <circle cx="408" cy="112" r="1.3" opacity=".6"/>
+    <circle cx="107" cy="411" r="1.4" opacity=".6"/>
+    <circle cx="428" cy="381" r="1.4" opacity=".7"/>
+  </g>
+  <g fill="none" stroke="#b7d7ff" stroke-width="1.5">
+    <path d="M66 372C-4 270 30 145 145 85" opacity=".5"/>
+    <path d="M376 67C494 122 531 279 449 398" opacity=".55" stroke-dasharray="5 9"/>
+    <path d="M72 52v12m-6-6h12M455 460v10m-5-5h10" opacity=".85"/>
+  </g>
+  <circle cx="256" cy="256" r="193" fill="none" stroke="#efb39a" stroke-width="1" opacity=".35"/>
+  <circle cx="256" cy="256" r="190" fill="url(#surface)"/>
+  <g clip-path="url(#planet)">
+    <path d="M62 192c36-44 66-26 91-50s54-25 76-5 38 10 54-7 52-10 58 16-21 52-59 49-46 13-65 30-45 3-65-5-54 15-90-28Z" fill="#e7a36c" opacity=".5"/>
+    <path d="M92 271c30-36 54-15 78-35s50-9 71 10 34 8 62 12 37 29 63 23 64 23 78 52-14 40-48 24-47-5-81-20-54 5-80-17-44-11-62-23-54 19-81-26Z" fill="#823f30" opacity=".38"/>
+    <path d="M71 331c31-21 51-6 69 17s39 17 64 39 56-3 81 19 29 40 7 59H93Z" fill="#d58a57" opacity=".45"/>
+    <path d="M148 249c40 3 48 22 73 18s45 25 73 22 50 16 77 19" fill="none" stroke="#6b362a" stroke-width="8" stroke-linecap="round" opacity=".28"/>
+    <path d="M146 241c38 3 50 20 73 17s46 24 74 21 50 18 77 18" fill="none" stroke="#f3b079" stroke-width="3" stroke-linecap="round" opacity=".4"/>
+    <g fill="#81402f" opacity=".42">
+      <circle cx="176" cy="165" r="15"/>
+      <circle cx="301" cy="201" r="24"/>
+      <circle cx="348" cy="307" r="18"/>
+      <circle cx="216" cy="354" r="12"/>
+      <circle cx="128" cy="305" r="9"/>
+      <circle cx="273" cy="128" r="8"/>
+      <circle cx="305" cy="382" r="10"/>
+      <circle cx="364" cy="161" r="11"/>
+    </g>
+    <g fill="#dfa06c" opacity=".75">
+      <circle cx="179" cy="168" r="11"/>
+      <circle cx="306" cy="206" r="18"/>
+      <circle cx="352" cy="311" r="13"/>
+      <circle cx="219" cy="357" r="8"/>
+      <circle cx="131" cy="308" r="6"/>
+      <circle cx="275" cy="130" r="5"/>
+      <circle cx="308" cy="385" r="7"/>
+      <circle cx="367" cy="164" r="7"/>
+    </g>
+    <g fill="none" stroke="#f3b67c" stroke-width="2" opacity=".2">
+      <path d="M95 207c35-13 41 6 69-2s44-8 66 8"/>
+      <path d="M124 221c26-3 32 9 50 7"/>
+      <path d="M236 159c14 10 26 10 42 5"/>
+      <path d="M158 379c19-4 31 16 48 13"/>
+      <path d="M306 342c25-9 38 4 54 1"/>
+    </g>
+    <circle cx="256" cy="256" r="190" fill="url(#sunlight)"/>
+    <circle cx="256" cy="256" r="190" fill="url(#night)"/>
+  </g>
+  <path d="M449 398l-5-12 13 3Z" fill="#b7d7ff" opacity=".85"/>
+</svg>

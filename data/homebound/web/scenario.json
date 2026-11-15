@@ -1,0 +1,104 @@
+{
+  "status": "HYPOTHETICAL_UNVALIDATED_SCENARIO",
+  "purpose": "Future interface demonstration; no route, travel speed, life-support model, or habitat engineering validation is claimed.",
+  "grid_width": 300,
+  "grid_height": 300,
+  "mission_time_budget_minutes": 120,
+  "reserve_minutes": 20,
+  "time_parameter_note": "Configurable illustrative inputs, not NASA operating requirements or measured astronaut capabilities.",
+  "placement_note": "Illustrative seeds are snapped to a locally lower maximum-slope valid cell within ten model cells. This heuristic does not establish safe terrain, connectivity, or habitat engineering suitability.",
+  "points": [
+    {
+      "id": "H",
+      "kind": "hypothetical_habitat",
+      "name": "Hypothetical planning origin",
+      "column_fraction": 0.12,
+      "row_fraction": 0.36,
+      "science_minutes": 0,
+      "rationale": "A reference origin for a future planning demonstration, not a proposed real base.",
+      "row": 105,
+      "column": 43,
+      "easting_m": -343.4653899991697,
+      "northing_m": -307374.20868679084,
+      "longitude_deg_east": 137.34418313481956,
+      "latitude_deg_planetocentric": -5.185822728296911,
+      "block_mean_elevation_m": -2682.305908203125,
+      "block_max_slope_deg": 6.029620170593262,
+      "seed_shift_m": 38.52363004344574,
+      "evidence_source_ids": [
+        "hirise_optical",
+        "hirise_dem"
+      ],
+      "approval_status": "Illustrative annotation; no NASA approval or validated access."
+    },
+    {
+      "id": "A",
+      "kind": "illustrative_observation",
+      "name": "Layer-pattern observation area",
+      "column_fraction": 0.38,
+      "row_fraction": 0.37,
+      "science_minutes": 20,
+      "rationale": "Illustrative viewpoint near contrasting, visibly layered surface patterns. Geological interpretation and science value require expert review.",
+      "row": 113,
+      "column": 119,
+      "easting_m": 40.973043578580246,
+      "northing_m": -307414.67589032534,
+      "longitude_deg_east": 137.35069391175202,
+      "latitude_deg_planetocentric": -5.1865054652927585,
+      "block_mean_elevation_m": -2623.744140625,
+      "block_max_slope_deg": 10.744735717773438,
+      "seed_shift_m": 27.240320039642295,
+      "evidence_source_ids": [
+        "hirise_optical",
+        "hirise_dem"
+      ],
+      "approval_status": "Illustrative annotation; no NASA approval or validated access."
+    },
+    {
+      "id": "B",
+      "kind": "illustrative_observation",
+      "name": "Dissected-terrain observation area",
+      "column_fraction": 0.56,
+      "row_fraction": 0.56,
+      "science_minutes": 25,
+      "rationale": "Illustrative viewpoint near incised and dissected morphology visible in the orthoimage. No material composition or sample value is asserted.",
+      "row": 168,
+      "column": 160,
+      "easting_m": 248.3674616928928,
+      "northing_m": -307692.88791462505,
+      "longitude_deg_east": 137.35420630457082,
+      "latitude_deg_planetocentric": -5.191199282139211,
+      "block_mean_elevation_m": -2511.47900390625,
+      "block_max_slope_deg": 14.624317169189453,
+      "seed_shift_m": 40.467203534499994,
+      "evidence_source_ids": [
+        "hirise_optical",
+        "hirise_dem"
+      ],
+      "approval_status": "Illustrative annotation; no NASA approval or validated access."
+    },
+    {
+      "id": "C",
+      "kind": "illustrative_observation",
+      "name": "Ridge-and-gully observation area",
+      "column_fraction": 0.72,
+      "row_fraction": 0.22,
+      "science_minutes": 30,
+      "rationale": "Illustrative viewpoint near ridge-and-gully texture. Its accessibility and scientific priority have not been established.",
+      "row": 64,
+      "column": 214,
+      "easting_m": 521.5210855507678,
+      "northing_m": -307166.8142686765,
+      "longitude_deg_east": 137.35883238291757,
+      "latitude_deg_planetocentric": -5.182323701193192,
+      "block_mean_elevation_m": -2562.411865234375,
+      "block_max_slope_deg": 11.4478759765625,
+      "seed_shift_m": 14.307317017450586,
+      "evidence_source_ids": [
+        "hirise_optical",
+        "hirise_dem"
+      ],
+      "approval_status": "Illustrative annotation; no NASA approval or validated access."
+    }
+  ]
+}

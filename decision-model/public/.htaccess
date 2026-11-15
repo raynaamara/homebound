@@ -1,0 +1,6 @@
+DirectoryIndex index.html
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType application/json .json
+  AddType image/webp .webp
+</IfModule>

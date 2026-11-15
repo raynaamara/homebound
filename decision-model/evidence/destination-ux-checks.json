@@ -1,0 +1,20 @@
+{
+  "applicationVersion": "1.1.2",
+  "method": "Executed browser/Playwright checks against the actual local application, plus six focused code-label/marker-key unit tests and the existing model regression suite.",
+  "checks": [
+    {"id":"D01","status":"PASS","check":"Visible code in every destination card","observed":"Five titles explicitly read Location P/A/B/C/X followed by the corresponding existing destination name."},
+    {"id":"D02","status":"PASS","check":"Complete visible marker key","observed":"The default-open key lists H,P,A,B,C,X with names; H is explained as fixed origin/return, not a selectable destination, and X appears only for custom selection."},
+    {"id":"D03","status":"PASS","check":"Original choices match selected marker identity","observed":"Selecting each P/A/B/C changes the caption to its Location code and highlights the same code in the marker key."},
+    {"id":"D04","status":"PASS","check":"Custom selector maps to X","observed":"The internal selector value custom is not used as a map code; custom choice uses Location X in card, caption and selected key."},
+    {"id":"D05","status":"PASS","check":"Mobile layout","observed":"At actual 390 x 844 CSS viewport, document width remains 375 px without horizontal overflow."},
+    {"id":"D06","status":"PASS","check":"Accessible name and activity identity","observed":"The native radio is discoverable by Location P plus its name, and Activities retains the same explicit location code."},
+    {"id":"D07","status":"PASS","check":"Unchanged practice calculation","observed":"Guided P still produces 61.92 min extra margin under unchanged model inputs."},
+    {"id":"D08","status":"PASS","check":"Traceable brief and JSON codes","observed":"Printed brief content names origin/return H and Location P; result JSON retains destination id P and all H/P/A/B/C/X marker definitions."},
+    {"id":"D09","status":"PASS","check":"Original A and fixed origin preserved","observed":"A still returns NO_MODELED_ROUTE with null time at the nominal setting; origin remains row 105, column 43."}
+  ],
+  "limitations": [
+    "This is a destination-label and map-key correction, not a scientific renaming or change to positions, durations, routing, safety constraints or real-world site validation.",
+    "The 1.1.0 browser record and 1.1.1 layer checks remain historical evidence; they are not falsely presented as complete fresh reruns.",
+    "No human usability pilot, actual Rumahweb deployment or new physical/operational validation was performed."
+  ]
+}

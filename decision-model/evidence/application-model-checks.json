@@ -1,0 +1,235 @@
+{
+  "executedUtc": "2026-11-15T04:27:20.694Z",
+  "applicationVersion": "1.1.12",
+  "modelVersion": "1.0.0",
+  "checks": [
+    {
+      "id": "UNCHANGED-REQUIRED-ENGINE-AND-DATA",
+      "status": "PASS",
+      "observed": 3
+    },
+    {
+      "id": "PRACTICE-ACTUAL-TERRAIN",
+      "status": "PASS",
+      "observed": {
+        "baseline": "FEASIBLE",
+        "revised": "TIME_BUDGET_EXCEEDED",
+        "margin": -1.0830014565751185
+      }
+    },
+    {
+      "id": "COMPARISON-RESERVE-PRESERVED",
+      "status": "PASS",
+      "observed": {
+        "statusChanged": true,
+        "extraScienceMinutes": 63,
+        "requiredDeltaMinutes": 63.00000000000001,
+        "marginDeltaMinutes": -63.00000000000001,
+        "evaluable": true
+      }
+    },
+    {
+      "id": "ORIGINAL-ABC-NOT-MOVED-OR-RELAXED",
+      "status": "PASS",
+      "observed": [
+        {
+          "id": "A",
+          "status": "NO_MODELED_ROUTE",
+          "destination": {
+            "row": 113,
+            "column": 119,
+            "id": "A",
+            "name": "Layer-pattern observation area",
+            "scienceMinutes": 20,
+            "kind": "original_case",
+            "description": "Explore layer-pattern context and compare the time available for observation.",
+            "objective": "Plan an observation here and compare its round-trip and activity timing.",
+            "evidence": "This example uses prepared terrain data at the original scenario coordinates.",
+            "science": null
+          }
+        },
+        {
+          "id": "B",
+          "status": "NO_MODELED_ROUTE",
+          "destination": {
+            "row": 168,
+            "column": 160,
+            "id": "B",
+            "name": "Dissected-terrain observation area",
+            "scienceMinutes": 25,
+            "kind": "original_case",
+            "description": "Examine dissected-terrain patterns and compare travel and observation trade-offs.",
+            "objective": "Plan an observation here and compare its round-trip and activity timing.",
+            "evidence": "This example uses prepared terrain data at the original scenario coordinates.",
+            "science": null
+          }
+        },
+        {
+          "id": "C",
+          "status": "NO_MODELED_ROUTE",
+          "destination": {
+            "row": 64,
+            "column": 214,
+            "id": "C",
+            "name": "Ridge-and-gully observation area",
+            "scienceMinutes": 30,
+            "kind": "original_case",
+            "description": "Explore ridge-and-gully context and evaluate a complete round-trip plan.",
+            "objective": "Plan an observation here and compare its round-trip and activity timing.",
+            "evidence": "This example uses prepared terrain data at the original scenario coordinates.",
+            "science": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "TRACEABLE-ENGLISH-BRIEF",
+      "status": "PASS",
+      "observed": "Actual revised plan and original comparison; not a new scientific validation."
+    },
+    {
+      "id": "SCIENCE-CANDIDATE-ACTUAL-TERRAIN",
+      "status": "PASS",
+      "observed": {
+        "destination": {
+          "row": 84,
+          "column": 42,
+          "id": "S",
+          "name": "Texture-transition observation",
+          "scienceMinutes": 20,
+          "kind": "science_candidate",
+          "description": "Investigate an image-supported texture transition and compare an observation plan.",
+          "objective": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+          "evidence": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+          "science": {
+            "status": "image_supported_candidate",
+            "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+            "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+            "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+            "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+            "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+            "opticalObservationDate": "3 March 2009",
+            "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+            "opticalSourceId": "hirise_optical",
+            "terrainSourceId": "hirise_dem",
+            "thermalSourceId": "themis_context_cube",
+            "crop": {
+              "row": 54,
+              "column": 12,
+              "size": 60
+            }
+          }
+        },
+        "margin": 67.59608929948027
+      }
+    },
+    {
+      "id": "SCIENCE-EVIDENCE-GEOMETRY-AND-SOURCES",
+      "status": "PASS",
+      "observed": {
+        "sourceX": 60,
+        "sourceY": 270,
+        "sourceWidth": 300,
+        "sourceHeight": 300,
+        "markerX": 183,
+        "markerY": 183,
+        "outputSize": 360
+      }
+    },
+    {
+      "id": "TRACEABLE-SCIENCE-BRIEF",
+      "status": "PASS",
+      "observed": "Image-supported question, fixed evidence window and original source references retained alongside the actual modeled plan."
+    }
+  ],
+  "humanUsabilityStudy": "NOT_PERFORMED",
+  "scienceValidation": "NOT_PERFORMED",
+  "historicalReleaseChecks": [
+    {
+      "relativePath": "docs\\HOMEBOUND_Data_Catalog_and_QA_EN.xlsx",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Data_Preparation_Report_EN.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Decision_Model_Delivery_Integrity.json",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Decision_Model_Report_EN.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Decision_Model_Results_EN.xlsx",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Decision_Model_Source.zip",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_decision_result.json",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Delivery_Integrity.json",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Pre_Application_Deliverables_Register_EN.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Problem_Definition_and_MVP_Scope_Brief_EN.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Research_Data_Package.zip",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Rumahweb_Deployment_Guide_EN.md",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Rumahweb_Upload.zip",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Web_Inputs.zip",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\Nusa Nova.png",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\Participant_Guide_SpaceApps_Purwokerto_2026.pdf",
+      "status": "NOT_PRESENT",
+      "note": "Not asserted as preserved in this workspace."
+    },
+    {
+      "relativePath": "docs\\~$MEBOUND_Pre_Application_Deliverables_Register_EN.docx",
+      "status": "TRANSIENT_OFFICE_LOCK_NOT_CHECKED",
+      "note": "Office session state is not a deliverable or a preserved scientific input."
+    }
+  ],
+  "originalCasePolicy": "Preserved as original illustrative cases; guided practice is explicitly hypothetical."
+}

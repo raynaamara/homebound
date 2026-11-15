@@ -1,0 +1,14 @@
+{
+  "id": "illustrative-user-approved-v1",
+  "label": "Adjustable scenario travel preset",
+  "baseSpeedMPerMin": 30,
+  "maximumSlopeDegrees": 20,
+  "uphillPenalty": 4,
+  "downhillPenalty": 2,
+  "note": "Configurable scenario assumptions. Routes are evaluated using the values entered by the user.",
+  "sensitivity": {
+    "maximumSlopeDegrees": [10, 15, 20, 25, 30, 40],
+    "baseSpeedMPerMin": [15, 30, 45],
+    "reserveMinutes": [10, 20, 30]
+  }
+}

@@ -1,0 +1,1041 @@
+{
+  "capturedUtc": "2026-11-14T03:58:04.115Z",
+  "previousApplicationVersion": "1.1.10",
+  "previousRegisterVersion": "1.22",
+  "historicalSnapshot": "docs\\history\\HOMEBOUND_Application_1.1.10_and_Register_1.22.zip",
+  "snapshotSha256": "3a935cb99f9a350c59feb780e677c81ad4c7cf81bae029108f74eadd40f87e01",
+  "protectedFiles": {
+    "decision-model\\src\\engine.ts": "737ebca888f73b24c46f20648c4ec8940b695f32051410862d19169069794c56",
+    "data\\homebound\\web\\elevation.png": "aad1deea5d5fd9a30f6201b4b8b6b865c87d3044165ea31e824c5203871ff091",
+    "data\\homebound\\web\\manifest.json": "0b2f9c92eb290989c0d22c158fa106ff3825ac08c15e25a2dd536e3f8ace4025",
+    "data\\homebound\\web\\optical.webp": "97939563f5869e715531bf8abcba843d110b95a7dcda89f988d7d18038c0216d",
+    "data\\homebound\\web\\scenario.json": "44c8cd2d28fa4aee4560a9ecbbb2da7e3f6beb9cc718dfe5aefde96f7958b0d2",
+    "data\\homebound\\web\\slope.png": "9bb44a0044a295942ccc2d011d41633582400bed99fed690bf8139acb80b42b1",
+    "data\\homebound\\web\\terrain_grid.json": "407ccb92c30770f1acc07ab96d5ceccb2676eec1b04028b2b12f0a0f0a1ac1d6",
+    "data\\homebound\\web\\terrain_grid.json.gz": "509c237d7bd397e460bd5454ec71df3abcf1967a55a4b6447f3da2604355ef66",
+    "data\\homebound\\web\\thermal_context.png": "652dd55f1e2caa3e398fcc6477e4dea2ed0efdd5d7c0ba1b6a51a6f3dd60cdca",
+    "data\\homebound\\web\\valid_mask.png": "eeae68b724f6ba4958e57b9bd85da6d0da8b9938ba45ee00d40dcb6d4c47f3af"
+  },
+  "originalSourceCatalog": {
+    "sources": [
+      {
+        "id": "hirise_dem",
+        "mission": "Mars Reconnaissance Orbiter",
+        "instrument": "HiRISE",
+        "data_type": "topographic",
+        "role": "Primary measured terrain input",
+        "product_id": "DTEEC_012340_1750_012195_1750_A01",
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_012300_012399/ESP_012340_1750_ESP_012195_1750/DTEEC_012340_1750_012195_1750_A01.IMG",
+        "provider_page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_012340_1750",
+        "interpretation": "Elevation in meters above the Mars 2000 equipotential surface; not a traversability certification.",
+        "sha256": "1ce168a5bedfdb138aabf1c06feca573e6f2222003a592accda4ef30a45f0339",
+        "retrieved_utc": "2026-11-09T14:19:15.532221+00:00"
+      },
+      {
+        "id": "hirise_optical",
+        "mission": "Mars Reconnaissance Orbiter",
+        "instrument": "HiRISE",
+        "data_type": "optical",
+        "role": "Co-registered surface context",
+        "product_id": "ESP_012195_1750_RED_C_01_ORTHO",
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_012300_012399/ESP_012340_1750_ESP_012195_1750/ESP_012195_1750_RED_C_01_ORTHO.JP2",
+        "provider_page": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_012340_1750",
+        "interpretation": "8-bit red-band digital numbers. Preserve the label's scale/offset; null and saturation codes are not ordinary reflectance samples.",
+        "sha256": "13756d7b5931ddaa656bd8591bbe69333e090d4369d56cc8ac446299b4bed9e3",
+        "retrieved_utc": "2026-11-09T14:17:03.403594+00:00"
+      },
+      {
+        "id": "themis_context_cube",
+        "mission": "2001 Mars Odyssey",
+        "instrument": "THEMIS",
+        "data_type": "metadata and thermal-derived contextual",
+        "role": "Independent source format and embedded ISIS projection/history label",
+        "product_id": "Gale_crater_THEMIS_qualTI",
+        "url": "http://static.mars.asu.edu/themis/landingsites/msl42/qualTI/Gale_crater_THEMIS_qualTI_ISIS.cub",
+        "provider_page": "https://themis.mars.asu.edu/landingsites/mslsite_42",
+        "interpretation": "Use embedded source projection; compare raster values with the provider's GeoTIFF.",
+        "sha256": "84489e9b6b7a8699ac84fde59c8e2051b97478312733e32a4a3a04b68a69e0d8",
+        "retrieved_utc": "2026-11-09T14:17:43.832303+00:00"
+      }
+    ],
+    "credit": "HiRISE: NASA/JPL-Caltech/University of Arizona. THEMIS: NASA/JPL-Caltech/Arizona State University. Retain original source credits and check provider citation policies.",
+    "thermal_limitation": "Qualitative contextual values, not verified physical temperature or thermal inertia."
+  },
+  "originalSourceCatalogSha256": "16a8fd82358167eccf6244e39d9c09b721a70131690c56fe123c1107b4fc333b",
+  "previousConfiguration": {
+    "applicationVersion": "1.1.10",
+    "scenarioPolicy": "guided_practice",
+    "practice": {
+      "id": "P",
+      "name": "Return-aware planning practice",
+      "row": 70,
+      "column": 37,
+      "scienceMinutes": 20,
+      "kind": "hypothetical_practice",
+      "description": "A connected waypoint for exploring how terrain, observation time, and a return reserve interact.",
+      "objective": "Compare the complete modeled excursion before and after extending an observation.",
+      "evidence": "A connected waypoint selected for a guided round-trip planning exercise."
+    },
+    "scienceCandidate": {
+      "id": "S",
+      "name": "Texture-transition observation",
+      "row": 84,
+      "column": 42,
+      "scienceMinutes": 20,
+      "kind": "science_candidate",
+      "description": "Investigate an image-supported texture transition and compare an observation plan.",
+      "science": {
+        "status": "image_supported_candidate",
+        "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+        "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+        "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+        "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+        "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+        "opticalObservationDate": "3 March 2009",
+        "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+        "opticalSourceId": "hirise_optical",
+        "terrainSourceId": "hirise_dem",
+        "thermalSourceId": "themis_context_cube",
+        "crop": {
+          "row": 54,
+          "column": 12,
+          "size": 60
+        }
+      }
+    },
+    "originalCases": {
+      "A": "Explore layer-pattern context and compare the time available for observation.",
+      "B": "Examine dissected-terrain patterns and compare travel and observation trade-offs.",
+      "C": "Explore ridge-and-gully context and evaluate a complete round-trip plan."
+    },
+    "modelScope": [
+      "Pre-departure, time-based Marswalk planning.",
+      "Adjustable speed, slope, observation duration and reserve assumptions.",
+      "Original A/B/C coordinates and the nominal 20-degree limit are unchanged.",
+      "The practice waypoint provides a guided example of the calculation.",
+      "Thermal information provides qualitative context; terrain elevation and slope drive routing."
+    ]
+  },
+  "referencePlans": [
+    {
+      "id": "P-20",
+      "plan": {
+        "modelVersion": "1.0.0",
+        "origin": {
+          "row": 105,
+          "column": 43
+        },
+        "destination": {
+          "row": 70,
+          "column": 37,
+          "id": "P",
+          "name": "Return-aware planning practice",
+          "scienceMinutes": 20,
+          "kind": "hypothetical_practice",
+          "description": "A connected waypoint for exploring how terrain, observation time, and a return reserve interact.",
+          "objective": "Compare the complete modeled excursion before and after extending an observation.",
+          "evidence": "A connected waypoint selected for a guided round-trip planning exercise.",
+          "science": null
+        },
+        "parameters": {
+          "baseSpeedMPerMin": 30,
+          "maximumSlopeDegrees": 20,
+          "uphillPenalty": 4,
+          "downhillPenalty": 2
+        },
+        "mission": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 20,
+          "reserveMinutes": 20
+        },
+        "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+        "safetyCertified": false,
+        "status": "FEASIBLE",
+        "reasonCode": "WITHIN_TIME_MODEL",
+        "explanation": "The complete modeled excursion fits the budget, retains the stated reserve, and leaves 61.92 additional minutes. This is not a safety certification.",
+        "time": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 20,
+          "reserveMinutes": 20,
+          "outboundMinutes": 8.7749792466404,
+          "returnMinutes": 9.308022209934713,
+          "requiredMinutes": 58.08300145657511,
+          "rawMarginMinutes": 61.91699854342489,
+          "marginMinutes": 61.91699854342489,
+          "maxScienceMinutes": 81.91699854342488,
+          "latestReturnDepartureMinute": 90.6919777900653,
+          "meetsModelBudget": true,
+          "zeroExtraMargin": false
+        },
+        "outbound": {
+          "cells": [
+            31543,
+            31544,
+            31245,
+            31246,
+            30947,
+            30948,
+            30648,
+            30349,
+            30049,
+            29749,
+            29449,
+            29149,
+            28848,
+            28548,
+            28247,
+            27946,
+            27646,
+            27346,
+            27046,
+            26746,
+            26446,
+            26146,
+            25846,
+            25546,
+            25246,
+            24945,
+            24644,
+            24343,
+            24043,
+            23743,
+            23442,
+            23142,
+            22841,
+            22540,
+            22539,
+            22239,
+            21939,
+            21639,
+            21638,
+            21338,
+            21037
+          ],
+          "minutes": 8.7749792466404,
+          "distanceM": 230.13567789266068,
+          "ascentM": 2.838999999999942,
+          "descentM": 10.807999999999993
+        },
+        "return": {
+          "cells": [
+            21037,
+            21338,
+            21638,
+            21639,
+            21939,
+            22239,
+            22539,
+            22540,
+            22841,
+            23142,
+            23442,
+            23743,
+            24043,
+            24343,
+            24644,
+            24945,
+            25246,
+            25546,
+            25846,
+            26146,
+            26446,
+            26746,
+            27046,
+            27346,
+            27646,
+            27946,
+            28247,
+            28548,
+            28848,
+            29149,
+            29449,
+            29749,
+            30049,
+            30349,
+            30648,
+            30948,
+            30947,
+            31246,
+            31245,
+            31544,
+            31543
+          ],
+          "minutes": 9.308022209934713,
+          "distanceM": 230.13567789266065,
+          "ascentM": 10.807999999999993,
+          "descentM": 2.838999999999942
+        }
+      }
+    },
+    {
+      "id": "P-83",
+      "plan": {
+        "modelVersion": "1.0.0",
+        "origin": {
+          "row": 105,
+          "column": 43
+        },
+        "destination": {
+          "row": 70,
+          "column": 37,
+          "id": "P",
+          "name": "Return-aware planning practice",
+          "scienceMinutes": 20,
+          "kind": "hypothetical_practice",
+          "description": "A connected waypoint for exploring how terrain, observation time, and a return reserve interact.",
+          "objective": "Compare the complete modeled excursion before and after extending an observation.",
+          "evidence": "A connected waypoint selected for a guided round-trip planning exercise.",
+          "science": null
+        },
+        "parameters": {
+          "baseSpeedMPerMin": 30,
+          "maximumSlopeDegrees": 20,
+          "uphillPenalty": 4,
+          "downhillPenalty": 2
+        },
+        "mission": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 83,
+          "reserveMinutes": 20
+        },
+        "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+        "safetyCertified": false,
+        "status": "TIME_BUDGET_EXCEEDED",
+        "reasonCode": "NEGATIVE_TIME_MARGIN",
+        "explanation": "The complete modeled excursion exceeds the budget by 1.08 minutes. Reduce science time or revise the plan; the reserve is not silently removed.",
+        "time": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 83,
+          "reserveMinutes": 20,
+          "outboundMinutes": 8.7749792466404,
+          "returnMinutes": 9.308022209934713,
+          "requiredMinutes": 121.08300145657512,
+          "rawMarginMinutes": -1.0830014565751185,
+          "marginMinutes": -1.0830014565751185,
+          "maxScienceMinutes": 81.91699854342488,
+          "latestReturnDepartureMinute": 90.6919777900653,
+          "meetsModelBudget": false,
+          "zeroExtraMargin": false
+        },
+        "outbound": {
+          "cells": [
+            31543,
+            31544,
+            31245,
+            31246,
+            30947,
+            30948,
+            30648,
+            30349,
+            30049,
+            29749,
+            29449,
+            29149,
+            28848,
+            28548,
+            28247,
+            27946,
+            27646,
+            27346,
+            27046,
+            26746,
+            26446,
+            26146,
+            25846,
+            25546,
+            25246,
+            24945,
+            24644,
+            24343,
+            24043,
+            23743,
+            23442,
+            23142,
+            22841,
+            22540,
+            22539,
+            22239,
+            21939,
+            21639,
+            21638,
+            21338,
+            21037
+          ],
+          "minutes": 8.7749792466404,
+          "distanceM": 230.13567789266068,
+          "ascentM": 2.838999999999942,
+          "descentM": 10.807999999999993
+        },
+        "return": {
+          "cells": [
+            21037,
+            21338,
+            21638,
+            21639,
+            21939,
+            22239,
+            22539,
+            22540,
+            22841,
+            23142,
+            23442,
+            23743,
+            24043,
+            24343,
+            24644,
+            24945,
+            25246,
+            25546,
+            25846,
+            26146,
+            26446,
+            26746,
+            27046,
+            27346,
+            27646,
+            27946,
+            28247,
+            28548,
+            28848,
+            29149,
+            29449,
+            29749,
+            30049,
+            30349,
+            30648,
+            30948,
+            30947,
+            31246,
+            31245,
+            31544,
+            31543
+          ],
+          "minutes": 9.308022209934713,
+          "distanceM": 230.13567789266065,
+          "ascentM": 10.807999999999993,
+          "descentM": 2.838999999999942
+        }
+      }
+    },
+    {
+      "id": "S-20",
+      "plan": {
+        "modelVersion": "1.0.0",
+        "origin": {
+          "row": 105,
+          "column": 43
+        },
+        "destination": {
+          "row": 84,
+          "column": 42,
+          "id": "S",
+          "name": "Texture-transition observation",
+          "scienceMinutes": 20,
+          "kind": "science_candidate",
+          "description": "Investigate an image-supported texture transition and compare an observation plan.",
+          "objective": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+          "evidence": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+          "science": {
+            "status": "image_supported_candidate",
+            "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+            "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+            "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+            "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+            "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+            "opticalObservationDate": "3 March 2009",
+            "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+            "opticalSourceId": "hirise_optical",
+            "terrainSourceId": "hirise_dem",
+            "thermalSourceId": "themis_context_cube",
+            "crop": {
+              "row": 54,
+              "column": 12,
+              "size": 60
+            }
+          }
+        },
+        "parameters": {
+          "baseSpeedMPerMin": 30,
+          "maximumSlopeDegrees": 20,
+          "uphillPenalty": 4,
+          "downhillPenalty": 2
+        },
+        "mission": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 20,
+          "reserveMinutes": 20
+        },
+        "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+        "safetyCertified": false,
+        "status": "FEASIBLE",
+        "reasonCode": "WITHIN_TIME_MODEL",
+        "explanation": "The complete modeled excursion fits the budget, retains the stated reserve, and leaves 67.60 additional minutes. This is not a safety certification.",
+        "time": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 20,
+          "reserveMinutes": 20,
+          "outboundMinutes": 6.088715216997393,
+          "returnMinutes": 6.315195483522339,
+          "requiredMinutes": 52.40391070051973,
+          "rawMarginMinutes": 67.59608929948027,
+          "marginMinutes": 67.59608929948027,
+          "maxScienceMinutes": 87.59608929948025,
+          "latestReturnDepartureMinute": 93.68480451647766,
+          "meetsModelBudget": true,
+          "zeroExtraMargin": false
+        },
+        "outbound": {
+          "cells": [
+            31543,
+            31544,
+            31245,
+            31246,
+            30947,
+            30948,
+            30648,
+            30349,
+            30049,
+            29749,
+            29449,
+            29149,
+            28848,
+            28548,
+            28247,
+            27946,
+            27646,
+            27346,
+            27046,
+            26746,
+            26446,
+            26146,
+            25846,
+            25546,
+            25246,
+            24945,
+            24944,
+            24943,
+            25242
+          ],
+          "minutes": 6.088715216997393,
+          "distanceM": 158.74463790645154,
+          "ascentM": 2.838999999999942,
+          "descentM": 6.235000000000127
+        },
+        "return": {
+          "cells": [
+            25242,
+            24943,
+            24944,
+            24945,
+            25246,
+            25546,
+            25846,
+            26146,
+            26446,
+            26746,
+            27046,
+            27346,
+            27646,
+            27946,
+            28247,
+            28548,
+            28848,
+            29149,
+            29449,
+            29749,
+            30049,
+            30349,
+            30648,
+            30948,
+            30947,
+            31246,
+            31245,
+            31544,
+            31543
+          ],
+          "minutes": 6.315195483522339,
+          "distanceM": 158.74463790645157,
+          "ascentM": 6.235000000000127,
+          "descentM": 2.838999999999942
+        }
+      }
+    },
+    {
+      "id": "S-88",
+      "plan": {
+        "modelVersion": "1.0.0",
+        "origin": {
+          "row": 105,
+          "column": 43
+        },
+        "destination": {
+          "row": 84,
+          "column": 42,
+          "id": "S",
+          "name": "Texture-transition observation",
+          "scienceMinutes": 20,
+          "kind": "science_candidate",
+          "description": "Investigate an image-supported texture transition and compare an observation plan.",
+          "objective": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+          "evidence": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+          "science": {
+            "status": "image_supported_candidate",
+            "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+            "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+            "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+            "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+            "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+            "opticalObservationDate": "3 March 2009",
+            "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+            "opticalSourceId": "hirise_optical",
+            "terrainSourceId": "hirise_dem",
+            "thermalSourceId": "themis_context_cube",
+            "crop": {
+              "row": 54,
+              "column": 12,
+              "size": 60
+            }
+          }
+        },
+        "parameters": {
+          "baseSpeedMPerMin": 30,
+          "maximumSlopeDegrees": 20,
+          "uphillPenalty": 4,
+          "downhillPenalty": 2
+        },
+        "mission": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 88,
+          "reserveMinutes": 20
+        },
+        "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+        "safetyCertified": false,
+        "status": "TIME_BUDGET_EXCEEDED",
+        "reasonCode": "NEGATIVE_TIME_MARGIN",
+        "explanation": "The complete modeled excursion exceeds the budget by 0.40 minutes. Reduce science time or revise the plan; the reserve is not silently removed.",
+        "time": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 88,
+          "reserveMinutes": 20,
+          "outboundMinutes": 6.088715216997393,
+          "returnMinutes": 6.315195483522339,
+          "requiredMinutes": 120.40391070051975,
+          "rawMarginMinutes": -0.4039107005197451,
+          "marginMinutes": -0.4039107005197451,
+          "maxScienceMinutes": 87.59608929948025,
+          "latestReturnDepartureMinute": 93.68480451647766,
+          "meetsModelBudget": false,
+          "zeroExtraMargin": false
+        },
+        "outbound": {
+          "cells": [
+            31543,
+            31544,
+            31245,
+            31246,
+            30947,
+            30948,
+            30648,
+            30349,
+            30049,
+            29749,
+            29449,
+            29149,
+            28848,
+            28548,
+            28247,
+            27946,
+            27646,
+            27346,
+            27046,
+            26746,
+            26446,
+            26146,
+            25846,
+            25546,
+            25246,
+            24945,
+            24944,
+            24943,
+            25242
+          ],
+          "minutes": 6.088715216997393,
+          "distanceM": 158.74463790645154,
+          "ascentM": 2.838999999999942,
+          "descentM": 6.235000000000127
+        },
+        "return": {
+          "cells": [
+            25242,
+            24943,
+            24944,
+            24945,
+            25246,
+            25546,
+            25846,
+            26146,
+            26446,
+            26746,
+            27046,
+            27346,
+            27646,
+            27946,
+            28247,
+            28548,
+            28848,
+            29149,
+            29449,
+            29749,
+            30049,
+            30349,
+            30648,
+            30948,
+            30947,
+            31246,
+            31245,
+            31544,
+            31543
+          ],
+          "minutes": 6.315195483522339,
+          "distanceM": 158.74463790645157,
+          "ascentM": 6.235000000000127,
+          "descentM": 2.838999999999942
+        }
+      }
+    },
+    {
+      "id": "S-85",
+      "plan": {
+        "modelVersion": "1.0.0",
+        "origin": {
+          "row": 105,
+          "column": 43
+        },
+        "destination": {
+          "row": 84,
+          "column": 42,
+          "id": "S",
+          "name": "Texture-transition observation",
+          "scienceMinutes": 20,
+          "kind": "science_candidate",
+          "description": "Investigate an image-supported texture transition and compare an observation plan.",
+          "objective": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+          "evidence": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+          "science": {
+            "status": "image_supported_candidate",
+            "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+            "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+            "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+            "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+            "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+            "opticalObservationDate": "3 March 2009",
+            "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+            "opticalSourceId": "hirise_optical",
+            "terrainSourceId": "hirise_dem",
+            "thermalSourceId": "themis_context_cube",
+            "crop": {
+              "row": 54,
+              "column": 12,
+              "size": 60
+            }
+          }
+        },
+        "parameters": {
+          "baseSpeedMPerMin": 30,
+          "maximumSlopeDegrees": 20,
+          "uphillPenalty": 4,
+          "downhillPenalty": 2
+        },
+        "mission": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 85,
+          "reserveMinutes": 20
+        },
+        "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+        "safetyCertified": false,
+        "status": "FEASIBLE",
+        "reasonCode": "WITHIN_TIME_MODEL",
+        "explanation": "The complete modeled excursion fits the budget, retains the stated reserve, and leaves 2.60 additional minutes. This is not a safety certification.",
+        "time": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 85,
+          "reserveMinutes": 20,
+          "outboundMinutes": 6.088715216997393,
+          "returnMinutes": 6.315195483522339,
+          "requiredMinutes": 117.40391070051975,
+          "rawMarginMinutes": 2.596089299480255,
+          "marginMinutes": 2.596089299480255,
+          "maxScienceMinutes": 87.59608929948025,
+          "latestReturnDepartureMinute": 93.68480451647766,
+          "meetsModelBudget": true,
+          "zeroExtraMargin": false
+        },
+        "outbound": {
+          "cells": [
+            31543,
+            31544,
+            31245,
+            31246,
+            30947,
+            30948,
+            30648,
+            30349,
+            30049,
+            29749,
+            29449,
+            29149,
+            28848,
+            28548,
+            28247,
+            27946,
+            27646,
+            27346,
+            27046,
+            26746,
+            26446,
+            26146,
+            25846,
+            25546,
+            25246,
+            24945,
+            24944,
+            24943,
+            25242
+          ],
+          "minutes": 6.088715216997393,
+          "distanceM": 158.74463790645154,
+          "ascentM": 2.838999999999942,
+          "descentM": 6.235000000000127
+        },
+        "return": {
+          "cells": [
+            25242,
+            24943,
+            24944,
+            24945,
+            25246,
+            25546,
+            25846,
+            26146,
+            26446,
+            26746,
+            27046,
+            27346,
+            27646,
+            27946,
+            28247,
+            28548,
+            28848,
+            29149,
+            29449,
+            29749,
+            30049,
+            30349,
+            30648,
+            30948,
+            30947,
+            31246,
+            31245,
+            31544,
+            31543
+          ],
+          "minutes": 6.315195483522339,
+          "distanceM": 158.74463790645157,
+          "ascentM": 6.235000000000127,
+          "descentM": 2.838999999999942
+        }
+      }
+    },
+    {
+      "id": "A-20",
+      "plan": {
+        "modelVersion": "1.0.0",
+        "origin": {
+          "row": 105,
+          "column": 43
+        },
+        "destination": {
+          "row": 113,
+          "column": 119,
+          "id": "A",
+          "name": "Layer-pattern observation area",
+          "scienceMinutes": 20,
+          "kind": "original_case",
+          "description": "Explore layer-pattern context and compare the time available for observation.",
+          "objective": "Plan an observation here and compare its round-trip and activity timing.",
+          "evidence": "This example uses prepared terrain data at the original scenario coordinates.",
+          "science": null
+        },
+        "parameters": {
+          "baseSpeedMPerMin": 30,
+          "maximumSlopeDegrees": 20,
+          "uphillPenalty": 4,
+          "downhillPenalty": 2
+        },
+        "mission": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 20,
+          "reserveMinutes": 20
+        },
+        "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+        "safetyCertified": false,
+        "status": "NO_MODELED_ROUTE",
+        "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+        "explanation": "No complete round trip exists within the known, permitted grid and current edge rules. This does not prove that no physical route exists.",
+        "time": null,
+        "outbound": null,
+        "return": null
+      }
+    },
+    {
+      "id": "B-25",
+      "plan": {
+        "modelVersion": "1.0.0",
+        "origin": {
+          "row": 105,
+          "column": 43
+        },
+        "destination": {
+          "row": 168,
+          "column": 160,
+          "id": "B",
+          "name": "Dissected-terrain observation area",
+          "scienceMinutes": 25,
+          "kind": "original_case",
+          "description": "Examine dissected-terrain patterns and compare travel and observation trade-offs.",
+          "objective": "Plan an observation here and compare its round-trip and activity timing.",
+          "evidence": "This example uses prepared terrain data at the original scenario coordinates.",
+          "science": null
+        },
+        "parameters": {
+          "baseSpeedMPerMin": 30,
+          "maximumSlopeDegrees": 20,
+          "uphillPenalty": 4,
+          "downhillPenalty": 2
+        },
+        "mission": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 25,
+          "reserveMinutes": 20
+        },
+        "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+        "safetyCertified": false,
+        "status": "NO_MODELED_ROUTE",
+        "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+        "explanation": "No complete round trip exists within the known, permitted grid and current edge rules. This does not prove that no physical route exists.",
+        "time": null,
+        "outbound": null,
+        "return": null
+      }
+    },
+    {
+      "id": "C-30",
+      "plan": {
+        "modelVersion": "1.0.0",
+        "origin": {
+          "row": 105,
+          "column": 43
+        },
+        "destination": {
+          "row": 64,
+          "column": 214,
+          "id": "C",
+          "name": "Ridge-and-gully observation area",
+          "scienceMinutes": 30,
+          "kind": "original_case",
+          "description": "Explore ridge-and-gully context and evaluate a complete round-trip plan.",
+          "objective": "Plan an observation here and compare its round-trip and activity timing.",
+          "evidence": "This example uses prepared terrain data at the original scenario coordinates.",
+          "science": null
+        },
+        "parameters": {
+          "baseSpeedMPerMin": 30,
+          "maximumSlopeDegrees": 20,
+          "uphillPenalty": 4,
+          "downhillPenalty": 2
+        },
+        "mission": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 30,
+          "reserveMinutes": 20
+        },
+        "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+        "safetyCertified": false,
+        "status": "NO_MODELED_ROUTE",
+        "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+        "explanation": "No complete round trip exists within the known, permitted grid and current edge rules. This does not prove that no physical route exists.",
+        "time": null,
+        "outbound": null,
+        "return": null
+      }
+    },
+    {
+      "id": "S-slope-10",
+      "plan": {
+        "modelVersion": "1.0.0",
+        "origin": {
+          "row": 105,
+          "column": 43
+        },
+        "destination": {
+          "row": 84,
+          "column": 42,
+          "id": "S",
+          "name": "Texture-transition observation",
+          "scienceMinutes": 20,
+          "kind": "science_candidate",
+          "description": "Investigate an image-supported texture transition and compare an observation plan.",
+          "objective": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+          "evidence": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+          "science": {
+            "status": "image_supported_candidate",
+            "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+            "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+            "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+            "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+            "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+            "opticalObservationDate": "3 March 2009",
+            "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+            "opticalSourceId": "hirise_optical",
+            "terrainSourceId": "hirise_dem",
+            "thermalSourceId": "themis_context_cube",
+            "crop": {
+              "row": 54,
+              "column": 12,
+              "size": 60
+            }
+          }
+        },
+        "parameters": {
+          "baseSpeedMPerMin": 30,
+          "maximumSlopeDegrees": 10,
+          "uphillPenalty": 4,
+          "downhillPenalty": 2
+        },
+        "mission": {
+          "missionBudgetMinutes": 120,
+          "scienceMinutes": 20,
+          "reserveMinutes": 20
+        },
+        "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+        "safetyCertified": false,
+        "status": "NO_MODELED_ROUTE",
+        "reasonCode": "ENDPOINT_EXCLUDED",
+        "explanation": "The origin or destination is excluded by the current slope limit or an explicit blocked-cell rule.",
+        "time": null,
+        "outbound": null,
+        "return": null
+      }
+    }
+  ],
+  "unchangedDeliverables": {
+    "docs\\HOMEBOUND_Project_Demo_Story_EN.pptx": "ab3a0c045b3019c40e1d5a2141bb44c174dc0585f63d21e16d81caa8acfd0264",
+    "docs\\HOMEBOUND_Project_Demo_Story_EN.pdf": "4c940f235dda819e7502854e4c1395dbf4783bade300c287f3ad4b2c435e1689",
+    "docs\\HOMEBOUND_App_Demo_EN.mp4": "74ffe3a5ab47599c8e585f188f68bf66e7692262378b788c468229f2918d667d",
+    "docs\\HOMEBOUND_App_Demo_EN.srt": "ca1a2681ab527eca760c7f72f45bd921a0e9ca308efe7b8cfe04c81704d49252",
+    "docs\\HOMEBOUND_App_Demo_Integrity.json": "72fedfe8850987c6573e497e2cb16932285a1ed4af6ad01c5295e979169a494f",
+    "docs\\HOMEBOUND_Student_Starter_Guide_EN.docx": "df90bf5f55fa4e8a3611a56521163d3e8729a928917e74348207c7c8da91af8f",
+    "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN.docx": "5e18d36c4849d154e0710386c772f13894702ec56e1875e4384f9238db867e87",
+    "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN v2.docx": "66e189a0b0c3c9ff31b3b4468aea038f6f36a27f5e9566542da9480b1ed35b08"
+  }
+}

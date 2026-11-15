@@ -1,0 +1,25 @@
+{
+  "name": "homebound-decision-model",
+  "version": "1.1.12",
+  "private": true,
+  "type": "module",
+  "description": "Explainable, time-only Marswalk planning research prototype with a static browser deployment.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "compile": "tsc -p tsconfig.json",
+    "build": "npm run compile && node scripts/stage.mjs",
+    "test": "npm run compile && node --test tests/*.test.mjs",
+    "audit:model": "npm run compile && node scripts/audit-model.mjs",
+    "audit:app": "npm run compile && node scripts/audit-application.mjs",
+    "audit:regional": "npm run compile && node scripts/audit-regional-context.mjs",
+    "audit:presets": "npm run compile && node scripts/audit-planning-presets.mjs",
+    "preview": "node scripts/preview.mjs",
+    "check:delivery": "node scripts/check-delivery.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,42 @@
+id,name,status,milliseconds
+U01,grid parser copies numeric samples and retains valid negative and zero elevations,PASS,2.3051
+U02,unknown cells require null samples and retain an unknown mask,PASS,2.6092
+U03,grid rejects length mismatch and invalid validity codes,PASS,0.5266
+U04,"grid rejects unsupported units, row order, Earth radius, rotation, and cell count",PASS,1.1516
+U05,grid rejects nonfinite elevations and out-of-range slopes,PASS,0.6258
+U06,"travel parameters reject zero speed, invalid slope, and negative penalties",PASS,0.5699
+U07,reference arithmetic preserves reserve and science time,PASS,1.8366
+U08,exact boundary retains reserve and one minute less is infeasible,PASS,0.2766
+U09,floating-point boundary uses only a documented numerical tolerance,PASS,0.3581
+U10,"negative, missing, nonfinite, and overflowing time inputs are explicit errors",PASS,0.5401
+U11,"reserve larger than budget produces an infeasible decision, not a silent cap",PASS,0.2915
+U12,flat cardinal and diagonal edge times use metric cell dimensions,PASS,2.9165
+U13,directional uphill/downhill edge cost matches hand calculation,PASS,0.4653
+U14,reverse Dijkstra preserves the original return-direction cost,PASS,1.0966
+U15,Dijkstra finds the expected flat 3x3 diagonal route,PASS,0.9917
+U16,non-neighbor indices cannot wrap across rows,PASS,0.5763
+U17,diagonal cannot cut between excluded orthogonal neighbors,PASS,2.2504
+U18,diagonal requires both orthogonal corridors to meet edge-grade limits,PASS,0.3744
+U19,edge-grade rule blocks a steep jump even if cell slope metadata are low,PASS,0.3456
+U20,unknown endpoint yields insufficient data and no fabricated route or time,PASS,0.414
+U21,unknown origin propagates unknown opportunity field,PASS,0.5768
+U22,excluded origin is reported without relocating it,PASS,0.4791
+U23,explicit blocked cells break a route without silently changing thresholds,PASS,1.265
+U24,routing through unknown cells is not permitted,PASS,0.4018
+U25,"stationary origin plan retains science and reserve, with zero route time",PASS,0.9375
+U26,invalid coordinates and blocked-cell declarations are explicit errors,PASS,0.4845
+U27,unrepresentable edge time is an explicit numerical error,PASS,0.184
+U28,route re-summing matches returned time and preserves path direction,PASS,1.3286
+U29,opportunity field matches selected plan arithmetic,PASS,0.8289
+U30,"negative margins, exact margin, excluded and unknown field codes are distinct",PASS,0.4439
+U31,"serialized opportunity fields retain unknowns as null, never nonfinite JSON",PASS,0.4917
+U32,increasing science time or reserve never expands the feasible field,PASS,3.3952
+U33,slower speed cannot improve a fixed plan's time margin,PASS,1.2584
+U34,tightening a slope limit cannot create new modeled connectivity,PASS,0.4324
+U35,"parameters are copied, frozen and reflected in an inspectable result",PASS,0.9113
+U36,deterministic ties return the same complete result,PASS,1.7457
+U37,directed shortest paths agree with an independent Floyd-Warshall oracle,PASS,3.9547
+U38,scenario parser maps original source names without changing locations,PASS,7.0185
+U39,scenario rejects duplicate identifiers and missing origin,PASS,0.6017
+U40,scenario rejects non-integer dimensions and out-of-grid points,PASS,0.3401
+U41,scenario rejects invalid times and a reserved custom identifier,PASS,0.4966

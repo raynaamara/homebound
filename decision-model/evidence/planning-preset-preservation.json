@@ -1,0 +1,115 @@
+{
+  "capturedUtc": "2026-11-14T09:34:28.052801+00:00",
+  "previousApplicationVersion": "1.1.11",
+  "previousRegisterVersion": "1.29",
+  "historicalSnapshot": "docs\\history\\HOMEBOUND_Application_1.1.11_and_Register_1.29.zip",
+  "snapshotSha256": "5c6f570ee6c0970d17e8316fdcf0783237f528f8d47edf6dc6a2369c6b10202a",
+  "previousConfiguration": {
+    "applicationVersion": "1.1.11",
+    "scenarioPolicy": "guided_practice",
+    "practice": {
+      "id": "P",
+      "name": "Return-aware planning practice",
+      "row": 70,
+      "column": 37,
+      "scienceMinutes": 20,
+      "kind": "hypothetical_practice",
+      "description": "A connected waypoint for exploring how terrain, observation time, and a return reserve interact.",
+      "objective": "Compare the complete modeled excursion before and after extending an observation.",
+      "evidence": "A connected waypoint selected for a guided round-trip planning exercise."
+    },
+    "scienceCandidate": {
+      "id": "S",
+      "name": "Texture-transition observation",
+      "row": 84,
+      "column": 42,
+      "scienceMinutes": 20,
+      "kind": "science_candidate",
+      "description": "Investigate an image-supported texture transition and compare an observation plan.",
+      "science": {
+        "status": "image_supported_candidate",
+        "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+        "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+        "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+        "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+        "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+        "opticalObservationDate": "3 March 2009",
+        "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+        "opticalSourceId": "hirise_optical",
+        "terrainSourceId": "hirise_dem",
+        "thermalSourceId": "themis_context_cube",
+        "crop": {
+          "row": 54,
+          "column": 12,
+          "size": 60
+        }
+      }
+    },
+    "originalCases": {
+      "A": "Explore layer-pattern context and compare the time available for observation.",
+      "B": "Examine dissected-terrain patterns and compare travel and observation trade-offs.",
+      "C": "Explore ridge-and-gully context and evaluate a complete round-trip plan."
+    },
+    "modelScope": [
+      "Pre-departure, time-based Marswalk planning.",
+      "Adjustable speed, slope, observation duration and reserve assumptions.",
+      "Original A/B/C coordinates and the nominal 20-degree limit are unchanged.",
+      "The practice waypoint provides a guided example of the calculation.",
+      "Thermal information provides qualitative context; terrain elevation and slope drive routing."
+    ]
+  },
+  "protectedFiles": {
+    "data\\homebound\\web\\elevation.png": "aad1deea5d5fd9a30f6201b4b8b6b865c87d3044165ea31e824c5203871ff091",
+    "data\\homebound\\web\\manifest.json": "0b2f9c92eb290989c0d22c158fa106ff3825ac08c15e25a2dd536e3f8ace4025",
+    "data\\homebound\\web\\optical.webp": "97939563f5869e715531bf8abcba843d110b95a7dcda89f988d7d18038c0216d",
+    "data\\homebound\\web\\regional-context.json": "0d1e7b0593d867d1b134e3ce0c2b83ddb447a9a204ce5c1bade89ddf4f71c6e5",
+    "data\\homebound\\web\\regional-context.svg": "001e8c82e9187583d7a32d6bccc3263ceb2c31e570666dd9ccda45bcacba3ade",
+    "data\\homebound\\web\\scenario.json": "44c8cd2d28fa4aee4560a9ecbbb2da7e3f6beb9cc718dfe5aefde96f7958b0d2",
+    "data\\homebound\\web\\slope.png": "9bb44a0044a295942ccc2d011d41633582400bed99fed690bf8139acb80b42b1",
+    "data\\homebound\\web\\sources.json": "65e2228d0b4abd04feb6d4073cf5b2d258dab5f6120567c8fcfcedc7ccec2307",
+    "data\\homebound\\web\\terrain_grid.json": "407ccb92c30770f1acc07ab96d5ceccb2676eec1b04028b2b12f0a0f0a1ac1d6",
+    "data\\homebound\\web\\terrain_grid.json.gz": "509c237d7bd397e460bd5454ec71df3abcf1967a55a4b6447f3da2604355ef66",
+    "data\\homebound\\web\\thermal_context.png": "652dd55f1e2caa3e398fcc6477e4dea2ed0efdd5d7c0ba1b6a51a6f3dd60cdca",
+    "data\\homebound\\web\\valid_mask.png": "eeae68b724f6ba4958e57b9bd85da6d0da8b9938ba45ee00d40dcb6d4c47f3af",
+    "decision-model\\src\\engine.ts": "737ebca888f73b24c46f20648c4ec8940b695f32051410862d19169069794c56",
+    "decision-model\\config\\illustrative-preset.json": "259c910deae88d58a911c27516ce10551f5c9ba49ddb51bbd220c114204e5379",
+    "data\\homebound\\metadata\\spatial_reference.json": "31ff0a3abb7a223c264706f82409017e917d38356966409dbec9059b432e4bf0"
+  },
+  "unchangedDeliverables": {
+    "docs\\HOMEBOUND_Project_Demo_Story_EN.pptx": "9acc81c082b1201668579e279829f0d53b5624c3962fe57d4aecf8241f360e08",
+    "docs\\HOMEBOUND_Project_Demo_Story_EN.pdf": "9a2380907f6c69241abd6329dc0b0888fa5d99e5fd12b3203f89f1a6ef3cf38f",
+    "docs\\HOMEBOUND_App_Demo_EN.mp4": "946cf55fa0970de7a14bd36a37f9ddbb2549847884bc420bbcc16255d5e8170e",
+    "docs\\HOMEBOUND_App_Demo_EN.srt": "45ddef41b782a1b5aec2ddb047fd25794f1e97d43fbb8b065126ff881fd6a787",
+    "docs\\HOMEBOUND_App_Demo_Integrity.json": "916a94fc604516ba13a3fb00bcfe4bf405597d5ba9e8795d65be79bf4a8a7e4e",
+    "docs\\HOMEBOUND_App_Demo_Music_Credit_EN.txt": "8a06564cb473f19510e37e51aa72f7ef5a3870c030390722f356440f28c6aedd",
+    "docs\\HOMEBOUND_Student_Starter_Guide_EN.docx": "df90bf5f55fa4e8a3611a56521163d3e8729a928917e74348207c7c8da91af8f",
+    "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN.docx": "5e18d36c4849d154e0710386c772f13894702ec56e1875e4384f9238db867e87",
+    "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN v2.docx": "66e189a0b0c3c9ff31b3b4468aea038f6f36a27f5e9566542da9480b1ed35b08",
+    "docs\\A_HOMEBOUND _ Interactive Marswalk Planner.pdf": "32b00a221671590032f84bf1ebd22d3b9e024e3db45e6b2adcffa72716b5a631"
+  },
+  "previousRegisterSha256": "aedfc767d12aa3d21ec9476f8735eff7d3165ca53d6b9bbde5fef24111ffd22b",
+  "previousDeliveryFiles": {
+    "HOMEBOUND_Application_Rumahweb_Upload.zip": "4ac1ae31efb90c1568f24d8bd881f4fc99436f17cd95a998e2215be38348f293",
+    "HOMEBOUND_Application_Source.zip": "2cb619925dd6efb6e87385f0e169bdd04bdebd4fa86bf9c429910955e38b6a45",
+    "HOMEBOUND_Application_User_Guide_EN.docx": "64e615c7e3e59b21524527268a661ebe4d7d7f9a4d5f24c417ac5517bd9c8528",
+    "HOMEBOUND_Application_QA_EN.xlsx": "0d18091b1f9f6513ea180f6a84573e2b568034b2eaa66d9b6f3e72fd8d718611",
+    "HOMEBOUND_Application_Deployment_EN.md": "10dc11a25a9c0fd88d1b9afa60f6cedd6203f167acd5425c8029e2978d2145c6",
+    "HOMEBOUND_Application_Delivery_Integrity.json": "8a7ad4cf235fc39d388675cf9d3ca1c8db026cdb166ab74be5dc01c6e0457ce0",
+    "HOMEBOUND_Deliverables_Register_EN.docx": "aedfc767d12aa3d21ec9476f8735eff7d3165ca53d6b9bbde5fef24111ffd22b"
+  },
+  "scope": "Only add explicit planning presets and related application UI/exports/docs. Keep the Science default, engine, NASA inputs, waypoint coordinates, current story deck and video unchanged.",
+  "publicPackageMetadataRevision": {
+    "packagingEdition": "1.1",
+    "revisedUtc": "2026-11-15T01:07:36.924707+00:00",
+    "scope": "A non-rendered production field was removed from the regional SVG. Map geometry, embedded NASA tile bytes and all scientific definitions are unchanged; regional JSON changes only its dependent image hash.",
+    "originalFiles": {
+      "data\\homebound\\web\\regional-context.svg": "f2819e9ed36bed3d851ace3d628e0e2839c0c3890e3b79ddcd7a43bbd7d8bc5c",
+      "data\\homebound\\web\\regional-context.json": "b032fa076a4bf4042360f6d01f3c66cf65cc907a8181e976d5cdf316ac5882e9"
+    },
+    "revisedFiles": {
+      "data\\homebound\\web\\regional-context.svg": "001e8c82e9187583d7a32d6bccc3263ceb2c31e570666dd9ccda45bcacba3ade",
+      "data\\homebound\\web\\regional-context.json": "0d1e7b0593d867d1b134e3ce0c2b83ddb447a9a204ce5c1bade89ddf4f71c6e5"
+    },
+    "svgOutsideMetadataSha256": "83b11c178439b7aa2f8afdff05499c9452d93920d134e6dbcf80b696564992be"
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "applicationVersion": "1.1.12",
+  "status": "IMAGE_SUPPORTED_CANDIDATE",
+  "selectionBasis": "Manual inspection of the prepared HiRISE image; the observed texture contrast motivates an investigation, not a confirmed geological interpretation.",
+  "destination": {
+    "row": 84,
+    "column": 42,
+    "id": "S",
+    "name": "Texture-transition observation",
+    "scienceMinutes": 20,
+    "kind": "science_candidate",
+    "description": "Investigate an image-supported texture transition and compare an observation plan.",
+    "objective": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+    "evidence": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+    "science": {
+      "status": "image_supported_candidate",
+      "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+      "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+      "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+      "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+      "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+      "opticalObservationDate": "3 March 2009",
+      "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+      "opticalSourceId": "hirise_optical",
+      "terrainSourceId": "hirise_dem",
+      "thermalSourceId": "themis_context_cube",
+      "crop": {
+        "row": 54,
+        "column": 12,
+        "size": 60
+      }
+    }
+  },
+  "opticalDisplay": {
+    "relativePath": "data/homebound/web/optical.webp",
+    "sha256": "97939563f5869e715531bf8abcba843d110b95a7dcda89f988d7d18038c0216d",
+    "source": {
+      "id": "hirise_optical",
+      "mission": "Mars Reconnaissance Orbiter",
+      "instrument": "HiRISE",
+      "dataType": "optical",
+      "role": "Co-registered surface context",
+      "productId": "ESP_012195_1750_RED_C_01_ORTHO",
+      "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_012300_012399/ESP_012340_1750_ESP_012195_1750/ESP_012195_1750_RED_C_01_ORTHO.JP2",
+      "providerUrl": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_012340_1750",
+      "sha256": "13756d7b5931ddaa656bd8591bbe69333e090d4369d56cc8ac446299b4bed9e3"
+    },
+    "acquisitionMetadata": "https://www.uahirise.org/ESP_012195_1750",
+    "acquisitionDate": "3 March 2009",
+    "providerDtmPage": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_012340_1750"
+  },
+  "evidenceGeometry": {
+    "sourceX": 60,
+    "sourceY": 270,
+    "sourceWidth": 300,
+    "sourceHeight": 300,
+    "markerX": 183,
+    "markerY": 183,
+    "outputSize": 360
+  },
+  "terrain": {
+    "knownCells": 3600,
+    "totalCells": 3600,
+    "minimumElevationM": -2701.418,
+    "maximumElevationM": -2665.249,
+    "targetElevationM": -2685.702,
+    "targetMaximumNativeSlopeDegrees": 18.618,
+    "metresPerCell": 5.058400441812499
+  },
+  "nominalPlan": {
+    "modelVersion": "1.0.0",
+    "origin": {
+      "row": 105,
+      "column": 43
+    },
+    "destination": {
+      "row": 84,
+      "column": 42,
+      "id": "S",
+      "name": "Texture-transition observation",
+      "scienceMinutes": 20,
+      "kind": "science_candidate",
+      "description": "Investigate an image-supported texture transition and compare an observation plan.",
+      "objective": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+      "evidence": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+      "science": {
+        "status": "image_supported_candidate",
+        "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+        "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+        "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+        "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+        "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+        "opticalObservationDate": "3 March 2009",
+        "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+        "opticalSourceId": "hirise_optical",
+        "terrainSourceId": "hirise_dem",
+        "thermalSourceId": "themis_context_cube",
+        "crop": {
+          "row": 54,
+          "column": 12,
+          "size": 60
+        }
+      }
+    },
+    "parameters": {
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2
+    },
+    "mission": {
+      "missionBudgetMinutes": 120,
+      "scienceMinutes": 20,
+      "reserveMinutes": 20
+    },
+    "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+    "safetyCertified": false,
+    "status": "FEASIBLE",
+    "reasonCode": "WITHIN_TIME_MODEL",
+    "explanation": "The complete modeled excursion fits the budget, retains the stated reserve, and leaves 67.60 additional minutes. This is not a safety certification.",
+    "time": {
+      "missionBudgetMinutes": 120,
+      "scienceMinutes": 20,
+      "reserveMinutes": 20,
+      "outboundMinutes": 6.088715216997393,
+      "returnMinutes": 6.315195483522339,
+      "requiredMinutes": 52.40391070051973,
+      "rawMarginMinutes": 67.59608929948027,
+      "marginMinutes": 67.59608929948027,
+      "maxScienceMinutes": 87.59608929948025,
+      "latestReturnDepartureMinute": 93.68480451647766,
+      "meetsModelBudget": true,
+      "zeroExtraMargin": false
+    },
+    "outbound": {
+      "cells": [
+        31543,
+        31544,
+        31245,
+        31246,
+        30947,
+        30948,
+        30648,
+        30349,
+        30049,
+        29749,
+        29449,
+        29149,
+        28848,
+        28548,
+        28247,
+        27946,
+        27646,
+        27346,
+        27046,
+        26746,
+        26446,
+        26146,
+        25846,
+        25546,
+        25246,
+        24945,
+        24944,
+        24943,
+        25242
+      ],
+      "minutes": 6.088715216997393,
+      "distanceM": 158.74463790645154,
+      "ascentM": 2.838999999999942,
+      "descentM": 6.235000000000127
+    },
+    "return": {
+      "cells": [
+        25242,
+        24943,
+        24944,
+        24945,
+        25246,
+        25546,
+        25846,
+        26146,
+        26446,
+        26746,
+        27046,
+        27346,
+        27646,
+        27946,
+        28247,
+        28548,
+        28848,
+        29149,
+        29449,
+        29749,
+        30049,
+        30349,
+        30648,
+        30948,
+        30947,
+        31246,
+        31245,
+        31544,
+        31543
+      ],
+      "minutes": 6.315195483522339,
+      "distanceM": 158.74463790645157,
+      "ascentM": 6.235000000000127,
+      "descentM": 2.838999999999942
+    }
+  },
+  "sources": [
+    {
+      "source": {
+        "id": "hirise_optical",
+        "mission": "Mars Reconnaissance Orbiter",
+        "instrument": "HiRISE",
+        "dataType": "optical",
+        "role": "Co-registered surface context",
+        "productId": "ESP_012195_1750_RED_C_01_ORTHO",
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_012300_012399/ESP_012340_1750_ESP_012195_1750/ESP_012195_1750_RED_C_01_ORTHO.JP2",
+        "providerUrl": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_012340_1750",
+        "sha256": "13756d7b5931ddaa656bd8591bbe69333e090d4369d56cc8ac446299b4bed9e3"
+      },
+      "role": "Location-specific optical evidence"
+    },
+    {
+      "source": {
+        "id": "hirise_dem",
+        "mission": "Mars Reconnaissance Orbiter",
+        "instrument": "HiRISE",
+        "dataType": "topographic",
+        "role": "Primary measured terrain input",
+        "productId": "DTEEC_012340_1750_012195_1750_A01",
+        "url": "https://www.uahirise.org/PDS/DTM/ESP/ORB_012300_012399/ESP_012340_1750_ESP_012195_1750/DTEEC_012340_1750_012195_1750_A01.IMG",
+        "providerUrl": "https://www.uahirise.org/dtm/dtm.php?ID=ESP_012340_1750",
+        "sha256": "1ce168a5bedfdb138aabf1c06feca573e6f2222003a592accda4ef30a45f0339"
+      },
+      "role": "Elevation and slope context; terrain routing"
+    },
+    {
+      "source": {
+        "id": "themis_context_cube",
+        "mission": "2001 Mars Odyssey",
+        "instrument": "THEMIS",
+        "dataType": "metadata and thermal-derived contextual",
+        "role": "Independent source format and embedded ISIS projection/history label",
+        "productId": "Gale_crater_THEMIS_qualTI",
+        "url": "http://static.mars.asu.edu/themis/landingsites/msl42/qualTI/Gale_crater_THEMIS_qualTI_ISIS.cub",
+        "providerUrl": "https://themis.mars.asu.edu/landingsites/mslsite_42",
+        "sha256": "84489e9b6b7a8699ac84fde59c8e2051b97478312733e32a4a3a04b68a69e0d8"
+      },
+      "role": "Regional qualitative thermal context; native 100 m spacing"
+    }
+  ],
+  "note": "The original P, H/A/B/C inputs and the nominal travel preset are preserved. S is a separate user-approved observation candidate."
+}

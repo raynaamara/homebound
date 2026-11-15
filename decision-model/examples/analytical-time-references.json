@@ -1,0 +1,32 @@
+[
+  {
+    "label": "Analytical reference, not a Mars-route measurement",
+    "missionBudgetMinutes": 120,
+    "scienceMinutes": 20,
+    "reserveMinutes": 20,
+    "outboundMinutes": 25,
+    "returnMinutes": 35,
+    "requiredMinutes": 100,
+    "rawMarginMinutes": 20,
+    "marginMinutes": 20,
+    "maxScienceMinutes": 40,
+    "latestReturnDepartureMinute": 65,
+    "meetsModelBudget": true,
+    "zeroExtraMargin": false
+  },
+  {
+    "label": "Analytical extra-task case, not a Mars-route measurement",
+    "missionBudgetMinutes": 120,
+    "scienceMinutes": 45,
+    "reserveMinutes": 20,
+    "outboundMinutes": 25,
+    "returnMinutes": 35,
+    "requiredMinutes": 125,
+    "rawMarginMinutes": -5,
+    "marginMinutes": -5,
+    "maxScienceMinutes": 40,
+    "latestReturnDepartureMinute": 65,
+    "meetsModelBudget": false,
+    "zeroExtraMargin": false
+  }
+]

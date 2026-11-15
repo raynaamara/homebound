@@ -1,0 +1,57 @@
+[
+  {
+    "filename": "terrain_grid.json",
+    "bytes": 3309764,
+    "sha256": "407ccb92c30770f1acc07ab96d5ceccb2676eec1b04028b2b12f0a0f0a1ac1d6"
+  },
+  {
+    "filename": "scenario.json",
+    "bytes": 4336,
+    "sha256": "44c8cd2d28fa4aee4560a9ecbbb2da7e3f6beb9cc718dfe5aefde96f7958b0d2"
+  },
+  {
+    "filename": "manifest.json",
+    "bytes": 1941,
+    "sha256": "0b2f9c92eb290989c0d22c158fa106ff3825ac08c15e25a2dd536e3f8ace4025"
+  },
+  {
+    "filename": "sources.json",
+    "bytes": 3818,
+    "sha256": "65e2228d0b4abd04feb6d4073cf5b2d258dab5f6120567c8fcfcedc7ccec2307"
+  },
+  {
+    "filename": "optical.webp",
+    "bytes": 438394,
+    "sha256": "97939563f5869e715531bf8abcba843d110b95a7dcda89f988d7d18038c0216d"
+  },
+  {
+    "filename": "elevation.png",
+    "bytes": 26119,
+    "sha256": "aad1deea5d5fd9a30f6201b4b8b6b865c87d3044165ea31e824c5203871ff091"
+  },
+  {
+    "filename": "slope.png",
+    "bytes": 216976,
+    "sha256": "9bb44a0044a295942ccc2d011d41633582400bed99fed690bf8139acb80b42b1"
+  },
+  {
+    "filename": "thermal_context.png",
+    "bytes": 1900,
+    "sha256": "652dd55f1e2caa3e398fcc6477e4dea2ed0efdd5d7c0ba1b6a51a6f3dd60cdca"
+  },
+  {
+    "filename": "valid_mask.png",
+    "bytes": 687,
+    "sha256": "eeae68b724f6ba4958e57b9bd85da6d0da8b9938ba45ee00d40dcb6d4c47f3af"
+  },
+  {
+    "filename": "regional-context.json",
+    "bytes": 4708,
+    "sha256": "0d1e7b0593d867d1b134e3ce0c2b83ddb447a9a204ce5c1bade89ddf4f71c6e5"
+  },
+  {
+    "filename": "regional-context.svg",
+    "bytes": 397807,
+    "sha256": "001e8c82e9187583d7a32d6bccc3263ceb2c31e570666dd9ccda45bcacba3ade"
+  }
+]

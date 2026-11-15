@@ -1,0 +1,25 @@
+{
+  "applicationVersion": "1.1.6",
+  "theme": "Martian Mission Control",
+  "method": "Targeted checks in a fresh integrated-browser page, eight new CSS/contrast regression tests, and exact canvas SHA-256 comparison with the recorded 1.1.5 baseline.",
+  "checks": [
+    {"id":"S01","status":"PASS","check":"Deep-space frame","observed":"Header resolves to #0B1120, story panels to #132238, light headings to #F4F7FB, and copper-derived accents decorate the landing page. Desktop screenshots were inspected."},
+    {"id":"S02","status":"PASS","check":"Opaque light workspace","observed":"Workspace resolves to #F3F6FB, map card/input surfaces remain white, and the canvas has filter=none and opacity=1. Space decoration stays outside the working surfaces."},
+    {"id":"S03","status":"PASS","check":"Representative text contrast","observed":"Computed brand, navigation, story, input, helper, primary-button and active-map-view pairs measure 17.52, 11.71, 9.94, 13.13, 6.20, 6.11 and 6.11 to 1. Unit checks also cover the lightest designed dark base, control boundaries and focus rings."},
+    {"id":"S04","status":"PASS","check":"Keyboard and active state","observed":"Dark-header keyboard focus uses the visible amber outline; light-workspace Tab/Space selection still activates Whole area and updates the saved map image. Exactly one map-view option remains selected."},
+    {"id":"S05","status":"PASS","check":"Mobile reading and overflow","observed":"At actual 390/320 px viewport widths, document widths remain 375/305 px across landing, destination, expanded activity help, review and brief. Map buttons stay equal-width and at least 44 px high. The mobile orbit is hidden and sparse stars stay in the gutters."},
+    {"id":"S06","status":"PASS","check":"Scientific canvas preservation","observed":"Optical, elevation, slope, thermal and opportunity canvas PNG data-URL SHA-256 values exactly match theme-map-baseline.json for the same nominal P plan. No map recoloring, filter or opacity treatment was introduced."},
+    {"id":"S07","status":"PASS","check":"Numerical and budget outcomes","observed":"Nominal P retains the 61.92 min displayed margin. Adding 63 observation minutes retains TIME_BUDGET_EXCEEDED, -1.0830014565751185 min raw margin, and the 20-minute reserve."},
+    {"id":"S08","status":"PASS","check":"Unavailable-route outcome","observed":"Original A retains NO_MODELED_ROUTE with null time under the nominal preset. Existing textual status explanations and semantic status colors remain present."},
+    {"id":"S09","status":"PASS","check":"White print layout","observed":"Print-media body, workspace and brief are white; workspace border/shadow are removed. Header, map controls and footer are hidden. The dark frame does not print."},
+    {"id":"S10","status":"PASS","check":"Current brief and JSON","observed":"A view change in Save brief updates the actual brief image to the current canvas. JSON retains versions, source records, current comparison, reserve and unavailable values."},
+    {"id":"S11","status":"PASS","check":"Motion and asset footprint","observed":"With reduced-motion preference enabled, active animations count is zero and both decorative pseudo-elements report animation-name=none. Decoration is noninteractive CSS; there are no external font/image URLs or new production dependencies."},
+    {"id":"S12","status":"PASS","check":"Regression and static delivery","observed":"117 unit tests, five actual-data integration checks and 30 static-delivery checks pass. The model and scientific-input preservation guards remain required for release."}
+  ],
+  "boundaries": [
+    "Representative computed contrast checks are not a full accessibility audit or a human usability study.",
+    "Pointer/keyboard behavior at mobile viewport sizes was checked; a physical touch-device test was not performed.",
+    "Normal operating-system print/download dialogs and actual Rumahweb hosting remain separate acceptance checks.",
+    "The older inactive browser page stalled during reference capture; a fresh page loaded normally and provided all baseline and theme measurements. The served module/configuration both returned HTTP 200."
+  ]
+}

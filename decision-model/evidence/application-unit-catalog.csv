@@ -1,0 +1,161 @@
+id,name,status,milliseconds
+T01,Why HOMEBOUND explains the three implemented workflow capabilities below the hero,PASS,5.7676
+T02,related tools use a closed native disclosure and acknowledge existing planning capabilities,PASS,0.8101
+T03,focus cards and disclosure retain readable dark styling and native keyboard targets,PASS,0.8403
+T04,"positioning is informational, separate from mission controls and omitted from printed briefs",PASS,0.6283
+T05,grid parser copies numeric samples and retains valid negative and zero elevations,PASS,4.9209
+T06,unknown cells require null samples and retain an unknown mask,PASS,1.124
+T07,grid rejects length mismatch and invalid validity codes,PASS,0.4495
+T08,"grid rejects unsupported units, row order, Earth radius, rotation, and cell count",PASS,0.7856
+T09,grid rejects nonfinite elevations and out-of-range slopes,PASS,0.5799
+T10,"travel parameters reject zero speed, invalid slope, and negative penalties",PASS,0.6781
+T11,reference arithmetic preserves reserve and science time,PASS,0.5997
+T12,exact boundary retains reserve and one minute less is infeasible,PASS,0.3805
+T13,floating-point boundary uses only a documented numerical tolerance,PASS,0.4421
+T14,"negative, missing, nonfinite, and overflowing time inputs are explicit errors",PASS,0.6914
+T15,"reserve larger than budget produces an infeasible decision, not a silent cap",PASS,0.294
+T16,flat cardinal and diagonal edge times use metric cell dimensions,PASS,4.3588
+T17,directional uphill/downhill edge cost matches hand calculation,PASS,0.4975
+T18,reverse Dijkstra preserves the original return-direction cost,PASS,0.9666
+T19,Dijkstra finds the expected flat 3x3 diagonal route,PASS,1.0557
+T20,non-neighbor indices cannot wrap across rows,PASS,0.5058
+T21,diagonal cannot cut between excluded orthogonal neighbors,PASS,0.3929
+T22,diagonal requires both orthogonal corridors to meet edge-grade limits,PASS,0.2555
+T23,edge-grade rule blocks a steep jump even if cell slope metadata are low,PASS,0.2183
+T24,unknown endpoint yields insufficient data and no fabricated route or time,PASS,0.2576
+T25,unknown origin propagates unknown opportunity field,PASS,0.41
+T26,excluded origin is reported without relocating it,PASS,0.2972
+T27,explicit blocked cells break a route without silently changing thresholds,PASS,0.3064
+T28,routing through unknown cells is not permitted,PASS,0.213
+T29,"stationary origin plan retains science and reserve, with zero route time",PASS,0.3127
+T30,invalid coordinates and blocked-cell declarations are explicit errors,PASS,0.7424
+T31,unrepresentable edge time is an explicit numerical error,PASS,0.3055
+T32,route re-summing matches returned time and preserves path direction,PASS,1.4861
+T33,opportunity field matches selected plan arithmetic,PASS,0.8297
+T34,"negative margins, exact margin, excluded and unknown field codes are distinct",PASS,0.422
+T35,"serialized opportunity fields retain unknowns as null, never nonfinite JSON",PASS,0.428
+T36,increasing science time or reserve never expands the feasible field,PASS,3.1899
+T37,slower speed cannot improve a fixed plan's time margin,PASS,2.51
+T38,tightening a slope limit cannot create new modeled connectivity,PASS,0.7619
+T39,"parameters are copied, frozen and reflected in an inspectable result",PASS,0.5003
+T40,deterministic ties return the same complete result,PASS,2.1102
+T41,directed shortest paths agree with an independent Floyd-Warshall oracle,PASS,4.2879
+T42,export actions form one full-width column with equal control typography and targets,PASS,3.6488
+T43,"named export group retains its labels, file names and primary-secondary hierarchy",PASS,0.6662
+T44,export layout preserves hidden download states and is excluded from print,PASS,0.4748
+T45,elevation uses actual visible negative-elevation endpoints,PASS,4.6637
+T46,focusing recomputes display range without changing physical values,PASS,0.6287
+T47,partial pixel intersections contribute to the displayed range,PASS,0.5121
+T48,unknown samples never become zero elevation,PASS,0.4548
+T49,all-unknown viewport has no fabricated range,PASS,2.6609
+T50,invalid map windows are rejected explicitly,PASS,0.8461
+T51,color endpoints match the visible elevation legend,PASS,1.3128
+T52,local elevation variation uses the whole color palette rather than near-black global tones,PASS,0.5172
+T53,constant elevation produces one honest color and one-value legend,PASS,0.7625
+T54,invalid colors and reversed ranges do not silently become valid colors,PASS,0.5467
+T55,native thermal and slope display metadata are read from the actual source manifest,PASS,0.2694
+T56,missing or invalid layer metadata fail instead of defaulting silently,PASS,2.2554
+T57,uncalculated overlay explicitly discloses its optical base,PASS,0.2467
+T58,calculating and stale overlay states are explicit and distinct,PASS,0.1942
+T59,current overlay is not mislabeled unavailable and keeps the non-safety interpretation,PASS,0.2869
+T60,"thermal legend honestly uses DN and native resolution, not fabricated temperature",PASS,0.2982
+T61,"elevation legend describes view-dependent contrast, datum, and unavailable data",PASS,0.282
+T62,slope and optical descriptions retain their distinct meanings,PASS,0.3038
+T63,initial viewport mode describes the complete grid,PASS,5.4078
+T64,automatic point fitting selects focus without altering existing viewport geometry,PASS,0.6526
+T65,whole-area selection restores the full grid after focus,PASS,1.6946
+T66,refocusing follows new points after whole-area selection,PASS,0.4657
+T67,failed focus operations leave both mode and viewport unchanged,PASS,1.4302
+T68,a full-size focus retains the requested destination-fit mode,PASS,0.4333
+T69,viewport mode cannot be changed independently of viewport operations,PASS,0.4881
+T70,map-view controls are named native toggle buttons grouped below Layer,PASS,0.8839
+T71,"segmented styling uses equal columns, visible active state and 44px targets",PASS,0.8635
+T72,"Martian Dawn replaces teal branding with orange, ice blue and sand tokens",PASS,1.8331
+T73,"primary actions, selected destinations and map controls share the action token",PASS,0.9717
+T74,hero illustration has a dedicated noninteractive area with fixed aspect ratio,PASS,0.4238
+T75,the three focus cards remain present below the hero illustration,PASS,0.4928
+T76,mobile retains its own visible Mars area instead of hiding the illustration,PASS,0.6078
+T77,a separate decorative mini-Mars remains in the workspace heading,PASS,0.3375
+T78,"the planet is a lightweight static local vector, not another scientific map",PASS,0.61
+T79,the decorative asset participates in the build fingerprint and both image URLs,PASS,0.2868
+T80,all seven parameters have nonempty visible helper text and accessible associations,PASS,6.708
+T81,"budget, observation and reserve definitions distinguish travel and protected time",PASS,0.6097
+T82,"advanced parameters explain direction, units and non-operational assumptions",PASS,1.0136
+T83,technical help is a native expandable disclosure rather than a hover-only tooltip,PASS,0.2805
+T84,uphill coefficient example agrees with the actual engine edge-time formula,PASS,1.5041
+T85,downhill coefficient example agrees with the actual engine edge-time formula,PASS,0.5669
+T86,percent grade is not mislabeled as degrees or astronaut calibration,PASS,0.3484
+T87,extra observation help identifies addition rather than replacing the original,PASS,1.0366
+T88,public interface removes requested boilerplate and keeps planning context,PASS,2.222
+T89,public scenario and preset copy use positive method descriptions,PASS,0.8886
+T90,human scenario labels retain their distinct meanings,PASS,2.9614
+T91,display adapter changes prose without changing model data or raw provenance,PASS,1.2022
+T92,"mission briefs remove boilerplate and retain sources, units and plan comparisons",PASS,3.3461
+T93,actionable outcomes remain truthful for over-budget and unavailable routes,PASS,0.7166
+T94,"layer copy retains qualitative DN, terrain units and source resolution without boilerplate",PASS,1.3165
+T95,scenario parser maps original source names without changing locations,PASS,3.8772
+T96,scenario rejects duplicate identifiers and missing origin,PASS,3.1989
+T97,scenario rejects non-integer dimensions and out-of-grid points,PASS,0.8057
+T98,scenario rejects invalid times and a reserved custom identifier,PASS,1.4704
+T99,the new science point has its own identity without repurposing practice or originals,PASS,17.6044
+T100,"science IDs cannot conflict with P, H, X or an original example",PASS,6.2935
+T101,science status describes an image-supported question rather than validated geology,PASS,0.9117
+T102,all science narrative fields and source identities are required,PASS,0.7888
+T103,the crop maps the exact selected cell center into the prepared optical image,PASS,0.6795
+T104,"off-grid, unrelated and non-integer crop geometry is rejected explicitly",PASS,0.646
+T105,evidence sources retain three distinct roles and reject unknown IDs,PASS,2.6958
+T106,observation and source-provider links reject executable protocols,PASS,0.5603
+T107,the image-supported candidate has a nominal round trip without relaxing the preset,PASS,0.9485
+T108,the candidate can exceed its budget while the protected reserve remains intact,PASS,0.901
+T109,a stricter route assumption changes feasibility without changing the science rationale,PASS,19.1413
+T110,the recorded evidence window has the measured complete terrain context,PASS,5.6836
+T111,"science text brief retains the question, task, window, date and source provenance",PASS,1.2647
+T112,a science brief cannot be paired with another calculated destination,PASS,0.2335
+T113,practice briefs do not inherit a previously selected science evidence window,PASS,0.2426
+T114,"mismatched evidence location, crop or source is rejected",PASS,0.346
+T115,structured science exports retain exact evidence and source roles,PASS,0.3255
+T116,structured exports reject missing evidence and clear science for planning-only points,PASS,2.1051
+T117,"the marker key explicitly distinguishes practice, science and custom points",PASS,0.7232
+T118,science explanations are native disclosures and the review has a dedicated summary,PASS,0.6756
+T119,"theme defines the agreed deep-space, light-workspace and Mars palette",PASS,2.3616
+T120,primary button text retains at least 4.5 to 1 contrast,PASS,2.5127
+T121,"dark-surface heading, secondary and accent text exceed 4.5 to 1",PASS,0.564
+T122,light-surface primary and helper text exceed 4.5 to 1,PASS,0.341
+T123,control boundaries and context-specific focus rings exceed 3 to 1,PASS,0.525
+T124,scientific map and status palettes remain distinct and unfiltered,PASS,0.6751
+T125,"space decoration is static, noninteractive and requires no external assets",PASS,0.6036
+T126,print output resets the dark frame and workspace to white,PASS,0.4936
+T127,Science remains the default and observation-only edits retain its preset identity,PASS,2.7566
+T128,"planning presets reject unknown or duplicate IDs, invalid ranges and a changed Science default",PASS,1.0311
+T129,all six preset-controlled inputs must match; incomplete and manually edited values stay Custom,PASS,0.5917
+T130,"brief preset identity follows the calculated assumptions, including extended observation",PASS,3.9821
+T131,guided destination is explicitly hypothetical and retains the verified witness coordinates,PASS,0.337
+T132,all original scenario destinations retain their exact coordinates and task durations,PASS,0.3375
+T133,application config rejects an unapproved version or policy,PASS,0.371
+T134,practice cannot be presented as a validated target or placed outside the data grid,PASS,0.3452
+T135,practice identifiers and original descriptions are validated,PASS,0.5161
+T136,source parsing preserves the original three records and adds a distinct regional source,PASS,2.4073
+T137,source references reject executable URLs and missing identities,PASS,0.3884
+T138,regional context retains a contained Mars footprint and complete matching source-tile provenance,PASS,0.3362
+T139,"regional context rejects route-role changes, external image paths, bad hashes and incomplete tiles",PASS,0.7285
+T140,"regional context rejects Earth conventions, reversed bounds and a footprint outside its map",PASS,0.3167
+T141,regional briefs retain actual map provenance without changing a practice plan or adding S science,PASS,0.7214
+T142,"request fingerprint includes point, travel assumptions and all mission inputs",PASS,0.4318
+T143,request fingerprint does not depend on object insertion order,PASS,0.1638
+T144,comparison preserves reserve and reports the science-only consequences,PASS,0.2922
+T145,"comparison refuses to mix different destinations, budgets, or travel assumptions",PASS,0.3115
+T146,comparison refuses a negative additional observation duration,PASS,0.1818
+T147,unavailable time comparisons retain null deltas rather than fabricating zero,PASS,0.1728
+T148,"extra duration is explicit, finite and nonnegative; other mission inputs are unchanged",PASS,0.3993
+T149,all four engine statuses have distinct human-readable decisions and next actions,PASS,0.3445
+T150,time formatting preserves unavailable and negative values,PASS,0.2533
+T151,"brief states the hypothetical purpose, assumptions, reserve, source identity and scope",PASS,0.2342
+T152,no-route brief contains unavailable return values and an explicit no-route decision,PASS,0.2175
+T153,comparison brief identifies the original and revised duration without mutating either,PASS,0.3268
+T154,assumption summary is explicit rather than a hidden preset label,PASS,0.214
+T155,destination labels explicitly include P/A/B/C in the same map codes,PASS,0.2282
+T156,"custom selector identifier maps to X, not the internal word custom",PASS,0.1547
+T157,map key shares the same names and codes and explicitly explains H and X,PASS,1.9532
+T158,invalid or origin-reserved destination codes are explicit errors,PASS,0.3139
+T159,duplicate marker codes cannot create an ambiguous map key,PASS,0.2315
+T160,human text brief explains both origin H and selected destination code,PASS,0.2945

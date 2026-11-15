@@ -1,0 +1,59 @@
+{
+  "working_crs_wkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",3396036.8126024,0]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",-5],PARAMETER[\"central_meridian\",137.35],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+  "working_radius_m": 3396036.8126024,
+  "horizontal_units": "metres",
+  "vertical_reference": "Mars 2000 equipotential surface, per source label",
+  "latitude_convention": "planetocentric",
+  "longitude_convention": "east-positive, 0-360 for this region",
+  "model_affine_pixel_corner": {
+    "a": 5.058400441812499,
+    "b": 0.0,
+    "c": -563.5058092180134,
+    "d": 0.0,
+    "e": -5.058400441812499,
+    "f": -306840.5474401796
+  },
+  "pixel_center_formula": "x=a*(column+0.5)+b*(row+0.5)+c; y=d*(column+0.5)+e*(row+0.5)+f",
+  "row_order": "north to south; row zero at top",
+  "bounds_projected_m": [
+    -563.5058092180134,
+    -308358.0675727234,
+    954.0143233257363,
+    -306840.5474401796
+  ],
+  "corner_longitude_latitude": [
+    [
+      137.3404565717069,
+      -5.202421771508453
+    ],
+    [
+      137.3404565717069,
+      -5.176819134164171
+    ],
+    [
+      137.36615700696655,
+      -5.202421771508453
+    ],
+    [
+      137.36615700696655,
+      -5.176819134164171
+    ]
+  ],
+  "native_resolution_m": [
+    1.0116800883625,
+    1.0116800883625
+  ],
+  "model_resolution_m": [
+    5.058400441812499,
+    5.058400441812499
+  ],
+  "native_shape": [
+    1500,
+    1500
+  ],
+  "model_shape": [
+    300,
+    300
+  ],
+  "thermal_native_resolution_m": 100
+}

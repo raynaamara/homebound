@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "sourceId": "mars_trek_mola_context",
+  "title": "Where is this Marswalk?",
+  "imageAsset": "regional-context.svg",
+  "imageSha256": "001e8c82e9187583d7a32d6bccc3263ceb2c31e570666dd9ccda45bcacba3ade",
+  "description": "HOMEBOUND explores a small area within Gale Crater. This regional map shows its setting; the detailed HiRISE terrain supports the walking-route calculation.",
+  "scope": "Regional color-shaded relief only; not a walking-route layer, local slope measurement or geological-unit identification.",
+  "usedForRouting": false,
+  "nativeResolutionM": 463,
+  "credit": "NASA Mars Trek / NASA MGS-MOLA",
+  "studyArea": {
+    "bounds": {
+      "west": 137.3404565717069,
+      "south": -5.202421771508453,
+      "east": 137.36615700696655,
+      "north": -5.176819134164171
+    },
+    "widthM": 1517.5201325437497,
+    "heightM": 1517.520132543752,
+    "latitudeConvention": "planetocentric",
+    "longitudeConvention": "east-positive"
+  },
+  "mapBounds": {
+    "west": 135.9,
+    "south": -7.4,
+    "east": 139.9,
+    "north": -3.4
+  },
+  "serviceMetadata": {
+    "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/WMTSCapabilities.xml",
+    "retrievedUtc": "2026-11-14T04:00:44.739825+00:00",
+    "bytes": 7040,
+    "sha256": "2fb4722b5af0417980052354eab806cb9bdea003617548433cec8d8813d8d125",
+    "contentType": "application/xml",
+    "lastModified": "Sat, 08 Dec 2018 06:47:07 GMT"
+  },
+  "tiles": [
+    {
+      "row": 33,
+      "column": 112,
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/33/112.jpg",
+      "retrievedUtc": "2026-11-14T04:00:46.196783+00:00",
+      "bytes": 71182,
+      "sha256": "67e58224618989875db1fa6749c659207565dc0b7deef89b12a05bc01da96c96",
+      "contentType": "image/jpeg",
+      "lastModified": "Tue, 27 Jun 2017 02:06:25 GMT"
+    },
+    {
+      "row": 33,
+      "column": 113,
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/33/113.jpg",
+      "retrievedUtc": "2026-11-14T04:00:47.898821+00:00",
+      "bytes": 77102,
+      "sha256": "07b928ea3986d03a4c977ae8b998c7c3548cc72ba22af4edb21c3f43b51cb059",
+      "contentType": "image/jpeg",
+      "lastModified": "Tue, 27 Jun 2017 02:06:38 GMT"
+    },
+    {
+      "row": 34,
+      "column": 112,
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/34/112.jpg",
+      "retrievedUtc": "2026-11-14T04:00:49.795345+00:00",
+      "bytes": 74202,
+      "sha256": "1f342902bd9ee9025f41e058fef143af3289cc84e642edba75ac8dea637cac98",
+      "contentType": "image/jpeg",
+      "lastModified": "Tue, 27 Jun 2017 02:06:25 GMT"
+    },
+    {
+      "row": 34,
+      "column": 113,
+      "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/34/113.jpg",
+      "retrievedUtc": "2026-11-14T04:00:51.616565+00:00",
+      "bytes": 72680,
+      "sha256": "5267bba3e0b541dce410e2e5b2ccb73fa550e584632c33897fd1356437b021fa",
+      "contentType": "image/jpeg",
+      "lastModified": "Tue, 27 Jun 2017 02:06:38 GMT"
+    }
+  ],
+  "georeferencing": {
+    "sourceMetadata": "data\\homebound\\metadata\\spatial_reference.json",
+    "sourceMetadataSha256": "31ff0a3abb7a223c264706f82409017e917d38356966409dbec9059b432e4bf0",
+    "workingCrsWkt": "PROJCS[\"unknown\",GEOGCS[\"unknown\",DATUM[\"unknown\",SPHEROID[\"unknown\",3396036.8126024,0]],PRIMEM[\"Reference meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",-5],PARAMETER[\"central_meridian\",137.35],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+    "inverseProjectionCornerToleranceDegrees": 1e-10,
+    "mapPixelOrigin": [
+      24,
+      84
+    ],
+    "mapPixelSize": [
+      672,
+      672
+    ],
+    "footprintPixels": [
+      265.99670404675976,
+      382.5056145395808,
+      4.317673123618988,
+      4.301243073839288
+    ],
+    "locatorCenterPixels": [
+      268.15554060856925,
+      384.6562360765005
+    ],
+    "locatorRingRadiusPixels": 12,
+    "locatorNote": "The footprint follows the AOI corners; the larger ring is a visibility aid, not a route or destination marker."
+  },
+  "processing": "Cropped WMTS source tiles, geographic grid and georeferenced study-area locator. No synthetic terrain or new spatial detail."
+}

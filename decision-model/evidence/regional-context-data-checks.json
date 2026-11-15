@@ -1,0 +1,299 @@
+{
+  "applicationVersion": "1.1.12",
+  "modelVersion": "1.0.0",
+  "executedUtc": "2026-11-15T04:27:36.184Z",
+  "method": "Actual NASA WMTS originals, hash-checked receipts, independent Mars inverse projection, exact baseline plan comparison, and prepared/export metadata inspection.",
+  "checks": [
+    {
+      "id": "RD01",
+      "status": "PASS",
+      "check": "Original source records preserved; new Mars Trek source has a distinct regional role",
+      "evidence": {
+        "id": "mars_trek_mola_context",
+        "mission": "Mars Global Surveyor",
+        "instrument": "MOLA",
+        "dataType": "regional topographic visualization",
+        "role": "Regional relief context only; not used for route calculation. This download is the study-area tile; all four mosaic tiles and hashes are recorded in regional-context.json.",
+        "productId": "Mars_MGS_MOLA_ClrShade_merge_global_463m",
+        "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/33/112.jpg",
+        "providerUrl": "https://trek.nasa.gov/mars/",
+        "sha256": "67e58224618989875db1fa6749c659207565dc0b7deef89b12a05bc01da96c96"
+      }
+    },
+    {
+      "id": "RD02",
+      "status": "PASS",
+      "check": "Engine, ten protected inputs and original scenario/science/default-travel definitions are unchanged; named presets are separate",
+      "evidence": {
+        "protectedFiles": 10,
+        "previousVersion": "1.1.10",
+        "applicationVersion": "1.1.12"
+      }
+    },
+    {
+      "id": "RD03",
+      "status": "PASS",
+      "check": "Mars inverse projection and plotted AOI footprint independently match the original geographic corners",
+      "evidence": {
+        "studyArea": {
+          "bounds": {
+            "west": 137.3404565717069,
+            "east": 137.36615700696655,
+            "south": -5.202421771508453,
+            "north": -5.176819134164171
+          },
+          "widthM": 1517.5201325437497,
+          "heightM": 1517.520132543752,
+          "latitudeConvention": "planetocentric",
+          "longitudeConvention": "east-positive"
+        },
+        "footprintPixels": [
+          265.99670404675976,
+          382.5056145395808,
+          4.317673123618988,
+          4.301243073839288
+        ],
+        "toleranceDegrees": 1e-10
+      }
+    },
+    {
+      "id": "RD04",
+      "status": "PASS",
+      "check": "All four original NASA tiles, download receipts, service metadata and embedded image pixels match their hashes",
+      "evidence": {
+        "tiles": [
+          {
+            "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/33/112.jpg",
+            "sha256": "67e58224618989875db1fa6749c659207565dc0b7deef89b12a05bc01da96c96"
+          },
+          {
+            "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/33/113.jpg",
+            "sha256": "07b928ea3986d03a4c977ae8b998c7c3548cc72ba22af4edb21c3f43b51cb059"
+          },
+          {
+            "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/34/112.jpg",
+            "sha256": "1f342902bd9ee9025f41e058fef143af3289cc84e642edba75ac8dea637cac98"
+          },
+          {
+            "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/default/default028mm/6/34/113.jpg",
+            "sha256": "5267bba3e0b541dce410e2e5b2ccb73fa550e584632c33897fd1356437b021fa"
+          }
+        ],
+        "imageSha256": "001e8c82e9187583d7a32d6bccc3263ceb2c31e570666dd9ccda45bcacba3ade",
+        "serviceMetadata": {
+          "url": "https://trek.nasa.gov/tiles/Mars/EQ/Mars_MGS_MOLA_ClrShade_merge_global_463m/1.0.0/WMTSCapabilities.xml",
+          "sha256": "2fb4722b5af0417980052354eab806cb9bdea003617548433cec8d8813d8d125"
+        }
+      }
+    },
+    {
+      "id": "RD05",
+      "status": "PASS",
+      "check": "Nine complete plans, route cells, times and reserves are identical to the captured 1.1.10 baseline",
+      "evidence": [
+        {
+          "id": "P-20",
+          "status": "FEASIBLE",
+          "margin": 61.91699854342489,
+          "reserve": 20
+        },
+        {
+          "id": "P-83",
+          "status": "TIME_BUDGET_EXCEEDED",
+          "margin": -1.0830014565751185,
+          "reserve": 20
+        },
+        {
+          "id": "S-20",
+          "status": "FEASIBLE",
+          "margin": 67.59608929948027,
+          "reserve": 20
+        },
+        {
+          "id": "S-88",
+          "status": "TIME_BUDGET_EXCEEDED",
+          "margin": -0.4039107005197451,
+          "reserve": 20
+        },
+        {
+          "id": "S-85",
+          "status": "FEASIBLE",
+          "margin": 2.596089299480255,
+          "reserve": 20
+        },
+        {
+          "id": "A-20",
+          "status": "NO_MODELED_ROUTE",
+          "margin": null,
+          "reserve": 20
+        },
+        {
+          "id": "B-25",
+          "status": "NO_MODELED_ROUTE",
+          "margin": null,
+          "reserve": 20
+        },
+        {
+          "id": "C-30",
+          "status": "NO_MODELED_ROUTE",
+          "margin": null,
+          "reserve": 20
+        },
+        {
+          "id": "S-slope-10",
+          "status": "NO_MODELED_ROUTE",
+          "margin": null,
+          "reserve": 20
+        }
+      ]
+    },
+    {
+      "id": "RD06",
+      "status": "PASS",
+      "check": "Practice brief includes complete regional provenance without inheriting S's location-specific science evidence",
+      "evidence": {
+        "tileReferences": 4,
+        "usedForRouting": false
+      }
+    },
+    {
+      "id": "RD07",
+      "status": "PASS",
+      "check": "Current preset-release media/reference hashes and prior snapshots are verified; old regional media hashes retain historical scope; absent handoff history is not checked",
+      "evidence": {
+        "verified": 0,
+        "notPresent": 12,
+        "historicalEvidence": [
+          {
+            "relativePath": "docs\\HOMEBOUND_Project_Demo_Story_EN.pptx",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\HOMEBOUND_Project_Demo_Story_EN.pdf",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\HOMEBOUND_App_Demo_EN.mp4",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\HOMEBOUND_App_Demo_EN.srt",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\HOMEBOUND_App_Demo_Integrity.json",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\HOMEBOUND_App_Demo_Music_Credit_EN.txt",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\HOMEBOUND_Student_Starter_Guide_EN.docx",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN.docx",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN v2.docx",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\A_HOMEBOUND _ Interactive Marswalk Planner.pdf",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\history\\HOMEBOUND_Application_1.1.10_and_Register_1.22.zip",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          },
+          {
+            "relativePath": "docs\\history\\HOMEBOUND_Application_1.1.11_and_Register_1.29.zip",
+            "status": "NOT_PRESENT",
+            "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+          }
+        ]
+      }
+    }
+  ],
+  "verifiedFiles": {
+    "data/homebound/web/sources.json": "65e2228d0b4abd04feb6d4073cf5b2d258dab5f6120567c8fcfcedc7ccec2307",
+    "data/homebound/web/regional-context.json": "0d1e7b0593d867d1b134e3ce0c2b83ddb447a9a204ce5c1bade89ddf4f71c6e5",
+    "data/homebound/web/regional-context.svg": "001e8c82e9187583d7a32d6bccc3263ceb2c31e570666dd9ccda45bcacba3ade",
+    "data\\homebound\\metadata\\spatial_reference.json": "31ff0a3abb7a223c264706f82409017e917d38356966409dbec9059b432e4bf0"
+  },
+  "historicalEvidence": [
+    {
+      "relativePath": "docs\\HOMEBOUND_Project_Demo_Story_EN.pptx",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Project_Demo_Story_EN.pdf",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_App_Demo_EN.mp4",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_App_Demo_EN.srt",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_App_Demo_Integrity.json",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_App_Demo_Music_Credit_EN.txt",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Student_Starter_Guide_EN.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN v2.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\A_HOMEBOUND _ Interactive Marswalk Planner.pdf",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\history\\HOMEBOUND_Application_1.1.10_and_Register_1.22.zip",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\history\\HOMEBOUND_Application_1.1.11_and_Register_1.29.zip",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    }
+  ]
+}

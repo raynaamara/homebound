@@ -1,0 +1,49 @@
+{
+  "modelVersion": "1.0.0",
+  "origin": {
+    "row": 105,
+    "column": 43
+  },
+  "destination": {
+    "id": "A",
+    "kind": "illustrative_observation",
+    "name": "Layer-pattern observation area",
+    "column_fraction": 0.38,
+    "row_fraction": 0.37,
+    "science_minutes": 20,
+    "rationale": "Illustrative viewpoint near contrasting, visibly layered surface patterns. Geological interpretation and science value require expert review.",
+    "row": 113,
+    "column": 119,
+    "easting_m": 40.973043578580246,
+    "northing_m": -307414.67589032534,
+    "longitude_deg_east": 137.35069391175202,
+    "latitude_deg_planetocentric": -5.1865054652927585,
+    "block_mean_elevation_m": -2623.744140625,
+    "block_max_slope_deg": 10.744735717773438,
+    "seed_shift_m": 27.240320039642295,
+    "evidence_source_ids": [
+      "hirise_optical",
+      "hirise_dem"
+    ],
+    "approval_status": "Illustrative annotation; no NASA approval or validated access."
+  },
+  "parameters": {
+    "baseSpeedMPerMin": 30,
+    "maximumSlopeDegrees": 20,
+    "uphillPenalty": 4,
+    "downhillPenalty": 2
+  },
+  "mission": {
+    "missionBudgetMinutes": 120,
+    "scienceMinutes": 20,
+    "reserveMinutes": 20
+  },
+  "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+  "safetyCertified": false,
+  "status": "NO_MODELED_ROUTE",
+  "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+  "explanation": "No complete round trip exists within the known, permitted grid and current edge rules. This does not prove that no physical route exists.",
+  "time": null,
+  "outbound": null,
+  "return": null
+}

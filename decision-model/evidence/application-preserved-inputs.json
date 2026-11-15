@@ -1,0 +1,22 @@
+{
+  "docs\\HOMEBOUND_Data_Catalog_and_QA_EN.xlsx": "e9abf26235f76ec4fa9ecb9d1f4ffa46f63b7cd6d6fc4281205a818a17756baf",
+  "docs\\HOMEBOUND_Data_Preparation_Report_EN.docx": "ecb9ee41f0b9bdaed4212619245c85ed09c80b4a8ab17551dffd268af9664a04",
+  "docs\\HOMEBOUND_Decision_Model_Delivery_Integrity.json": "ae224e1b1ff03406043db9e1148af61a57dcb6e8347258662a6087992e5b7a09",
+  "docs\\HOMEBOUND_Decision_Model_Report_EN.docx": "eeead9a276619feabbadf91a83701de8ef8f01c2d7b08469a2ef13d7a5da06c7",
+  "docs\\HOMEBOUND_Decision_Model_Results_EN.xlsx": "d6332d09f6e3f65dbbb297c5b3f3851c4d14a8d0131a9aa73d57054f91f6cc53",
+  "docs\\HOMEBOUND_Decision_Model_Source.zip": "40475a7bf68921d299e4760391e1ae301e412c16f4e56286a84b53fcc91dac0b",
+  "docs\\HOMEBOUND_decision_result.json": "e14b3474800c958eaaf9027a0e11d2765566021f75d51adeebd7da3c005d7062",
+  "docs\\HOMEBOUND_Delivery_Integrity.json": "012ba1e471def43b4ad98a7cc94c73169718aa3cc3c59846a4ef5305da7f6ec4",
+  "docs\\HOMEBOUND_Pre_Application_Deliverables_Register_EN.docx": "483009e385bc15e7a2d4a1bbee5f75a8d974d06a6ed6674237455db973c77234",
+  "docs\\HOMEBOUND_Problem_Definition_and_MVP_Scope_Brief_EN.docx": "55214d4b74e3418adce65f87a9f613bc100063176498ad5981ace3b6f77cc442",
+  "docs\\HOMEBOUND_Research_Data_Package.zip": "75944dfb29a0f7bc5298c4b847274975085e5f78631702e412f59b9a6234be12",
+  "docs\\HOMEBOUND_Rumahweb_Deployment_Guide_EN.md": "86f568c8985837780d330f5510e51bc1f2a48c5f61e944db27ce919934335f0c",
+  "docs\\HOMEBOUND_Rumahweb_Upload.zip": "9229e6e50b6cf8131da91a56e4b3542942376592fa91b6db2b80009803e98845",
+  "docs\\HOMEBOUND_Web_Inputs.zip": "03663e01a6fea50d0c988f7e4658b89f5125caaa7970d3bd337d1a2939f03c46",
+  "docs\\Nusa Nova.png": "099b6aed6cfcee1fd15b3b09a173e4037185fd83e9fa0b2025d43fd1474d0c1e",
+  "docs\\Participant_Guide_SpaceApps_Purwokerto_2026.pdf": "3319d4a8140cd960d540a17b71efe1de10feaba7014b42c89968e443b59b3355",
+  "docs\\~$MEBOUND_Pre_Application_Deliverables_Register_EN.docx": "6e6938018610140d8416f7ab76ed412e6cc80d91e8bad21d6d6a82518a26c621",
+  "decision-model\\src\\engine.ts": "737ebca888f73b24c46f20648c4ec8940b695f32051410862d19169069794c56",
+  "data\\homebound\\web\\terrain_grid.json": "407ccb92c30770f1acc07ab96d5ceccb2676eec1b04028b2b12f0a0f0a1ac1d6",
+  "data\\homebound\\web\\scenario.json": "44c8cd2d28fa4aee4560a9ecbbb2da7e3f6beb9cc718dfe5aefde96f7958b0d2"
+}

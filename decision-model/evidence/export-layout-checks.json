@@ -1,0 +1,17 @@
+{
+  "applicationVersion": "1.1.9",
+  "scope": "Scoped Save brief export controls; routing, scientific context and navigation behavior are unchanged.",
+  "checks": [
+    {"id":"EX01","status":"PASS","check":"Equal full-width column","observed":"At actual 1280, 980, 768, 390 and 320 px viewport widths, all three controls match their group width. Measured panel widths are 475.77, 340.48, 624.25, 291.03 and 221.03 px, without horizontal document overflow."},
+    {"id":"EX02","status":"PASS","check":"Consistent typography and spacing","observed":"Each control is 48 px high, uses 14 px text and centered alignment, with exactly 12 px vertical gaps. Primary PDF and secondary TXT/JSON styling remain distinct."},
+    {"id":"EX03","status":"PASS","check":"Actual TXT/JSON contents and file contracts","observed":"Actual Blob contents retain application 1.1.9, the P margin 61.91699854342489 min, current source records and scienceContext=null for practice. Labels, download filenames and original handlers are unchanged."},
+    {"id":"EX04","status":"PASS","check":"Keyboard order and print handler","observed":"Tab visits Print, TXT and JSON in DOM order with visible focus. Enter invokes the existing print handler exactly once under a temporary QA print stub; normal export state is restored afterward."},
+    {"id":"EX05","status":"PASS","check":"Stale-state protection","observed":"Editing the budget disables Print and sets both download links hidden/display=none. Recalculating restores the normal controls; the grid does not expose stale links."},
+    {"id":"EX06","status":"PASS","check":"Print and regression","observed":"Print-media CSS hides the export group and retains a white mission brief. All 148 unit tests, eight actual-data integration checks and 36 static-delivery checks pass."}
+  ],
+  "boundaries": [
+    "The browser provider no longer recognized an older shared QA page handle, so a fresh local QA page was used without resetting the user's active plan.",
+    "The print handler was invoked with a QA stub and print-media styles were checked; native operating-system print/save dialogs were not exercised.",
+    "The context screenshots show the full page; measured DOM rectangles verify exact control alignment independently of embedded-browser element-screenshot clipping."
+  ]
+}

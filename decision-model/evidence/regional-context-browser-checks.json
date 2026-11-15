@@ -1,0 +1,136 @@
+{
+  "applicationVersion": "1.1.11",
+  "executedUtc": "2026-11-14T04:15:13.219069+00:00",
+  "method": "Fresh isolated headless Microsoft Edge; real static deployment and worker; actual Blob TXT/JSON, native PDF, responsive/keyboard, root/subfolder and development-only fault checks.",
+  "browserVersion": "157.0.4341.46",
+  "checks": [
+    {
+      "id": "RB01",
+      "status": "PASS",
+      "check": "Native disclosure, keyboard/pointer, credited actual local map and 44 px target",
+      "evidence": "Closed initially; Enter/Space/pointer toggle; decoded 720 by 850 source-backed SVG; accessible regional role and spacing."
+    },
+    {
+      "id": "RB02",
+      "status": "PASS",
+      "check": "Regional card remains contained and readable at desktop/tablet/390/320 px widths",
+      "evidence": [
+        {
+          "width": 1280,
+          "overflow": false,
+          "imageInside": true,
+          "summaryHeight": 44
+        },
+        {
+          "width": 900,
+          "overflow": false,
+          "imageInside": true,
+          "summaryHeight": 44
+        },
+        {
+          "width": 390,
+          "overflow": false,
+          "imageInside": true,
+          "summaryHeight": 44
+        },
+        {
+          "width": 320,
+          "overflow": false,
+          "imageInside": true,
+          "summaryHeight": 44
+        }
+      ]
+    },
+    {
+      "id": "RB03",
+      "status": "PASS",
+      "check": "Real worker/UI S 20/88/85-minute plans, exact route cells and reserve match the prior release",
+      "evidence": [
+        {
+          "case": "S-20",
+          "margin": 67.59608929948027
+        },
+        {
+          "case": "S-88",
+          "margin": -0.4039107005197451
+        },
+        {
+          "case": "S-85",
+          "margin": 2.596089299480255
+        }
+      ]
+    },
+    {
+      "id": "RB04",
+      "status": "PASS",
+      "check": "Actual TXT/JSON and native browser PDF retain the regional image role and all tile references",
+      "evidence": {
+        "jsonSources": 4,
+        "regionalTileReferences": 4,
+        "pdfPages": 4,
+        "sourceImage": "f2819e9ed36bed3d851ace3d628e0e2839c0c3890e3b79ddcd7a43bbd7d8bc5c"
+      }
+    },
+    {
+      "id": "RB05",
+      "status": "PASS",
+      "check": "Practice and no-route findings keep regional orientation without inheriting S science",
+      "evidence": "P remains feasible; original A remains no-route/null timing; both export the same study-area context and scienceContext:null."
+    },
+    {
+      "id": "RB06",
+      "status": "PASS",
+      "check": "Fresh subfolder startup, decoded local context image and actual P result",
+      "evidence": "nested/homebound/ uses relative assets and the same exact P plan/context."
+    },
+    {
+      "id": "RB07",
+      "status": "PASS",
+      "check": "Missing regional metadata/image fail visibly, block startup and recover through Retry without substituted data",
+      "evidence": [
+        {
+          "asset": "regional-context.json",
+          "visibleError": "./data/regional-context.json?v=1.1.11-43626dfc031a returned HTTP 503.",
+          "retry": "PASS",
+          "substituteData": false
+        },
+        {
+          "asset": "regional-context.svg",
+          "visibleError": "The source image cannot be decoded.",
+          "retry": "PASS",
+          "substituteData": false
+        }
+      ]
+    }
+  ],
+  "deploymentSha256": {
+    ".htaccess": "05d92d8c8f8fa67f6d850f0e4b1cd77f19a07511ec586fcfd3883d8c20843087",
+    "data\\application.json": "eb2b2c8de16ddd1405490547f1db897fbe094e42e0231a1f9e680cbea09a3362",
+    "data\\elevation.png": "aad1deea5d5fd9a30f6201b4b8b6b865c87d3044165ea31e824c5203871ff091",
+    "data\\manifest.json": "0b2f9c92eb290989c0d22c158fa106ff3825ac08c15e25a2dd536e3f8ace4025",
+    "data\\optical.webp": "97939563f5869e715531bf8abcba843d110b95a7dcda89f988d7d18038c0216d",
+    "data\\preset.json": "259c910deae88d58a911c27516ce10551f5c9ba49ddb51bbd220c114204e5379",
+    "data\\regional-context.json": "b032fa076a4bf4042360f6d01f3c66cf65cc907a8181e976d5cdf316ac5882e9",
+    "data\\regional-context.svg": "f2819e9ed36bed3d851ace3d628e0e2839c0c3890e3b79ddcd7a43bbd7d8bc5c",
+    "data\\scenario.json": "44c8cd2d28fa4aee4560a9ecbbb2da7e3f6beb9cc718dfe5aefde96f7958b0d2",
+    "data\\slope.png": "9bb44a0044a295942ccc2d011d41633582400bed99fed690bf8139acb80b42b1",
+    "data\\sources.json": "65e2228d0b4abd04feb6d4073cf5b2d258dab5f6120567c8fcfcedc7ccec2307",
+    "data\\terrain_grid.json": "407ccb92c30770f1acc07ab96d5ceccb2676eec1b04028b2b12f0a0f0a1ac1d6",
+    "data\\thermal_context.png": "652dd55f1e2caa3e398fcc6477e4dea2ed0efdd5d7c0ba1b6a51a6f3dd60cdca",
+    "data\\valid_mask.png": "eeae68b724f6ba4958e57b9bd85da6d0da8b9938ba45ee00d40dcb6d4c47f3af",
+    "HOMEBOUND_BUILD.txt": "c0280a6709b81343161d9036b8d47f7ae18177ed7c43e3cd840431da0bc27610",
+    "index.html": "4a3d715b6101018f656eb22a5736e5e40cc46739cec058de4cba0b4a6bfe1279",
+    "js\\app.js": "669c84b8500a5be8ffbf06a76630e88c32239413fdcc22205dd04e9f044c588e",
+    "js\\engine.js": "da25bb51fcf485d3b647678da48c8fb46c718dd48474c4bfd3a91febafd0763a",
+    "js\\layer-display.js": "300cb0d6077b588f06e48c473079053035988962f92c8c494fd93e70458b734c",
+    "js\\map-view.js": "2c9ec0ab43cdba31f836d1e510bf831e9ac98bb767ccb93e777880f226a5b7aa",
+    "js\\protocol.js": "0b0e82fdb60178f68c00bb5175f75b7e76a0f8ac2c002700d856f9d44587392f",
+    "js\\science-context.js": "31c10b4ab5d699e486a030eb16607c789f97a915669f7cc872863e63bddec04f",
+    "js\\worker.js": "b3d46b9470b02aa6e67847a928afe03c46a4725051f9c307c0d3645108336cb1",
+    "js\\workflow.js": "953ea34551f002281d9c12cc8bc792b7d3be713e44813ff116b086ea2acec0bb",
+    "mars-illustration.svg": "aa18491b1737715d709fc52cc405814086294d185fa4b7ede860f6577240265a",
+    "styles.css": "454a7ed557112ff7dd6016fe541afdf979259f4ff2b40b1da61062b4e9b72104"
+  },
+  "normalPageErrors": [],
+  "externalRuntimeRequests": []
+}

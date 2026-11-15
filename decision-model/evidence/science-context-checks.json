@@ -1,0 +1,27 @@
+{
+  "applicationVersion": "1.1.8",
+  "scope": "One user-approved image-supported science candidate S, added without changing P, H/A/B/C or the nominal preset.",
+  "checks": [
+    {"id":"SC01","status":"PASS","check":"Candidate and question grounded in actual inputs","observed":"S is row 84, column 42. The prepared HiRISE crop visibly contains dark linear features next to a brighter irregular-textured patch; the question investigates texture, relief and illumination rather than asserting composition or geological origin."},
+    {"id":"SC02","status":"PASS","check":"Acquisition and source provenance","observed":"The provider observation page verifies 3 March 2009 for ESP_012195_1750. DTM/ortho product identities and original hashes are retained; the prepared optical display is distinguished from the original full product."},
+    {"id":"SC03","status":"PASS","check":"Exact location-to-crop geometry","observed":"The 60-cell crop begins at row 54, column 12: native prepared-optical x=60, y=270, width=300, height=300. The selected cell center maps to (183,183) in the 360x360 evidence image."},
+    {"id":"SC04","status":"PASS","check":"Evidence pixels and layer independence","observed":"128391 output pixels outside the marker annotation were compared with an independently drawn crop of the unchanged optical display: zero differences. The evidence image remains identical when the main map changes layer or extent."},
+    {"id":"SC05","status":"PASS","check":"Measured terrain context","observed":"The crop has 3600/3600 known cells; model elevation ranges from -2701.418 to -2665.249 m. The selected cell is -2685.702 m with 18.618 degrees maximum native slope."},
+    {"id":"SC06","status":"PASS","check":"Distinct NASA data roles","observed":"Optical evidence, topographic context/routing and regional qualitative THEMIS context resolve to three typed source records from MRO and Mars Odyssey. Unknown, duplicated or role-swapped sources are rejected."},
+    {"id":"SC07","status":"PASS","check":"Nominal candidate round trip","observed":"At the unchanged 20-degree, 30 m/min, uphill 4/downhill 2 preset and 120/20/20 minute mission, S is FEASIBLE with 67.59608929948027 min margin."},
+    {"id":"SC08","status":"PASS","check":"Budget and reserve behavior","observed":"Adding 68 observation minutes at S yields TIME_BUDGET_EXCEEDED and -0.40391070051973 min margin, retaining the 20-minute reserve."},
+    {"id":"SC09","status":"PASS","check":"Scientific interest is separate from route feasibility","observed":"Explicitly changing the slope limit to 10 degrees yields NO_MODELED_ROUTE with null time, while S retains the same image-supported question and evidence."},
+    {"id":"SC10","status":"PASS","check":"Actual review and exports","observed":"Review shows the science question and current observation allowance. Actual TXT/JSON Blob contents retain the question, task, crop, date, marker, terrain context and three source roles. Mismatched destination/evidence snapshots and executable source URLs are rejected."},
+    {"id":"SC11","status":"PASS","check":"No stale or inherited science context","observed":"Switching S to X clears the crop and stale export links. Recalculating P exports scienceContext=null and preserves its 61.91699854342489 min margin. Original A/B/C remain separate examples."},
+    {"id":"SC12","status":"PASS","check":"Keyboard and responsive disclosure","observed":"Why this location? is a native details/summary disclosure toggled by Space/Enter with visible focus. At actual 390/320 px viewports, document widths are 375/305 px, and crop image widths equal their 291.03/221.03 px panels without horizontal overflow."},
+    {"id":"SC13","status":"PASS","check":"Printable evidence","observed":"Print output retains the marked scientific crop while hiding decorative mini-Mars. Body/workspace/brief remain white; the science crop has a separate compact print size."},
+    {"id":"SC14","status":"PASS","check":"Regression and intent of map change","observed":"145 unit tests, eight actual-data integration checks and 35 static-delivery checks pass. The new S marker is an intentional annotation change; prepared scientific inputs, original coordinates and routing equations are preserved."}
+  ],
+  "boundaries": [
+    "S is an image-supported observation candidate and an exploratory question, not a confirmed geological interpretation or an expert-validated science priority.",
+    "The 20-minute starting observation allowance is an editable scenario input; the application does not prescribe a real field protocol.",
+    "The crop is a nearest-neighbor enlargement of the prepared contrast-stretched, lossy optical display. It does not add native spatial detail or provide calibrated reflectance.",
+    "Physical access, line of sight, material composition, real-time conditions, full accessibility, human usability and actual hosting remain separate validation work.",
+    "Historical exact five-canvas hashes retain their earlier release scope; adding the visible S annotation intentionally changes current map images."
+  ]
+}

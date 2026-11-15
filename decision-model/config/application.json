@@ -1,0 +1,67 @@
+{
+  "applicationVersion": "1.1.12",
+  "scenarioPolicy": "guided_practice",
+  "defaultPlanningPreset": "science_walkthrough",
+  "planningPresets": [
+    {
+      "id": "science_walkthrough",
+      "name": "Science walkthrough",
+      "description": "Keep the original P/S walkthrough and the 20/88/85-minute science comparison.",
+      "missionBudgetMinutes": 120,
+      "maximumSlopeDegrees": 20
+    },
+    {
+      "id": "terrain_exploration",
+      "name": "Terrain exploration",
+      "description": "Explore routes to original A, B and C with a wider slope allowance and a longer budget. The 30-degree limit is an exploration assumption, not a validated walking limit.",
+      "missionBudgetMinutes": 180,
+      "maximumSlopeDegrees": 30
+    }
+  ],
+  "practice": {
+    "id": "P",
+    "name": "Return-aware planning practice",
+    "row": 70,
+    "column": 37,
+    "scienceMinutes": 20,
+    "kind": "hypothetical_practice",
+    "description": "A connected waypoint for exploring how terrain, observation time, and a return reserve interact.",
+    "objective": "Compare the complete modeled excursion before and after extending an observation.",
+    "evidence": "A connected waypoint selected for a guided round-trip planning exercise."
+  },
+  "scienceCandidate": {
+    "id": "S",
+    "name": "Texture-transition observation",
+    "row": 84,
+    "column": 42,
+    "scienceMinutes": 20,
+    "kind": "science_candidate",
+    "description": "Investigate an image-supported texture transition and compare an observation plan.",
+    "science": {
+      "status": "image_supported_candidate",
+      "question": "How does the visible transition between dark linear-patterned terrain and the brighter rough-textured patch relate to local relief?",
+      "observationTask": "Plan a single-waypoint imaging session: document local surface texture and linear-feature orientation, then relate the notes to the orbital crop and terrain context.",
+      "whyHere": "Location S lies at the imaged boundary between contrasting textures. The same crop is covered by the co-registered HiRISE terrain model, so the question can be examined alongside measured relief.",
+      "observed": "The marked crop contains repeated dark linear features next to a brighter irregular-textured patch.",
+      "interpretation": "Investigate whether the contrast follows changes in surface texture, local relief or illumination. Gray levels alone do not identify material composition.",
+      "opticalObservationDate": "3 March 2009",
+      "observationPageUrl": "https://www.uahirise.org/ESP_012195_1750",
+      "opticalSourceId": "hirise_optical",
+      "terrainSourceId": "hirise_dem",
+      "thermalSourceId": "themis_context_cube",
+      "crop": { "row": 54, "column": 12, "size": 60 }
+    }
+  },
+  "originalCases": {
+    "A": "Explore layer-pattern context and compare the time available for observation.",
+    "B": "Examine dissected-terrain patterns and compare travel and observation trade-offs.",
+    "C": "Explore ridge-and-gully context and evaluate a complete round-trip plan."
+  },
+  "modelScope": [
+    "Pre-departure, time-based Marswalk planning.",
+    "Adjustable speed, slope, observation duration and reserve assumptions.",
+    "Original A/B/C coordinates and the nominal 20-degree limit are unchanged.",
+    "The practice waypoint provides a guided example of the calculation.",
+    "Thermal information provides qualitative context; terrain elevation and slope drive routing."
+  ]
+}

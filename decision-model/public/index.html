@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; worker-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <title>HOMEBOUND | Interactive Marswalk Planner</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body data-print-ready="false">
+  <a class="skip-link" href="#workspace">Skip to mission planner</a>
+  <header class="site-header">
+    <a class="brand" href="#intro" id="home-link"><span class="brand-orbit" aria-hidden="true"></span><span>HOMEBOUND<small>INTERACTIVE MARSWALK PLANNER</small></span></a>
+    <nav aria-label="Information"><a href="#how-it-works">How it works</a><a href="#data-section" id="data-link">Data &amp; assumptions</a></nav>
+    <span class="research-tag">Planning simulation</span>
+  </header>
+  <main>
+    <section class="intro" id="intro" aria-labelledby="intro-title">
+      <div class="hero-layout">
+        <div class="intro-copy">
+          <p class="eyebrow">SCIENCE NEEDS A RETURN PLAN.</p>
+          <h1 id="intro-title">Plan the science.<br><em>Preserve the return.</em></h1>
+          <p class="lead">Terrain, observation time, and a protected reserve shape every Marswalk. Compare the complete round trip before choosing your next observation.</p>
+          <button id="start" class="primary" type="button" disabled>Start a guided plan <span aria-hidden="true">&rarr;</span></button>
+          <p id="load-status" class="hint" role="status">Loading the prepared Mars data and scenario...</p>
+          <p class="small-boundary">Explore a Marswalk planning scenario using real terrain data and adjustable time assumptions.</p>
+        </div>
+        <div class="mars-scene" aria-hidden="true">
+          <img src="./mars-illustration.svg" alt="" width="512" height="512">
+          <p class="planet-caption">MARS<span>Discovery starts with a return plan.</span></p>
+        </div>
+      </div>
+      <section class="homebound-focus" aria-labelledby="why-homebound-title">
+        <h2 id="why-homebound-title">Why HOMEBOUND?</h2>
+        <p class="focus-lead">Turn a Mars map into a return-aware observation plan. Compare observation-time choices while keeping the complete journey and reserve visible.</p>
+        <div class="problem-story">
+          <article><span aria-hidden="true">01</span><h3>Complete-trip planning</h3><p>Budget outbound travel, observation, the journey home and a protected reserve together. Outbound and return travel are calculated separately.</p></article>
+          <article><span aria-hidden="true">02</span><h3>Explainable what-if</h3><p>Compare the original plan with extra observation time and see how the margin changes, while keeping the reserve intact.</p></article>
+          <article><span aria-hidden="true">03</span><h3>Science-to-brief workflow</h3><p>At science location S, connect an image-supported question to the plan. Save the result, assumptions and sources in one brief.</p></article>
+        </div>
+        <details id="related-tools" class="related-tools">
+          <summary>Related tools and our focus</summary>
+          <p><a href="https://trek.nasa.gov/mars/jpl/config/textAbout.html" target="_blank" rel="noopener noreferrer" aria-label="NASA/JPL Mars Trek (opens in a new tab)">NASA/JPL Mars Trek</a> supports Mars data exploration, terrain analysis and mission planning. <a href="https://jmars.mars.asu.edu/getting-started" target="_blank" rel="noopener noreferrer" aria-label="ASU JMARS (opens in a new tab)">ASU JMARS</a> supports planetary-data analysis and observation-planning workflows.</p>
+          <p>HOMEBOUND complements these broader tools with a focused four-step workflow for one destination: compare observation-time choices, keep the complete round-trip budget visible, and save an explainable brief.</p>
+        </details>
+      </section>
+    </section>
+    <div id="error" class="error" role="alert" tabindex="-1" hidden><p id="error-text"></p><button id="retry-data" class="secondary" type="button" hidden>Retry loading data</button></div>
+    <section id="workspace" class="workspace" aria-label="Four-step mission planner" hidden>
+      <div class="workspace-heading"><div class="workspace-identity"><img class="workspace-planet" src="./mars-illustration.svg" alt="" aria-hidden="true" width="88" height="88"><div><p class="eyebrow">YOUR MISSION WORKSPACE</p><h2>One destination. A complete return-aware plan.</h2></div></div><p class="boundary">Planning scenario &middot; Adjustable assumptions</p></div>
+      <ol class="stepper" aria-label="Planning progress">
+        <li><button type="button" data-step="1" aria-current="step"><span>1</span>Destination</button></li>
+        <li><button type="button" data-step="2" disabled><span>2</span>Activities</button></li>
+        <li><button type="button" data-step="3" disabled><span>3</span>Review</button></li>
+        <li><button type="button" data-step="4" disabled><span>4</span>Save brief</button></li>
+      </ol>
+      <div class="workspace-grid">
+        <div class="flow-column">
+          <section class="card step-panel" id="step-1" aria-labelledby="title-1">
+            <p class="eyebrow">STEP 1 OF 4</p><h2 id="title-1" tabindex="-1">Choose a destination</h2>
+            <p>Choose a location on this Mars map. Each letter matches its map marker. Begin with P for a guided walkthrough, or choose S for an image-supported science observation.</p>
+            <p class="hint">For original A, B and C, try the Terrain exploration preset in Activities: a 30-degree slope limit and a 180-minute budget.</p>
+            <fieldset class="destinations"><legend class="sr-only">Destination options</legend><div id="destination-options"></div></fieldset>
+            <details id="regional-context"><summary>Where is this Marswalk?</summary><div id="regional-content" class="regional-content"></div></details>
+            <details id="science-context"><summary>Why this location?</summary><div id="science-content" class="science-content"></div></details>
+            <details id="custom-location"><summary>Inspect a custom point</summary>
+              <p class="hint">Use zero-based grid coordinates, or enable map picking to explore a point in the prepared study area.</p>
+              <div class="pair"><label for="row">Row<input id="row" type="number" min="0" max="299" step="1" value="70" disabled required></label><label for="column">Column<input id="column" type="number" min="0" max="299" step="1" value="37" disabled required></label></div>
+              <button id="pick-point" class="secondary" type="button" aria-pressed="false">Enable map picking</button>
+            </details>
+            <div class="context-box"><strong>H is your scenario origin.</strong><p id="origin-note">The starting and return point stays fixed for this map. Choose a destination to compare round-trip plans.</p></div>
+            <div class="step-actions"><button id="to-activities" class="primary" type="button">Continue to activities &rarr;</button></div>
+          </section>
+          <section class="card step-panel" id="step-2" aria-labelledby="title-2" hidden>
+            <p class="eyebrow">STEP 2 OF 4</p><h2 id="title-2" tabindex="-1">Plan your observation</h2>
+            <p id="selected-purpose"></p>
+            <form id="mission-form" novalidate>
+              <div class="context-box">
+                <label for="planning-preset">Planning preset</label>
+                <select id="planning-preset" aria-describedby="preset-help preset-summary" disabled><option value="custom" disabled>Custom settings</option></select>
+                <p id="preset-help" class="field-help">Presets reset the budget, reserve and travel assumptions. Your destination and observation duration stay unchanged. You can still edit every numeric input.</p>
+                <p id="preset-summary" role="status" aria-live="polite"></p>
+              </div>
+              <label for="budget">Mission time budget <span>(minutes)</span></label><input id="budget" type="number" min="0" step="any" value="120" aria-describedby="budget-help" required>
+              <p id="budget-help" class="field-help">Total time allocated to outbound travel, observation, return travel, and the protected reserve.</p>
+              <div class="pair"><div><label for="science">Observation time <span>(min)</span></label><input id="science" type="number" min="0" step="any" value="20" aria-describedby="science-help" required><p id="science-help" class="field-help">Time spent observing at the destination, excluding travel.</p></div><div><label for="reserve">Protected reserve <span>(min)</span></label><input id="reserve" type="number" min="0" step="any" value="20" aria-describedby="reserve-help reserve-margin-help" required><p id="reserve-help" class="field-help">Time deliberately kept aside in the plan. It is not available for additional observation.</p></div></div>
+              <p id="reserve-margin-help" class="field-help">Extra margin is the time left after travel, observation, and the protected reserve have all been accounted for.</p>
+              <details id="advanced-assumptions"><summary>View or edit travel assumptions</summary>
+                <p id="assumptions-warning" class="hint">Adjustable planning assumptions. Changes update terrain routing, using the values exactly as entered.</p>
+                <div class="pair"><div><label for="speed">Reference speed <span>(m/min)</span></label><input id="speed" type="number" min="0.001" step="any" value="30" aria-describedby="speed-help assumptions-warning" required><p id="speed-help" class="field-help">Assumed travel speed on flat terrain. Terrain penalties may increase travel time.</p></div><div><label for="slope-limit">Slope limit <span>(degrees)</span></label><input id="slope-limit" type="number" min="0" max="89.999" step="any" value="20" aria-describedby="slope-help assumptions-warning" required><p id="slope-help" class="field-help">Maximum slope permitted by this simulation. Steeper terrain or steps are excluded from routing.</p></div><div><label for="uphill">Uphill coefficient <span>(unitless)</span></label><input id="uphill" type="number" min="0" step="any" value="4" aria-describedby="uphill-help assumptions-warning" required><p id="uphill-help" class="field-help">Controls the additional time penalty for climbing. Higher values apply a larger penalty.</p></div><div><label for="downhill">Downhill coefficient <span>(unitless)</span></label><input id="downhill" type="number" min="0" step="any" value="2" aria-describedby="downhill-help assumptions-warning" required><p id="downhill-help" class="field-help">Controls the additional time penalty for descending. Higher values apply a larger penalty.</p></div></div>
+                <details id="parameter-explanation"><summary>How these assumptions affect the model</summary>
+                  <p>The coefficients have no units. A value of 4 is not four minutes or a direct four-times multiplier. For each permitted step, the model uses:</p>
+                  <p><code>grade = elevation rise / horizontal distance</code><br><code>time multiplier = 1 + uphill coefficient &times; max(grade, 0) + downhill coefficient &times; max(-grade, 0)</code></p>
+                  <div class="table-scroll"><table id="coefficient-examples"><caption>Illustrative coefficient examples</caption><thead><tr><th scope="col">Step grade</th><th scope="col">Coefficient</th><th scope="col">Time multiplier</th></tr></thead><tbody><tr><th scope="row">10% uphill</th><td>4</td><td>1.40 &times;</td></tr><tr><th scope="row">10% downhill</th><td>2</td><td>1.20 &times;</td></tr></tbody></table></div>
+                  <p>The multiplier applies to the model's three-dimensional step distance divided by reference speed. A 10% grade is about 5.71 degrees, not 10 degrees.</p>
+                  <p>A larger slope limit includes more terrain in the routing model. More reserve leaves less time for observation. These examples show how grade and your coefficients affect the travel-time estimate.</p>
+                </details>
+              </details>
+              <p class="assumptions-line" id="assumption-summary"></p>
+              <div class="step-actions"><button class="text-button" type="button" data-back="1">&larr; Destination</button><button id="review-plan" class="primary" type="submit">Review this plan &rarr;</button></div>
+            </form>
+          </section>
+          <section class="card step-panel" id="step-3" aria-labelledby="title-3" hidden>
+            <p class="eyebrow">STEP 3 OF 4</p><h2 id="title-3" tabindex="-1">Understand the decision</h2>
+            <p class="result-label" id="result-label">Original plan</p>
+            <p id="review-preset" class="hint"></p>
+            <h3 id="status" class="decision-status" role="status" aria-live="polite">Calculate a plan first.</h3>
+            <p id="explanation"></p><p id="next-action" class="next-action"></p>
+            <p id="science-review" class="science-review" hidden></p>
+            <div id="time-results" hidden>
+              <div class="metrics"><div><span>Maximum total observation</span><strong id="allowance"></strong></div><div><span>Extra margin beyond reserve</span><strong id="margin"></strong></div></div>
+              <div id="time-bar" class="time-bar"></div><p id="time-caption" class="hint"></p>
+              <p id="return-deadline" class="deadline"></p>
+            </div>
+            <div class="review-actions"><button id="choose-another" class="text-button" type="button">Choose another destination</button><button id="inspect-assumptions" class="text-button" type="button">Inspect assumptions</button></div>
+            <fieldset id="what-if"><legend>What if you investigate longer?</legend>
+              <p id="practice-tip" class="hint">Try +63 minutes in the practice plan to see how an extended observation changes the available time margin.</p>
+              <label for="extra">Additional observation time <span>(minutes)</span></label><input id="extra" type="number" min="0" step="any" value="0" aria-describedby="extra-help" required>
+              <div class="chips" aria-label="Set additional observation duration"><button type="button" data-extra="10">+10 min</button><button type="button" data-extra="25">+25 min</button><button type="button" data-extra="63">+63 min</button></div>
+              <p id="extra-help" class="field-help">Added to the original observation duration. Each shortcut sets the extra duration; repeated clicks do not accumulate it.</p>
+              <button id="compare" class="secondary" type="button">Compare with original</button><button id="restore-original" class="text-button" type="button">Restore original plan</button>
+            </fieldset>
+            <p id="comparison-unavailable" class="hint" hidden>Time comparison needs a modeled round trip. You can still save this finding.</p>
+            <div id="comparison-section" hidden><h3>Original versus revised</h3><div class="table-scroll"><table id="comparison-table"><thead><tr><th scope="col">Component</th><th scope="col">Original</th><th scope="col">Revised</th></tr></thead><tbody></tbody></table></div></div>
+            <details><summary>How was this calculated?</summary><p>Required time = outbound + observation + return + reserve. Directional terrain costs and two Dijkstra searches connect your selected location to a complete round-trip estimate.</p><p id="review-assumptions"></p><p id="runtime-note" class="hint"></p></details>
+            <div class="step-actions"><button class="text-button" type="button" data-back="2">&larr; Activities</button><button id="to-save" class="primary" type="button" disabled>Continue to mission brief &rarr;</button></div>
+          </section>
+          <section class="card step-panel" id="step-4" aria-labelledby="title-4" hidden>
+            <p class="eyebrow">STEP 4 OF 4</p><h2 id="title-4" tabindex="-1">Save a traceable mission brief</h2>
+            <p>Save your destination, route availability, timing, assumptions, and data sources in one traceable mission brief.</p>
+            <div id="mission-brief" hidden></div>
+            <div class="export-actions" role="group" aria-label="Save and download options"><button id="print" class="primary" type="button" disabled>Print / save as PDF</button><a id="download-text" class="button secondary" download="HOMEBOUND_Mission_Brief.txt" hidden>Download text brief</a><a id="download-json" class="button secondary" download="HOMEBOUND_Mission_Plan.json" hidden>Download result JSON</a></div>
+            <details><summary>Inspect technical JSON</summary><pre id="result-json"></pre></details>
+            <div class="step-actions"><button class="text-button" type="button" data-back="3">&larr; Review</button></div>
+          </section>
+        </div>
+        <details class="map-panel card" id="map-panel" open>
+          <summary>Mission map <span>Real Mars data &middot; Planning scenario</span></summary>
+          <div class="map-tools">
+            <label for="map-layer">Layer<select id="map-layer"><option value="optical">Optical context</option><option value="opportunity">Time-margin overlay</option><option value="elevation">Elevation context</option><option value="slope">Maximum native slope</option><option value="thermal">Qualitative thermal context</option></select></label>
+            <fieldset class="map-view-control">
+              <legend>Map view</legend>
+              <div class="map-view-options">
+                <button id="focus-map" type="button" aria-pressed="true">Destination / route</button>
+                <button id="fit-map" type="button" aria-pressed="false">Whole area</button>
+              </div>
+            </fieldset>
+          </div>
+          <div id="layer-notice" class="layer-notice" role="status" aria-live="polite" hidden></div>
+          <canvas id="map" width="900" height="900" role="img" aria-describedby="layer-detail marker-key" aria-label="Mars map with scenario origin H, selected waypoint, and available modeled outbound and return routes. Use destination cards or custom row and column fields as the keyboard alternative."></canvas>
+          <details class="marker-key" open><summary>Map marker key: H, P, S, A, B, C, X</summary><ul id="marker-key" aria-label="Map letter codes and their locations"></ul><p class="hint">H is the fixed origin, not a destination choice. S is the image-supported science candidate. Some markers may be outside the current view; choose Whole area to locate them. X appears only when a custom point is selected.</p></details>
+          <div class="layer-explanation"><strong id="layer-title">Optical surface context</strong><p id="layer-detail">Loading the layer description...</p></div>
+          <div id="layer-scale" class="layer-scale" hidden></div>
+          <p class="route-key"><span class="route-out">Blue solid: outbound</span><span class="route-return">Orange dashed: return</span></p>
+          <ul id="field-legend" class="legend" hidden><li><i class="swatch feasible"></i>Fits time model</li><li><i class="swatch exact"></i>No extra margin</li><li><i class="swatch exceeded"></i>Exceeds time budget</li><li><i class="swatch excluded"></i>Excluded by model</li><li><i class="swatch disconnected"></i>No connected route</li><li><i class="swatch unknown"></i>Unknown data</li></ul>
+          <p id="map-caption" class="hint">Explore practice P, science candidate S, observation examples A/B/C, or your custom location X. H is the shared starting and return point.</p>
+        </details>
+      </div>
+    </section>
+    <section id="how-it-works" class="information">
+      <p class="eyebrow">FROM DATA TO A DECISION</p><h2>Choose. Plan. Compare. Understand.</h2>
+      <p>HOMEBOUND connects terrain-aware routing with the time available for observation, helping you compare a complete Marswalk plan before departure.</p>
+      <div class="info-grid"><article><h3>Real source data</h3><p>MRO HiRISE optical imagery and terrain, Mars Odyssey THEMIS thermal context, and regional MGS/MOLA relief through NASA Mars Trek.</p></article><article><h3>Adjustable assumptions</h3><p>Choose the speed, slope limit, observation duration, and reserve for your planning scenario.</p></article><article><h3>Clear decisions</h3><p>Inspect route availability, compare your time budget, and understand the effect of each observation choice.</p></article></div>
+    </section>
+    <details id="data-section" class="information">
+      <summary>Data, assumptions, and methods</summary>
+      <h3>What each layer contributes</h3><ul><li><strong>HiRISE optical:</strong> visual surface context.</li><li><strong>HiRISE terrain:</strong> mean elevation and maximum native slope on the prepared model grid.</li><li><strong>THEMIS:</strong> qualitative thermal-derived context at native 100 m spacing.</li><li><strong>Mars Trek MGS/MOLA:</strong> a separate regional relief map locating the study area in Gale Crater; source spacing about 463 m, not used for routing.</li></ul>
+      <p>The grid covers about 1.52 &times; 1.52 km. Routing uses the prepared elevation/slope grid, selected terrain constraints, and diagonal-step rules.</p>
+      <p>The starting preset uses 30 m/min, a 20-degree slope limit, and uphill 4/downhill 2 coefficients. You can inspect and edit these assumptions in Activities.</p>
+      <p>Model scope: pre-departure terrain-based travel timing, observation duration, protected reserve, and plan comparison.</p>
+      <h3>Traceable source products</h3><ul id="source-list"></ul>
+    </details>
+    <p id="print-warning">No current mission brief is ready. Calculate and review a plan before printing.</p>
+  </main>
+  <footer><strong>HOMEBOUND</strong><p>Plan the science. Preserve the return.</p><p>HiRISE: NASA/JPL-Caltech/University of Arizona. THEMIS: NASA/JPL-Caltech/Arizona State University. Regional relief: NASA Mars Trek / MGS-MOLA.</p>  <p>Application 1.1.12 &middot; Model 1.0.0 &middot; Marswalk planning simulation.</p></footer>
+</body>
+</html>

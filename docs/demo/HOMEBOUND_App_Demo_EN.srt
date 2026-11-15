@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:06,000
+At Gale Crater, a texture boundary
+invites closer study.
+
+2
+00:00:06,000 --> 00:00:11,000
+The first plan includes travel,
+a 20-minute observation and reserve.
+
+3
+00:00:11,000 --> 00:00:17,000
+Extending observation to 88 minutes
+exceeds the budget by 0.40 minutes.
+
+4
+00:00:17,000 --> 00:00:24,000
+Three fewer minutes bring the plan within budget,
+while keeping the 20-minute reserve.
+
+5
+00:00:24,000 --> 00:00:29,000
+Compare your choices, keep the reserve,
+and save a source-linked brief.

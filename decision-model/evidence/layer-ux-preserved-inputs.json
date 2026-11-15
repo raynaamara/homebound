@@ -1,0 +1,19 @@
+{
+  "protectedFiles": {
+    "decision-model\\src\\engine.ts": "737ebca888f73b24c46f20648c4ec8940b695f32051410862d19169069794c56",
+    "data\\homebound\\web\\elevation.png": "aad1deea5d5fd9a30f6201b4b8b6b865c87d3044165ea31e824c5203871ff091",
+    "data\\homebound\\web\\manifest.json": "0b2f9c92eb290989c0d22c158fa106ff3825ac08c15e25a2dd536e3f8ace4025",
+    "data\\homebound\\web\\optical.webp": "97939563f5869e715531bf8abcba843d110b95a7dcda89f988d7d18038c0216d",
+    "data\\homebound\\web\\scenario.json": "44c8cd2d28fa4aee4560a9ecbbb2da7e3f6beb9cc718dfe5aefde96f7958b0d2",
+    "data\\homebound\\web\\slope.png": "9bb44a0044a295942ccc2d011d41633582400bed99fed690bf8139acb80b42b1",
+    "data\\homebound\\web\\sources.json": "16a8fd82358167eccf6244e39d9c09b721a70131690c56fe123c1107b4fc333b",
+    "data\\homebound\\web\\terrain_grid.json": "407ccb92c30770f1acc07ab96d5ceccb2676eec1b04028b2b12f0a0f0a1ac1d6",
+    "data\\homebound\\web\\terrain_grid.json.gz": "509c237d7bd397e460bd5454ec71df3abcf1967a55a4b6447f3da2604355ef66",
+    "data\\homebound\\web\\thermal_context.png": "652dd55f1e2caa3e398fcc6477e4dea2ed0efdd5d7c0ba1b6a51a6f3dd60cdca",
+    "data\\homebound\\web\\valid_mask.png": "eeae68b724f6ba4958e57b9bd85da6d0da8b9938ba45ee00d40dcb6d4c47f3af"
+  },
+  "historicalSnapshot": "docs\\history\\HOMEBOUND_Application_1.1.0_and_Register_1.1.zip",
+  "snapshotSha256": "55881e2cdc91ddf42f2b76eb1f29b6e91b0785e153bdc2cfe2e6bdc26b08e387",
+  "previousApplicationVersion": "1.1.0",
+  "previousRegisterVersion": "1.1"
+}

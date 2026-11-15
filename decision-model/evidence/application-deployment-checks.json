@@ -1,0 +1,175 @@
+{
+  "applicationVersion": "1.1.12",
+  "executedUtc": "2026-11-15T04:28:07.330Z",
+  "checks": [
+    {
+      "id": "FILE-index.html",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-styles.css",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-mars-illustration.svg",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-.htaccess",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-HOMEBOUND_BUILD.txt",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-js/app.js",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-js/worker.js",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-js/engine.js",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-js/protocol.js",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-js/workflow.js",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-js/map-view.js",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-js/layer-display.js",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-js/science-context.js",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/application.json",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/terrain_grid.json",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/scenario.json",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/preset.json",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/sources.json",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/optical.webp",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/slope.png",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/thermal_context.png",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/regional-context.json",
+      "status": "PASS"
+    },
+    {
+      "id": "FILE-data/regional-context.svg",
+      "status": "PASS"
+    },
+    {
+      "id": "COMPILED-MODULE-app.js",
+      "status": "PASS"
+    },
+    {
+      "id": "COMPILED-MODULE-engine.js",
+      "status": "PASS"
+    },
+    {
+      "id": "COMPILED-MODULE-layer-display.js",
+      "status": "PASS"
+    },
+    {
+      "id": "COMPILED-MODULE-map-view.js",
+      "status": "PASS"
+    },
+    {
+      "id": "COMPILED-MODULE-protocol.js",
+      "status": "PASS"
+    },
+    {
+      "id": "COMPILED-MODULE-science-context.js",
+      "status": "PASS"
+    },
+    {
+      "id": "COMPILED-MODULE-worker.js",
+      "status": "PASS"
+    },
+    {
+      "id": "COMPILED-MODULE-workflow.js",
+      "status": "PASS"
+    },
+    {
+      "id": "PLANNING-PRESET-NATIVE-CONTROL-AND-GUIDANCE",
+      "status": "PASS"
+    },
+    {
+      "id": "MAP-VIEW-SEGMENTED-CONTROL",
+      "status": "PASS"
+    },
+    {
+      "id": "HYBRID-SPACE-THEME-LIGHT-WORKSPACE",
+      "status": "PASS"
+    },
+    {
+      "id": "DAWN-ILLUSTRATION-VERSIONED-AND-UNCHANGED",
+      "status": "PASS"
+    },
+    {
+      "id": "SCIENCE-CONTEXT-DISCLOSURE-AND-REVIEW",
+      "status": "PASS"
+    },
+    {
+      "id": "REGIONAL-CONTEXT-LOCAL-IMAGE-AND-ROLE",
+      "status": "PASS"
+    },
+    {
+      "id": "EXPORT-ACTIONS-FULL-WIDTH-COLUMN",
+      "status": "PASS"
+    },
+    {
+      "id": "LANDING-FOCUS-AND-CAPABILITY-CARDS",
+      "status": "PASS"
+    },
+    {
+      "id": "RELATED-TOOLS-NATIVE-DISCLOSURE",
+      "status": "PASS"
+    },
+    {
+      "id": "RELATIVE-PATHS-NO-CDN",
+      "status": "PASS"
+    },
+    {
+      "id": "STAGED-DATA-MATCHES-SOURCE",
+      "status": "PASS"
+    }
+  ],
+  "hostingClaim": "Static compatibility verified locally; no actual Rumahweb account deployment was performed."
+}

@@ -1,0 +1,281 @@
+{
+  "applicationVersion": "1.1.12",
+  "modelVersion": "1.0.0",
+  "executedUtc": "2026-11-15T04:27:47.451Z",
+  "method": "Actual prepared terrain, exact Science baseline comparisons, independently specified A/B/C time expectations, calculated-input preset matching, and SHA-256 preservation.",
+  "checks": [
+    {
+      "id": "PD01",
+      "status": "PASS",
+      "check": "Engine, scientific inputs, waypoint coordinates and science definitions are unchanged; regional production metadata revision is explicitly verified",
+      "evidence": {
+        "protectedFiles": 15,
+        "previousVersion": "1.1.11",
+        "applicationVersion": "1.1.12",
+        "publicPackageMetadataRevision": {
+          "packagingEdition": "1.1",
+          "revisedUtc": "2026-11-15T01:07:36.924707+00:00",
+          "scope": "A non-rendered production field was removed from the regional SVG. Map geometry, embedded NASA tile bytes and all scientific definitions are unchanged; regional JSON changes only its dependent image hash.",
+          "originalFiles": {
+            "data\\homebound\\web\\regional-context.svg": "f2819e9ed36bed3d851ace3d628e0e2839c0c3890e3b79ddcd7a43bbd7d8bc5c",
+            "data\\homebound\\web\\regional-context.json": "b032fa076a4bf4042360f6d01f3c66cf65cc907a8181e976d5cdf316ac5882e9"
+          },
+          "revisedFiles": {
+            "data\\homebound\\web\\regional-context.svg": "001e8c82e9187583d7a32d6bccc3263ceb2c31e570666dd9ccda45bcacba3ade",
+            "data\\homebound\\web\\regional-context.json": "0d1e7b0593d867d1b134e3ce0c2b83ddb447a9a204ce5c1bade89ddf4f71c6e5"
+          },
+          "svgOutsideMetadataSha256": "83b11c178439b7aa2f8afdff05499c9452d93920d134e6dbcf80b696564992be"
+        }
+      }
+    },
+    {
+      "id": "PD02",
+      "status": "PASS",
+      "check": "Science retains the initial 120-minute/20-degree example; both presets preserve shared assumptions",
+      "evidence": {
+        "defaultPreset": {
+          "id": "science_walkthrough",
+          "name": "Science walkthrough",
+          "description": "Keep the original P/S walkthrough and the 20/88/85-minute science comparison.",
+          "missionBudgetMinutes": 120,
+          "reserveMinutes": 20,
+          "parameters": {
+            "baseSpeedMPerMin": 30,
+            "maximumSlopeDegrees": 20,
+            "uphillPenalty": 4,
+            "downhillPenalty": 2
+          }
+        },
+        "presets": [
+          {
+            "id": "science_walkthrough",
+            "name": "Science walkthrough",
+            "description": "Keep the original P/S walkthrough and the 20/88/85-minute science comparison.",
+            "missionBudgetMinutes": 120,
+            "reserveMinutes": 20,
+            "parameters": {
+              "baseSpeedMPerMin": 30,
+              "maximumSlopeDegrees": 20,
+              "uphillPenalty": 4,
+              "downhillPenalty": 2
+            }
+          },
+          {
+            "id": "terrain_exploration",
+            "name": "Terrain exploration",
+            "description": "Explore routes to original A, B and C with a wider slope allowance and a longer budget. The 30-degree limit is an exploration assumption, not a validated walking limit.",
+            "missionBudgetMinutes": 180,
+            "reserveMinutes": 20,
+            "parameters": {
+              "baseSpeedMPerMin": 30,
+              "maximumSlopeDegrees": 30,
+              "uphillPenalty": 4,
+              "downhillPenalty": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PD03",
+      "status": "PASS",
+      "check": "Science S 20/88/85 retains exact routes, times, statuses and protected reserve",
+      "evidence": [
+        {
+          "id": "S-20",
+          "status": "FEASIBLE",
+          "margin": 67.59608929948027,
+          "reserve": 20
+        },
+        {
+          "id": "S-88",
+          "status": "TIME_BUDGET_EXCEEDED",
+          "margin": -0.4039107005197451,
+          "reserve": 20
+        },
+        {
+          "id": "S-85",
+          "status": "FEASIBLE",
+          "margin": 2.596089299480255,
+          "reserve": 20
+        }
+      ]
+    },
+    {
+      "id": "PD04",
+      "status": "PASS",
+      "check": "Terrain exploration gives original A/B/C complete routes that fit 180 minutes, with original observation durations",
+      "evidence": [
+        {
+          "destination": "A",
+          "missionBudgetMinutes": 180,
+          "scienceMinutes": 20,
+          "reserveMinutes": 20,
+          "outboundMinutes": 21.734604065821443,
+          "returnMinutes": 17.75714151420771,
+          "requiredMinutes": 79.49174558002915,
+          "rawMarginMinutes": 100.50825441997085,
+          "marginMinutes": 100.50825441997085,
+          "maxScienceMinutes": 120.50825441997085,
+          "latestReturnDepartureMinute": 142.24285848579228,
+          "meetsModelBudget": true,
+          "zeroExtraMargin": false
+        },
+        {
+          "destination": "B",
+          "missionBudgetMinutes": 180,
+          "scienceMinutes": 25,
+          "reserveMinutes": 20,
+          "outboundMinutes": 68.23230598293063,
+          "returnMinutes": 56.532183288156695,
+          "requiredMinutes": 169.7644892710873,
+          "rawMarginMinutes": 10.235510728912686,
+          "marginMinutes": 10.235510728912686,
+          "maxScienceMinutes": 35.23551072891268,
+          "latestReturnDepartureMinute": 103.46781671184331,
+          "meetsModelBudget": true,
+          "zeroExtraMargin": false
+        },
+        {
+          "destination": "C",
+          "missionBudgetMinutes": 180,
+          "scienceMinutes": 30,
+          "reserveMinutes": 20,
+          "outboundMinutes": 60.339491389044085,
+          "returnMinutes": 52.19740916378039,
+          "requiredMinutes": 162.53690055282448,
+          "rawMarginMinutes": 17.463099447175523,
+          "marginMinutes": 17.463099447175523,
+          "maxScienceMinutes": 47.46309944717552,
+          "latestReturnDepartureMinute": 107.80259083621961,
+          "meetsModelBudget": true,
+          "zeroExtraMargin": false
+        }
+      ]
+    },
+    {
+      "id": "PD05",
+      "status": "PASS",
+      "check": "A larger slope allowance opens routes but does not hide B/C budget overruns at 120 minutes",
+      "evidence": [
+        {
+          "id": "B",
+          "status": "TIME_BUDGET_EXCEEDED",
+          "margin": -49.764489271087314
+        },
+        {
+          "id": "C",
+          "status": "TIME_BUDGET_EXCEEDED",
+          "margin": -42.53690055282448
+        }
+      ]
+    },
+    {
+      "id": "PD06",
+      "status": "PASS",
+      "check": "A manual assumption edit is labeled Custom from its actual calculated inputs without mutating either preset",
+      "evidence": {
+        "id": null,
+        "name": "Custom settings",
+        "description": "Manually edited budget, reserve or travel assumptions.",
+        "scope": "Budget, reserve and travel assumptions only; destination and observation duration are separate."
+      }
+    },
+    {
+      "id": "PD07",
+      "status": "PASS",
+      "check": "Named and custom text briefs retain calculated assumptions and NASA provenance without inheriting S science",
+      "evidence": {
+        "checked": [
+          "terrain-B",
+          "custom-B-181"
+        ],
+        "sources": 4
+      }
+    },
+    {
+      "id": "PD08",
+      "status": "PASS",
+      "check": "Current deck, video and reference documents plus the previous application/register snapshot remain untouched",
+      "evidence": {
+        "verified": 0,
+        "notPresent": 11
+      }
+    }
+  ],
+  "verifiedFiles": {
+    "data\\homebound\\web\\elevation.png": "aad1deea5d5fd9a30f6201b4b8b6b865c87d3044165ea31e824c5203871ff091",
+    "data\\homebound\\web\\manifest.json": "0b2f9c92eb290989c0d22c158fa106ff3825ac08c15e25a2dd536e3f8ace4025",
+    "data\\homebound\\web\\optical.webp": "97939563f5869e715531bf8abcba843d110b95a7dcda89f988d7d18038c0216d",
+    "data\\homebound\\web\\regional-context.json": "0d1e7b0593d867d1b134e3ce0c2b83ddb447a9a204ce5c1bade89ddf4f71c6e5",
+    "data\\homebound\\web\\regional-context.svg": "001e8c82e9187583d7a32d6bccc3263ceb2c31e570666dd9ccda45bcacba3ade",
+    "data\\homebound\\web\\scenario.json": "44c8cd2d28fa4aee4560a9ecbbb2da7e3f6beb9cc718dfe5aefde96f7958b0d2",
+    "data\\homebound\\web\\slope.png": "9bb44a0044a295942ccc2d011d41633582400bed99fed690bf8139acb80b42b1",
+    "data\\homebound\\web\\sources.json": "65e2228d0b4abd04feb6d4073cf5b2d258dab5f6120567c8fcfcedc7ccec2307",
+    "data\\homebound\\web\\terrain_grid.json": "407ccb92c30770f1acc07ab96d5ceccb2676eec1b04028b2b12f0a0f0a1ac1d6",
+    "data\\homebound\\web\\terrain_grid.json.gz": "509c237d7bd397e460bd5454ec71df3abcf1967a55a4b6447f3da2604355ef66",
+    "data\\homebound\\web\\thermal_context.png": "652dd55f1e2caa3e398fcc6477e4dea2ed0efdd5d7c0ba1b6a51a6f3dd60cdca",
+    "data\\homebound\\web\\valid_mask.png": "eeae68b724f6ba4958e57b9bd85da6d0da8b9938ba45ee00d40dcb6d4c47f3af",
+    "decision-model\\src\\engine.ts": "737ebca888f73b24c46f20648c4ec8940b695f32051410862d19169069794c56",
+    "decision-model\\config\\illustrative-preset.json": "259c910deae88d58a911c27516ce10551f5c9ba49ddb51bbd220c114204e5379",
+    "data\\homebound\\metadata\\spatial_reference.json": "31ff0a3abb7a223c264706f82409017e917d38356966409dbec9059b432e4bf0",
+    "decision-model/config/application.json": "110a9dd9b4071f0dd3650ffc4334ad74a635a16bdd8ff0d78b52de07ca8f01a2"
+  },
+  "historicalEvidence": [
+    {
+      "relativePath": "docs\\HOMEBOUND_Project_Demo_Story_EN.pptx",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Project_Demo_Story_EN.pdf",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_App_Demo_EN.mp4",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_App_Demo_EN.srt",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_App_Demo_Integrity.json",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_App_Demo_Music_Credit_EN.txt",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Student_Starter_Guide_EN.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\HOMEBOUND_Submission_Preparation_and_Review_EN v2.docx",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\A_HOMEBOUND _ Interactive Marswalk Planner.pdf",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    },
+    {
+      "relativePath": "docs\\history\\HOMEBOUND_Application_1.1.11_and_Register_1.29.zip",
+      "status": "NOT_PRESENT",
+      "note": "Not distributed in the source-only handoff; not asserted as preserved here."
+    }
+  ]
+}

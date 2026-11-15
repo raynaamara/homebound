@@ -1,0 +1,74 @@
+{
+  "package_id": "homebound-gale-research-v1",
+  "prepared_utc": "2026-11-09T14:35:25.729933+00:00",
+  "purpose": "PRE_EVENT_RESEARCH_PROTOTYPE",
+  "data_only": true,
+  "eligibility_asserted": false,
+  "operational_validation": false,
+  "bounds_projected_m": [
+    -563.5058092180134,
+    -308358.0675727234,
+    954.0143233257363,
+    -306840.5474401796
+  ],
+  "model_grid": "terrain_grid.json",
+  "scenario": "scenario.json",
+  "display_assets": [
+    {
+      "url": "optical.webp",
+      "role": "Visual context",
+      "width": 1500,
+      "height": 1500,
+      "source_ids": [
+        "hirise_optical"
+      ],
+      "display_stretch_percentiles": [
+        1,
+        99
+      ],
+      "display_stretch_dn_limits": [
+        16.0,
+        190.0
+      ],
+      "lossy": true
+    },
+    {
+      "url": "elevation.png",
+      "role": "Mean elevation visualization",
+      "source_ids": [
+        "hirise_dem"
+      ],
+      "physical_range_m": [
+        -2705.858154296875,
+        -2285.132568359375
+      ]
+    },
+    {
+      "url": "slope.png",
+      "role": "Maximum native slope per model cell",
+      "source_ids": [
+        "hirise_dem"
+      ],
+      "display_range_degrees": [
+        0,
+        60
+      ],
+      "upper_color_includes_values_above_maximum": true
+    },
+    {
+      "url": "thermal_context.png",
+      "role": "Qualitative thermal context only",
+      "source_ids": [
+        "themis_context_cube"
+      ],
+      "native_resolution_m": 100,
+      "display_values": "raw qualitative DN; no physical calibration",
+      "not_for_route_cost": true
+    },
+    {
+      "url": "valid_mask.png",
+      "role": "Data-completeness visualization, not safe terrain"
+    }
+  ],
+  "coordinate_note": "All displays share AOI bounds; optical is native-sized and other displays use the model grid. Do not interpret these as Earth GeoJSON/WGS84 layers."
+}

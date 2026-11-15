@@ -1,0 +1,183 @@
+{
+  "applicationVersion": "1.1.10",
+  "executedUtc": "2026-11-10T15:23:40.994047+00:00",
+  "method": "Node 26.13.0 regression/static checks and integrated Chromium DOM measurements, native disclosure interaction, keyboard-driven real-data workflow, actual JSON and print-media inspection.",
+  "checks": [
+    {
+      "id": "POS01",
+      "status": "PASS",
+      "check": "Three focused capability cards and S-specific science wording",
+      "evidence": "Named Why HOMEBOUND region; h2/h3 hierarchy; complete trip, what-if and science-to-brief cards; source and browser verified."
+    },
+    {
+      "id": "POS02",
+      "status": "PASS",
+      "check": "Fair official related-tool context",
+      "evidence": "Official Mars Trek about page and JMARS Quick Overview verified. Existing planning capabilities acknowledged; contextual links are not scientific inputs."
+    },
+    {
+      "id": "POS03",
+      "status": "PASS",
+      "check": "Native disclosure, keyboard and pointer interaction",
+      "evidence": "Initially closed; native Tab/Enter/Space and pointer toggles passed. Both official links use new-tab labels, noopener/noreferrer and ice-blue text. Focus outline: 3px rgb(246,193,119)."
+    },
+    {
+      "id": "POS04",
+      "status": "PASS",
+      "check": "Responsive readability at seven widths",
+      "evidence": "1280/980/901px: three columns; 900/768/390/320px: one column. No measured document/text overflow. Summary target 44px at every width; mobile start-button bottom 651.92/702.34px within 844px."
+    },
+    {
+      "id": "POS05",
+      "status": "PASS",
+      "check": "Unchanged real-data plans and reserve",
+      "evidence": "Native keyboard workflow and actual exported JSON verified P, P+63, S and S+68 margins; reserve stays 20 minutes; science evidence belongs to S only."
+    },
+    {
+      "id": "POS06",
+      "status": "PASS",
+      "check": "Stale-export and printed-brief behavior",
+      "evidence": "Editing extra observation hides stale exports. With intro visible on screen, print media hides introduction/related tools while preserving the ready mission brief. Related tools do not enter scientific-input sources."
+    },
+    {
+      "id": "POS07",
+      "status": "PASS",
+      "check": "Current root/subfolder static delivery and protected inputs",
+      "evidence": "Root and nested/homebound startup/current-version assets passed. Subfolder P margin matches 61.91699854342489. All 38 static checks and eleven protected engine/web hashes passed; no new runtime dependency."
+    }
+  ],
+  "responsive": [
+    {
+      "width": 1280,
+      "columns": 3,
+      "summaryHeight": 44,
+      "documentOverflow": false,
+      "textOverflowCount": 0
+    },
+    {
+      "width": 980,
+      "columns": 3,
+      "summaryHeight": 44,
+      "documentOverflow": false,
+      "textOverflowCount": 0
+    },
+    {
+      "width": 901,
+      "columns": 3,
+      "summaryHeight": 44,
+      "documentOverflow": false,
+      "textOverflowCount": 0
+    },
+    {
+      "width": 900,
+      "columns": 1,
+      "summaryHeight": 44,
+      "documentOverflow": false,
+      "textOverflowCount": 0
+    },
+    {
+      "width": 768,
+      "columns": 1,
+      "summaryHeight": 44,
+      "documentOverflow": false,
+      "textOverflowCount": 0
+    },
+    {
+      "width": 390,
+      "columns": 1,
+      "summaryHeight": 44,
+      "documentOverflow": false,
+      "textOverflowCount": 0
+    },
+    {
+      "width": 320,
+      "columns": 1,
+      "summaryHeight": 44,
+      "documentOverflow": false,
+      "textOverflowCount": 0
+    }
+  ],
+  "workflow": {
+    "status": "PASS",
+    "method": "Native keyboard activation and real exported JSON",
+    "results": [
+      {
+        "label": "P default",
+        "margin": 61.91699854342489,
+        "reserve": 20,
+        "science": 20,
+        "status": "FEASIBLE",
+        "version": "1.1.10",
+        "sourceCount": 3,
+        "scienceEvidence": false
+      },
+      {
+        "label": "P +63",
+        "margin": -1.0830014565751185,
+        "reserve": 20,
+        "science": 83,
+        "status": "TIME_BUDGET_EXCEEDED",
+        "version": "1.1.10",
+        "sourceCount": 3,
+        "scienceEvidence": false
+      },
+      {
+        "label": "S default",
+        "margin": 67.59608929948027,
+        "reserve": 20,
+        "science": 20,
+        "status": "FEASIBLE",
+        "version": "1.1.10",
+        "sourceCount": 3,
+        "scienceEvidence": true
+      },
+      {
+        "label": "S +68",
+        "margin": -0.4039107005197451,
+        "reserve": 20,
+        "science": 88,
+        "status": "TIME_BUDGET_EXCEEDED",
+        "version": "1.1.10",
+        "sourceCount": 3,
+        "scienceEvidence": true
+      }
+    ],
+    "staleExportsHidden": true,
+    "print": {
+      "introHidden": true,
+      "relatedRectangles": 0,
+      "briefVisible": true,
+      "ready": "true"
+    }
+  },
+  "subfolder": {
+    "status": "PASS",
+    "base": "http://127.0.0.1:4192/nested/homebound/",
+    "script": "http://127.0.0.1:4192/nested/homebound/js/app.js?v=1.1.10-51c1d041a066",
+    "resourceCount": 20,
+    "resourcesScoped": true,
+    "disclosureInitiallyClosed": true,
+    "margin": 61.91699854342489,
+    "reserve": 20,
+    "version": "1.1.10"
+  },
+  "newExternalRuntimeResources": [],
+  "screenshots": [
+    {
+      "filename": "differentiation-intro.png",
+      "bytes": 434877,
+      "sha256": "a3df6303e03e1f53a4b709d03632aa6d5a73ea841f91270555b45dfdb84ea038"
+    },
+    {
+      "filename": "differentiation-related-tools.png",
+      "bytes": 109879,
+      "sha256": "77916eb3e654ca71103535d2cd0029e91d5b56d997a7bfb638fcd814b8dd8d0c"
+    }
+  ],
+  "limitations": [
+    "Viewport checks use scripted CSS widths, not physical touch devices or a full accessibility/human-usability audit.",
+    "Integrated-frame pointer coordinates after viewport resizing were unreliable; DOM hit-testing showed the button unobstructed. Mission workflows were verified using native keyboard activation. Pointer disclosure toggles passed.",
+    "Complete native full-page screenshots were cropped after element screenshots proved clipped by the integrated frame.",
+    "Native OS save/PDF dialogs and deployment of 1.1.10 to the public hosting account remain post-upload checks."
+  ]
+}

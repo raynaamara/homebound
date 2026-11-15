@@ -1,0 +1,1511 @@
+{
+  "executedUtc": "2026-11-09T15:20:41.531Z",
+  "modelVersion": "1.0.0",
+  "status": "RESEARCH_PROTOTYPE_NOT_PHYSICALLY_VALIDATED",
+  "runtime": {
+    "node": "v26.13.0",
+    "platform": "win32",
+    "architecture": "x64"
+  },
+  "inputs": [
+    {
+      "filename": "terrain_grid.json",
+      "sha256": "407ccb92c30770f1acc07ab96d5ceccb2676eec1b04028b2b12f0a0f0a1ac1d6"
+    },
+    {
+      "filename": "scenario.json",
+      "sha256": "44c8cd2d28fa4aee4560a9ecbbb2da7e3f6beb9cc718dfe5aefde96f7958b0d2"
+    }
+  ],
+  "nominalParameters": {
+    "baseSpeedMPerMin": 30,
+    "maximumSlopeDegrees": 20,
+    "uphillPenalty": 4,
+    "downhillPenalty": 2
+  },
+  "nominalStatistics": {
+    "totalCells": 90000,
+    "knownCells": 90000,
+    "permittedCells": 17306,
+    "outboundReached": 1276,
+    "returnReached": 1276
+  },
+  "nominalBuildMilliseconds": 42.91499999999999,
+  "fieldUpdateMilliseconds": 8.696199999999976,
+  "nominalFieldCounts": {
+    "UNKNOWN": 0,
+    "EXCLUDED": 72694,
+    "DISCONNECTED": 16030,
+    "TIME_EXCEEDED": 0,
+    "FEASIBLE": 1276,
+    "ZERO_EXTRA_MARGIN": 0
+  },
+  "nominalResults": [
+    {
+      "targetId": "A",
+      "modelVersion": "1.0.0",
+      "origin": {
+        "row": 105,
+        "column": 43
+      },
+      "destination": {
+        "id": "A",
+        "kind": "illustrative_observation",
+        "name": "Layer-pattern observation area",
+        "column_fraction": 0.38,
+        "row_fraction": 0.37,
+        "science_minutes": 20,
+        "rationale": "Illustrative viewpoint near contrasting, visibly layered surface patterns. Geological interpretation and science value require expert review.",
+        "row": 113,
+        "column": 119,
+        "easting_m": 40.973043578580246,
+        "northing_m": -307414.67589032534,
+        "longitude_deg_east": 137.35069391175202,
+        "latitude_deg_planetocentric": -5.1865054652927585,
+        "block_mean_elevation_m": -2623.744140625,
+        "block_max_slope_deg": 10.744735717773438,
+        "seed_shift_m": 27.240320039642295,
+        "evidence_source_ids": [
+          "hirise_optical",
+          "hirise_dem"
+        ],
+        "approval_status": "Illustrative annotation; no NASA approval or validated access."
+      },
+      "parameters": {
+        "baseSpeedMPerMin": 30,
+        "maximumSlopeDegrees": 20,
+        "uphillPenalty": 4,
+        "downhillPenalty": 2
+      },
+      "mission": {
+        "missionBudgetMinutes": 120,
+        "scienceMinutes": 20,
+        "reserveMinutes": 20
+      },
+      "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+      "safetyCertified": false,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "explanation": "No complete round trip exists within the known, permitted grid and current edge rules. This does not prove that no physical route exists.",
+      "time": null,
+      "outbound": null,
+      "return": null
+    },
+    {
+      "targetId": "B",
+      "modelVersion": "1.0.0",
+      "origin": {
+        "row": 105,
+        "column": 43
+      },
+      "destination": {
+        "id": "B",
+        "kind": "illustrative_observation",
+        "name": "Dissected-terrain observation area",
+        "column_fraction": 0.56,
+        "row_fraction": 0.56,
+        "science_minutes": 25,
+        "rationale": "Illustrative viewpoint near incised and dissected morphology visible in the orthoimage. No material composition or sample value is asserted.",
+        "row": 168,
+        "column": 160,
+        "easting_m": 248.3674616928928,
+        "northing_m": -307692.88791462505,
+        "longitude_deg_east": 137.35420630457082,
+        "latitude_deg_planetocentric": -5.191199282139211,
+        "block_mean_elevation_m": -2511.47900390625,
+        "block_max_slope_deg": 14.624317169189453,
+        "seed_shift_m": 40.467203534499994,
+        "evidence_source_ids": [
+          "hirise_optical",
+          "hirise_dem"
+        ],
+        "approval_status": "Illustrative annotation; no NASA approval or validated access."
+      },
+      "parameters": {
+        "baseSpeedMPerMin": 30,
+        "maximumSlopeDegrees": 20,
+        "uphillPenalty": 4,
+        "downhillPenalty": 2
+      },
+      "mission": {
+        "missionBudgetMinutes": 120,
+        "scienceMinutes": 25,
+        "reserveMinutes": 20
+      },
+      "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+      "safetyCertified": false,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "explanation": "No complete round trip exists within the known, permitted grid and current edge rules. This does not prove that no physical route exists.",
+      "time": null,
+      "outbound": null,
+      "return": null
+    },
+    {
+      "targetId": "C",
+      "modelVersion": "1.0.0",
+      "origin": {
+        "row": 105,
+        "column": 43
+      },
+      "destination": {
+        "id": "C",
+        "kind": "illustrative_observation",
+        "name": "Ridge-and-gully observation area",
+        "column_fraction": 0.72,
+        "row_fraction": 0.22,
+        "science_minutes": 30,
+        "rationale": "Illustrative viewpoint near ridge-and-gully texture. Its accessibility and scientific priority have not been established.",
+        "row": 64,
+        "column": 214,
+        "easting_m": 521.5210855507678,
+        "northing_m": -307166.8142686765,
+        "longitude_deg_east": 137.35883238291757,
+        "latitude_deg_planetocentric": -5.182323701193192,
+        "block_mean_elevation_m": -2562.411865234375,
+        "block_max_slope_deg": 11.4478759765625,
+        "seed_shift_m": 14.307317017450586,
+        "evidence_source_ids": [
+          "hirise_optical",
+          "hirise_dem"
+        ],
+        "approval_status": "Illustrative annotation; no NASA approval or validated access."
+      },
+      "parameters": {
+        "baseSpeedMPerMin": 30,
+        "maximumSlopeDegrees": 20,
+        "uphillPenalty": 4,
+        "downhillPenalty": 2
+      },
+      "mission": {
+        "missionBudgetMinutes": 120,
+        "scienceMinutes": 30,
+        "reserveMinutes": 20
+      },
+      "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+      "safetyCertified": false,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "explanation": "No complete round trip exists within the known, permitted grid and current edge rules. This does not prove that no physical route exists.",
+      "time": null,
+      "outbound": null,
+      "return": null
+    }
+  ],
+  "connectedCellWitness": {
+    "label": "Numerical integration witness, not a recommended science target",
+    "selection": "Farthest grid-distance cell in the nominal origin-connected component; neither origin nor A/B/C was relocated.",
+    "cell": {
+      "row": 70,
+      "column": 37
+    },
+    "result": {
+      "modelVersion": "1.0.0",
+      "origin": {
+        "row": 105,
+        "column": 43
+      },
+      "destination": {
+        "row": 70,
+        "column": 37
+      },
+      "parameters": {
+        "baseSpeedMPerMin": 30,
+        "maximumSlopeDegrees": 20,
+        "uphillPenalty": 4,
+        "downhillPenalty": 2
+      },
+      "mission": {
+        "missionBudgetMinutes": 120,
+        "scienceMinutes": 20,
+        "reserveMinutes": 20
+      },
+      "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+      "safetyCertified": false,
+      "status": "FEASIBLE",
+      "reasonCode": "WITHIN_TIME_MODEL",
+      "explanation": "The complete modeled excursion fits the budget, retains the stated reserve, and leaves 61.92 additional minutes. This is not a safety certification.",
+      "time": {
+        "missionBudgetMinutes": 120,
+        "scienceMinutes": 20,
+        "reserveMinutes": 20,
+        "outboundMinutes": 8.7749792466404,
+        "returnMinutes": 9.308022209934713,
+        "requiredMinutes": 58.08300145657511,
+        "rawMarginMinutes": 61.91699854342489,
+        "marginMinutes": 61.91699854342489,
+        "maxScienceMinutes": 81.91699854342488,
+        "latestReturnDepartureMinute": 90.6919777900653,
+        "meetsModelBudget": true,
+        "zeroExtraMargin": false
+      },
+      "outbound": {
+        "cells": [
+          31543,
+          31544,
+          31245,
+          31246,
+          30947,
+          30948,
+          30648,
+          30349,
+          30049,
+          29749,
+          29449,
+          29149,
+          28848,
+          28548,
+          28247,
+          27946,
+          27646,
+          27346,
+          27046,
+          26746,
+          26446,
+          26146,
+          25846,
+          25546,
+          25246,
+          24945,
+          24644,
+          24343,
+          24043,
+          23743,
+          23442,
+          23142,
+          22841,
+          22540,
+          22539,
+          22239,
+          21939,
+          21639,
+          21638,
+          21338,
+          21037
+        ],
+        "minutes": 8.7749792466404,
+        "distanceM": 230.13567789266068,
+        "ascentM": 2.838999999999942,
+        "descentM": 10.807999999999993
+      },
+      "return": {
+        "cells": [
+          21037,
+          21338,
+          21638,
+          21639,
+          21939,
+          22239,
+          22539,
+          22540,
+          22841,
+          23142,
+          23442,
+          23743,
+          24043,
+          24343,
+          24644,
+          24945,
+          25246,
+          25546,
+          25846,
+          26146,
+          26446,
+          26746,
+          27046,
+          27346,
+          27646,
+          27946,
+          28247,
+          28548,
+          28848,
+          29149,
+          29449,
+          29749,
+          30049,
+          30349,
+          30648,
+          30948,
+          30947,
+          31246,
+          31245,
+          31544,
+          31543
+        ],
+        "minutes": 9.308022209934713,
+        "distanceM": 230.13567789266065,
+        "ascentM": 10.807999999999993,
+        "descentM": 2.838999999999942
+      }
+    },
+    "extraTaskResult": {
+      "modelVersion": "1.0.0",
+      "origin": {
+        "row": 105,
+        "column": 43
+      },
+      "destination": {
+        "row": 70,
+        "column": 37
+      },
+      "parameters": {
+        "baseSpeedMPerMin": 30,
+        "maximumSlopeDegrees": 20,
+        "uphillPenalty": 4,
+        "downhillPenalty": 2
+      },
+      "mission": {
+        "missionBudgetMinutes": 120,
+        "scienceMinutes": 82.91699854342488,
+        "reserveMinutes": 20
+      },
+      "scope": "PRE_DEPARTURE_TIME_ONLY_RESEARCH",
+      "safetyCertified": false,
+      "status": "TIME_BUDGET_EXCEEDED",
+      "reasonCode": "NEGATIVE_TIME_MARGIN",
+      "explanation": "The complete modeled excursion exceeds the budget by 1.00 minutes. Reduce science time or revise the plan; the reserve is not silently removed.",
+      "time": {
+        "missionBudgetMinutes": 120,
+        "scienceMinutes": 82.91699854342488,
+        "reserveMinutes": 20,
+        "outboundMinutes": 8.7749792466404,
+        "returnMinutes": 9.308022209934713,
+        "requiredMinutes": 121,
+        "rawMarginMinutes": -1,
+        "marginMinutes": -1,
+        "maxScienceMinutes": 81.91699854342488,
+        "latestReturnDepartureMinute": 90.6919777900653,
+        "meetsModelBudget": false,
+        "zeroExtraMargin": false
+      },
+      "outbound": {
+        "cells": [
+          31543,
+          31544,
+          31245,
+          31246,
+          30947,
+          30948,
+          30648,
+          30349,
+          30049,
+          29749,
+          29449,
+          29149,
+          28848,
+          28548,
+          28247,
+          27946,
+          27646,
+          27346,
+          27046,
+          26746,
+          26446,
+          26146,
+          25846,
+          25546,
+          25246,
+          24945,
+          24644,
+          24343,
+          24043,
+          23743,
+          23442,
+          23142,
+          22841,
+          22540,
+          22539,
+          22239,
+          21939,
+          21639,
+          21638,
+          21338,
+          21037
+        ],
+        "minutes": 8.7749792466404,
+        "distanceM": 230.13567789266068,
+        "ascentM": 2.838999999999942,
+        "descentM": 10.807999999999993
+      },
+      "return": {
+        "cells": [
+          21037,
+          21338,
+          21638,
+          21639,
+          21939,
+          22239,
+          22539,
+          22540,
+          22841,
+          23142,
+          23442,
+          23743,
+          24043,
+          24343,
+          24644,
+          24945,
+          25246,
+          25546,
+          25846,
+          26146,
+          26446,
+          26746,
+          27046,
+          27346,
+          27646,
+          27946,
+          28247,
+          28548,
+          28848,
+          29149,
+          29449,
+          29749,
+          30049,
+          30349,
+          30648,
+          30948,
+          30947,
+          31246,
+          31245,
+          31544,
+          31543
+        ],
+        "minutes": 9.308022209934713,
+        "distanceM": 230.13567789266065,
+        "ascentM": 10.807999999999993,
+        "descentM": 2.838999999999942
+      }
+    }
+  },
+  "sensitivity": [
+    {
+      "experiment": "slope",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 10,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "ENDPOINT_EXCLUDED",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 2,
+      "buildMilliseconds": 13.342099999999988
+    },
+    {
+      "experiment": "slope",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 10,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "ENDPOINT_EXCLUDED",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 2,
+      "buildMilliseconds": 13.342099999999988
+    },
+    {
+      "experiment": "slope",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 10,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "ENDPOINT_EXCLUDED",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 2,
+      "buildMilliseconds": 13.342099999999988
+    },
+    {
+      "experiment": "slope",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 15,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 117,
+      "buildMilliseconds": 7.747399999999999
+    },
+    {
+      "experiment": "slope",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 15,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 117,
+      "buildMilliseconds": 7.747399999999999
+    },
+    {
+      "experiment": "slope",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 15,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 117,
+      "buildMilliseconds": 7.747399999999999
+    },
+    {
+      "experiment": "slope",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "slope",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "slope",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "slope",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 25,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "FEASIBLE",
+      "reasonCode": "WITHIN_TIME_MODEL",
+      "outboundMinutes": 23.259564430831347,
+      "returnMinutes": 19.29242288441497,
+      "requiredMinutes": 82.55198731524632,
+      "marginMinutes": 37.44801268475368,
+      "maxScienceMinutes": 57.44801268475368,
+      "reachedCells": 8175,
+      "buildMilliseconds": 72.9092
+    },
+    {
+      "experiment": "slope",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 25,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 8175,
+      "buildMilliseconds": 72.9092
+    },
+    {
+      "experiment": "slope",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 25,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 8175,
+      "buildMilliseconds": 72.9092
+    },
+    {
+      "experiment": "slope",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 30,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "FEASIBLE",
+      "reasonCode": "WITHIN_TIME_MODEL",
+      "outboundMinutes": 21.734604065821443,
+      "returnMinutes": 17.75714151420771,
+      "requiredMinutes": 79.49174558002915,
+      "marginMinutes": 40.508254419970854,
+      "maxScienceMinutes": 60.508254419970854,
+      "reachedCells": 27763,
+      "buildMilliseconds": 177.47050000000002
+    },
+    {
+      "experiment": "slope",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 30,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "TIME_BUDGET_EXCEEDED",
+      "reasonCode": "NEGATIVE_TIME_MARGIN",
+      "outboundMinutes": 68.23230598293063,
+      "returnMinutes": 56.532183288156695,
+      "requiredMinutes": 169.7644892710873,
+      "marginMinutes": -49.764489271087314,
+      "maxScienceMinutes": -24.76448927108732,
+      "reachedCells": 27763,
+      "buildMilliseconds": 177.47050000000002
+    },
+    {
+      "experiment": "slope",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 30,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "TIME_BUDGET_EXCEEDED",
+      "reasonCode": "NEGATIVE_TIME_MARGIN",
+      "outboundMinutes": 60.339491389044085,
+      "returnMinutes": 52.19740916378039,
+      "requiredMinutes": 162.53690055282448,
+      "marginMinutes": -42.53690055282448,
+      "maxScienceMinutes": -12.536900552824477,
+      "reachedCells": 27763,
+      "buildMilliseconds": 177.47050000000002
+    },
+    {
+      "experiment": "slope",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 40,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "FEASIBLE",
+      "reasonCode": "WITHIN_TIME_MODEL",
+      "outboundMinutes": 21.464613425322284,
+      "returnMinutes": 17.500029991066608,
+      "requiredMinutes": 78.9646434163889,
+      "marginMinutes": 41.035356583611104,
+      "maxScienceMinutes": 61.035356583611104,
+      "reachedCells": 52282,
+      "buildMilliseconds": 387.5265
+    },
+    {
+      "experiment": "slope",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 40,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "TIME_BUDGET_EXCEEDED",
+      "reasonCode": "NEGATIVE_TIME_MARGIN",
+      "outboundMinutes": 52.00891362633839,
+      "returnMinutes": 40.230743945240235,
+      "requiredMinutes": 137.23965757157862,
+      "marginMinutes": -17.23965757157862,
+      "maxScienceMinutes": 7.760342428421367,
+      "reachedCells": 52282,
+      "buildMilliseconds": 387.5265
+    },
+    {
+      "experiment": "slope",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 40,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "TIME_BUDGET_EXCEEDED",
+      "reasonCode": "NEGATIVE_TIME_MARGIN",
+      "outboundMinutes": 57.00151055419039,
+      "returnMinutes": 48.87484757637549,
+      "requiredMinutes": 155.87635813056588,
+      "marginMinutes": -35.876358130565876,
+      "maxScienceMinutes": -5.876358130565876,
+      "reachedCells": 52282,
+      "buildMilliseconds": 387.5265
+    },
+    {
+      "experiment": "speed",
+      "targetId": "A",
+      "baseSpeedMPerMin": 15,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 16.38659999999993
+    },
+    {
+      "experiment": "speed",
+      "targetId": "B",
+      "baseSpeedMPerMin": 15,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 16.38659999999993
+    },
+    {
+      "experiment": "speed",
+      "targetId": "C",
+      "baseSpeedMPerMin": 15,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 16.38659999999993
+    },
+    {
+      "experiment": "speed",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "speed",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "speed",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "speed",
+      "targetId": "A",
+      "baseSpeedMPerMin": 45,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 17.633100000000013
+    },
+    {
+      "experiment": "speed",
+      "targetId": "B",
+      "baseSpeedMPerMin": 45,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 17.633100000000013
+    },
+    {
+      "experiment": "speed",
+      "targetId": "C",
+      "baseSpeedMPerMin": 45,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 17.633100000000013
+    },
+    {
+      "experiment": "reserve",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 10,
+      "scienceMinutes": 20,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "reserve",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 10,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "reserve",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 10,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "reserve",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 20,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "reserve",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "reserve",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 20,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "reserve",
+      "targetId": "A",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 30,
+      "scienceMinutes": 20,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "reserve",
+      "targetId": "B",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 30,
+      "scienceMinutes": 25,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    },
+    {
+      "experiment": "reserve",
+      "targetId": "C",
+      "baseSpeedMPerMin": 30,
+      "maximumSlopeDegrees": 20,
+      "uphillPenalty": 4,
+      "downhillPenalty": 2,
+      "reserveMinutes": 30,
+      "scienceMinutes": 30,
+      "status": "NO_MODELED_ROUTE",
+      "reasonCode": "NO_KNOWN_PERMITTED_ROUNDTRIP",
+      "outboundMinutes": null,
+      "returnMinutes": null,
+      "requiredMinutes": null,
+      "marginMinutes": null,
+      "maxScienceMinutes": null,
+      "reachedCells": 1276,
+      "buildMilliseconds": 42.91499999999999
+    }
+  ],
+  "analyticalReferences": [
+    {
+      "label": "Analytical reference, not a Mars-route measurement",
+      "missionBudgetMinutes": 120,
+      "scienceMinutes": 20,
+      "reserveMinutes": 20,
+      "outboundMinutes": 25,
+      "returnMinutes": 35,
+      "requiredMinutes": 100,
+      "rawMarginMinutes": 20,
+      "marginMinutes": 20,
+      "maxScienceMinutes": 40,
+      "latestReturnDepartureMinute": 65,
+      "meetsModelBudget": true,
+      "zeroExtraMargin": false
+    },
+    {
+      "label": "Analytical extra-task case, not a Mars-route measurement",
+      "missionBudgetMinutes": 120,
+      "scienceMinutes": 45,
+      "reserveMinutes": 20,
+      "outboundMinutes": 25,
+      "returnMinutes": 35,
+      "requiredMinutes": 125,
+      "rawMarginMinutes": -5,
+      "marginMinutes": -5,
+      "maxScienceMinutes": 40,
+      "latestReturnDepartureMinute": 65,
+      "meetsModelBudget": false,
+      "zeroExtraMargin": false
+    }
+  ],
+  "validations": [
+    {
+      "id": "NOMINAL-A-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "NOMINAL-B-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "NOMINAL-C-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-10-A-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-10-B-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-10-C-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-15-A-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-15-B-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-15-C-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-20-A-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-20-B-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-20-C-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-25-A-outbound-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 23.259564430831347,
+        "reported": 23.259564430831347,
+        "cells": 85
+      }
+    },
+    {
+      "id": "SLOPE-25-A-return-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 19.292422884414965,
+        "reported": 19.29242288441497,
+        "cells": 85
+      }
+    },
+    {
+      "id": "SLOPE-25-B-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-25-C-UNAVAILABLE-NULL",
+      "status": "PASS",
+      "details": "NO_MODELED_ROUTE"
+    },
+    {
+      "id": "SLOPE-30-A-outbound-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 21.734604065821443,
+        "reported": 21.734604065821443,
+        "cells": 79
+      }
+    },
+    {
+      "id": "SLOPE-30-A-return-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 17.757141514207703,
+        "reported": 17.75714151420771,
+        "cells": 79
+      }
+    },
+    {
+      "id": "SLOPE-30-B-outbound-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 68.23230598293063,
+        "reported": 68.23230598293063,
+        "cells": 209
+      }
+    },
+    {
+      "id": "SLOPE-30-B-return-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 56.53218328815669,
+        "reported": 56.532183288156695,
+        "cells": 209
+      }
+    },
+    {
+      "id": "SLOPE-30-C-outbound-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 60.339491389044085,
+        "reported": 60.339491389044085,
+        "cells": 218
+      }
+    },
+    {
+      "id": "SLOPE-30-C-return-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 52.19740916378039,
+        "reported": 52.19740916378039,
+        "cells": 218
+      }
+    },
+    {
+      "id": "SLOPE-40-A-outbound-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 21.464613425322284,
+        "reported": 21.464613425322284,
+        "cells": 77
+      }
+    },
+    {
+      "id": "SLOPE-40-A-return-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 17.50002999106661,
+        "reported": 17.500029991066608,
+        "cells": 77
+      }
+    },
+    {
+      "id": "SLOPE-40-B-outbound-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 52.00891362633839,
+        "reported": 52.00891362633839,
+        "cells": 145
+      }
+    },
+    {
+      "id": "SLOPE-40-B-return-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 40.23074394524022,
+        "reported": 40.230743945240235,
+        "cells": 145
+      }
+    },
+    {
+      "id": "SLOPE-40-C-outbound-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 57.00151055419039,
+        "reported": 57.00151055419039,
+        "cells": 211
+      }
+    },
+    {
+      "id": "SLOPE-40-C-return-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 48.87484757637549,
+        "reported": 48.87484757637549,
+        "cells": 211
+      }
+    },
+    {
+      "id": "CONNECTED-WITNESS-outbound-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 8.7749792466404,
+        "reported": 8.7749792466404,
+        "cells": 41
+      }
+    },
+    {
+      "id": "CONNECTED-WITNESS-return-RESUM",
+      "status": "PASS",
+      "details": {
+        "sum": 9.308022209934718,
+        "reported": 9.308022209934713,
+        "cells": 41
+      }
+    },
+    {
+      "id": "CONNECTED-WITNESS-EXTRA-TASK",
+      "status": "PASS",
+      "details": {
+        "baseline": "FEASIBLE",
+        "extra": "TIME_BUDGET_EXCEEDED",
+        "extraMargin": -1
+      }
+    },
+    {
+      "id": "CONNECTED-WITNESS-EXACT-BOUNDARY",
+      "status": "PASS",
+      "details": {
+        "missionBudgetMinutes": 58.08300145657511,
+        "scienceMinutes": 20,
+        "reserveMinutes": 20,
+        "outboundMinutes": 8.7749792466404,
+        "returnMinutes": 9.308022209934713,
+        "requiredMinutes": 58.08300145657511,
+        "rawMarginMinutes": 0,
+        "marginMinutes": 0,
+        "maxScienceMinutes": 20,
+        "latestReturnDepartureMinute": 28.7749792466404,
+        "meetsModelBudget": true,
+        "zeroExtraMargin": true
+      }
+    },
+    {
+      "id": "CONNECTED-WITNESS-SPEED-MONOTONICITY",
+      "status": "PASS",
+      "details": [
+        {
+          "speed": 15,
+          "requiredMinutes": 76.16600291315022
+        },
+        {
+          "speed": 30,
+          "requiredMinutes": 58.08300145657511
+        },
+        {
+          "speed": 45,
+          "requiredMinutes": 52.05533430438341
+        }
+      ]
+    },
+    {
+      "id": "REAL-FIELD-SCIENCE-MONOTONICITY",
+      "status": "PASS",
+      "details": {
+        "newlyFeasibleAfterExtraScience": 0
+      }
+    },
+    {
+      "id": "REAL-FIELD-RESERVE-MONOTONICITY",
+      "status": "PASS",
+      "details": {
+        "newlyFeasibleAfterMoreReserve": 0
+      }
+    },
+    {
+      "id": "REAL-CONNECTIVITY-SLOPE-MONOTONICITY",
+      "status": "PASS",
+      "details": [
+        {
+          "slope": 10,
+          "reached": 2
+        },
+        {
+          "slope": 15,
+          "reached": 117
+        },
+        {
+          "slope": 20,
+          "reached": 1276
+        },
+        {
+          "slope": 25,
+          "reached": 8175
+        },
+        {
+          "slope": 30,
+          "reached": 27763
+        },
+        {
+          "slope": 40,
+          "reached": 52282
+        }
+      ]
+    }
+  ],
+  "claimBoundaries": [
+    "The user-approved preset is illustrative; no astronaut-speed or slope-safety calibration.",
+    "No threshold is silently relaxed and no scenario endpoint is relocated.",
+    "A model route is not a certified physical route; maximum native slope aggregation may be restrictive.",
+    "No quantitative thermal, oxygen, battery, fatigue, or dynamic-environment model.",
+    "Local runtime timings are observations, not a cross-device performance guarantee."
+  ]
+}

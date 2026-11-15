@@ -1,0 +1,27 @@
+{
+  "applicationVersion": "1.1.1",
+  "method": "Targeted unit tests, actual numeric-grid sampling, Chromium/Playwright checks and local release-integrity checks. Original model/terrain inputs are unchanged.",
+  "checks": [
+    {"id":"L01","status":"PASS","scope":"Before calculation","check":"Explicit unavailable overlay","observed":"Selecting time-margin overlay before Review shows a visible calculation-required notice, names the optical base, and does not show a result legend."},
+    {"id":"L02","status":"PASS","scope":"Current calculation","check":"Calculated overlay","observed":"After the nominal practice calculation the notice disappears, the field legend appears, and 178629 canvas pixels meet an independent green-overlay criterion."},
+    {"id":"L03","status":"PASS","scope":"Edited comparison","check":"Stale overlay cleared","observed":"Changing extra observation duration shows a Recalculate notice, hides the field legend and disables saving until recalculation or explicit restoration."},
+    {"id":"L04","status":"PASS","scope":"Decision regression","check":"Original and revised model outcomes","observed":"Practice margin remains 61.91699854342489 min; adding 63 min gives -1.0830014565751185 min, with original 20-minute reserve and cached search retained."},
+    {"id":"L05","status":"PASS","scope":"Elevation rendering","check":"Readable data-derived color contrast","observed":"489376 of 490000 interior pixels met the color-spread criterion; channel range 23-255. Elevation is rendered from numeric grid values, not inferred from optical or grayscale pixels."},
+    {"id":"L06","status":"PASS","scope":"Independent numeric lookup","check":"Focused elevation legend","observed":"An independent loop over rows 50-124 and intersecting columns 2-77 gives -2705.099 to -2654.322 m, matching the displayed -2705.1 to -2654.3 m legend."},
+    {"id":"L07","status":"PASS","scope":"Map extent","check":"Legend follows focus and fit","observed":"Whole-area legend changes to -2705.9 to -2285.1 m and focused legend returns when refocused. Display rescaling does not alter model elevations."},
+    {"id":"L08","status":"PASS","scope":"Thermal interpretation","check":"Native resolution and qualitative units","observed":"The layer states native 100 m spacing, about 379 m view width and 3.8 native pixel widths, retains coarse grayscale blocks, and labels 0-255 DN as relative display codes, not temperature or calibrated physical thermal inertia."},
+    {"id":"L09","status":"PASS","scope":"Actual export payloads","check":"Map semantics retained in text and JSON","observed":"Actual generated Blob text/JSON include mapDisplay, visible elevation range or DN units, qualitative limitations, app 1.1.1, original/revised plan and unchanged reserve."},
+    {"id":"L10","status":"PASS","scope":"Print CSS","check":"Printed elevation interpretation","observed":"The mission brief contains the visible-view contrast explanation and displayed elevation legend during print-media emulation."},
+    {"id":"L11","status":"PASS","scope":"Mobile","check":"Legend and notice layout","observed":"At actual 390 x 844 CSS viewport, document width is 375 px without horizontal overflow; elevation legend remains visible."},
+    {"id":"L12","status":"PASS","scope":"Original science case","check":"No-route result remains unchanged","observed":"Original A at the 20-degree limit still returns NO_MODELED_ROUTE with null time, while the map legend remains inspectable."},
+    {"id":"L13","status":"PASS","scope":"Local subfolder deployment","check":"Versioned modules and JSON requests","observed":"At /nested/homebound/, elevation and pending/current time-margin states work and nominal margin is 61.92 min. Content-version query keys apply to CSS, modules, worker and JSON requests to avoid mixing cached releases."},
+    {"id":"L14","status":"PASS","scope":"Preservation and regression","check":"Scientific input and old-release boundaries","observed":"79 unit tests and the application integration audit pass. Original engine and ten prepared web files are protected by recorded hashes; app 1.1.0 and register 1.1 were archived before updating active deliverables."}
+  ],
+  "limitations": [
+    "The 26 application-browser scenarios from release 1.1.0 are retained as historical regression evidence; this file records the targeted checks executed for 1.1.1, not a fictional rerun of every earlier browser scenario.",
+    "No new human usability study, physical route validation, thermal calibration, astronaut-performance calibration or safety certification is asserted.",
+    "The user-facing local server on port 4180 stays running. The separate subfolder helper was stopped after testing.",
+    "The integrated browser cached older modules/configuration during initial checks. Content-versioned deployment URLs resolved the mismatch without changing or disabling scientific validation.",
+    "Native PDF/save dialogs and actual Rumahweb account deployment remain post-upload checks."
+  ]
+}

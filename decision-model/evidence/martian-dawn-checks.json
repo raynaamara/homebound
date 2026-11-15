@@ -1,0 +1,25 @@
+{
+  "applicationVersion": "1.1.7",
+  "theme": "Martian Dawn",
+  "method": "Targeted integrated-browser checks at actual desktop/mobile viewport sizes, eight new design/asset tests, updated palette tests, XML parsing and exact scientific-canvas comparison.",
+  "checks": [
+    {"id":"MD01","status":"PASS","check":"Consistent orange branding","observed":"Primary actions, map-view selection, destination radios/cards and the stepper use shared orange/sand tokens. Teal branding literals are absent from CSS. White/action contrast is 4.98:1; white/hover contrast is 6.54:1."},
+    {"id":"MD02","status":"PASS","check":"Visible desktop planet","observed":"The rendered planet disk is 319.14 px at an actual 1206 px viewport and 295.08 px at 980 px, within the proposed 280-360 px range. The image is decoded at its native 512x512 aspect ratio."},
+    {"id":"MD03","status":"PASS","check":"Independent visual hierarchy","observed":"Hero copy and the planet scene do not overlap. The three problem cards are below both, rather than covering the illustration."},
+    {"id":"MD04","status":"PASS","check":"Mobile planet and primary action","observed":"At actual 390/320 px widths, the visible planet disk is 141.02 px, with a 16 px gap before the copy. Start-button bottoms are 651.92/702.34 px within the 844 px viewport."},
+    {"id":"MD05","status":"PASS","check":"Persistent workspace identity","observed":"A separate mini-Mars remains visible when the intro is hidden and throughout planning, including Save brief. Its mobile image width is 64 px; desktop uses 88 px."},
+    {"id":"MD06","status":"PASS","check":"Lightweight versioned local asset","observed":"The standalone SVG is valid XML, 5051 bytes, static and free of scripts or external image/font references. Both image URLs use the same content-version key as the release assets; staging includes SVG bytes in that fingerprint."},
+    {"id":"MD07","status":"PASS","check":"Accessible decorative separation","observed":"Decorative scene/mini-Mars images have empty alternatives and are hidden from assistive technology. They add no controls or pointer interception; existing headings, three problem explanations and keyboard actions remain available."},
+    {"id":"MD08","status":"PASS","check":"Numerical and unavailable outcomes","observed":"Nominal P retains 61.91699854342489 min margin. Adding 63 observation minutes retains -1.0830014565751185 min and the 20-minute reserve. Original A retains NO_MODELED_ROUTE with null time."},
+    {"id":"MD09","status":"PASS","check":"Scientific colors and pixels","observed":"All five nominal-P canvas PNG data-URL SHA-256 values exactly match theme-map-baseline.json. Scientific map/status colors are separate from the new UI action palette."},
+    {"id":"MD10","status":"PASS","check":"Brief and print behavior","observed":"Keyboard selection of Whole area updates the saved map image to the current canvas. Print body/workspace/brief remain white; decorative mini-Mars is hidden and active animations count is zero."},
+    {"id":"MD11","status":"PASS","check":"Responsive planning workflow","observed":"Document widths remain 375/305 px at actual 390/320 px viewport widths, including expanded activity help and saved briefs. No horizontal overflow or overlapping hero copy was observed."},
+    {"id":"MD12","status":"PASS","check":"Regression and static release","observed":"125 unit tests, five actual-data integration checks and 32 static-delivery checks pass. The unchanged model/data guards remain required; the upload now includes the one reusable decorative SVG."}
+  ],
+  "boundaries": [
+    "The Mars illustration is decorative artwork, not calibrated imagery, a terrain map or a modeled route.",
+    "Representative contrast and keyboard/pointer checks are not a full accessibility audit or a human usability study.",
+    "Mobile viewport checks do not claim a physical touch-device test.",
+    "Historical theme/browser records retain their original release scope; actual hosting and native print/save dialogs remain separate acceptance checks."
+  ]
+}
